@@ -422,22 +422,19 @@ local openGui = Instance.new("ScreenGui")
 openGui.Name = "OpenGui"
 openGui.ResetOnSpawn = false
 openGui.Parent = playerGui
-openGui.Enabled = false  -- au départ caché
+openGui.Enabled = false
 
--- BOUTON ROND ROUGE (EN HAUT À DROITE)
+-- BOUTON ROND ROUGE (EN HAUT À GAUCHE)
 local openBtn = Instance.new("TextButton")
 openBtn.Name = "OpenButton"
 openBtn.Size = UDim2.new(0, 60, 0, 60)
-openBtn.Position = UDim2.new(1, -75, 0, 15)
+openBtn.Position = UDim2.new(0, 10, 0, 10) -- haut gauche
 openBtn.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
-openBtn.Text = "+"
-openBtn.TextColor3 = Color3.fromRGB(255, 255, 255)
-openBtn.TextScaled = true
-openBtn.Font = Enum.Font.GothamBold
+openBtn.Text = "" -- PAS DE CROIX
 openBtn.BorderSizePixel = 0
 openBtn.Parent = openGui
 
-Instance.new("UICorner", openBtn).CornerRadius = UDim.new(0, 30)
+Instance.new("UICorner", openBtn).CornerRadius = UDim.new(0, 30) -- rond parfait
 
 -- Quand on clique sur le rond rouge
 openBtn.MouseButton1Click:Connect(function()
@@ -445,8 +442,9 @@ openBtn.MouseButton1Click:Connect(function()
 	openGui.Enabled = false
 end)
 
--- 🎯 MODIFICATION IMPORTANTE : bouton X
+-- MODIFIER LE BOUTON X POUR OUVRIR LE ROND
 closeBtn.MouseButton1Click:Connect(function()
 	screenGui.Enabled = false
-	openGui.Enabled = true  -- le rond rouge apparaît ici
+	openGui.Enabled = true
 end)
+
