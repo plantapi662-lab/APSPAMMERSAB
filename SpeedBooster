@@ -1,0 +1,287 @@
+local Players = game:GetService("Players")
+local RunService = game:GetService("RunService")
+local player = Players.LocalPlayer
+
+local speedUnsteal = 60 -- default
+local speedSteal = 30   -- default
+local jumpBoost = 80    -- default
+
+local enabledUnsteal = false
+local enabledSteal = false
+local enabledJumpBoost = false -- nouveau
+
+local unstealConn
+local stealConn
+
+local function getChar()
+    local c = player.Character or player.CharacterAdded:Wait()
+    return c, c:WaitForChild("HumanoidRootPart"), c:FindFirstChildWhichIsA("Humanoid")
+end
+
+local function startSpeedUnsteal()
+    if unstealConn then return end
+    unstealConn = RunService.Heartbeat:Connect(function()
+        local _, hrp, hum = getChar()
+        if not hrp or not hum then return end
+        local move = hum.MoveDirection
+        local dir = move.Magnitude > 0.1 and move.Unit or Vector3.zero
+        if dir.Magnitude > 0 then
+            hrp.AssemblyLinearVelocity = Vector3.new(dir.X * speedUnsteal, hrp.AssemblyLinearVelocity.Y, dir.Z * speedUnsteal)
+        end
+    end)
+end
+
+local function stopSpeedUnsteal()
+    if unstealConn then unstealConn:Disconnect(); unstealConn = nil end
+end
+
+local function startSpeedSteal()
+    if stealConn then return end
+    stealConn = RunService.Heartbeat:Connect(function()
+        local _, hrp, hum = getChar()
+        if not hrp or not hum then return end
+        local move = hum.MoveDirection
+        local dir = move.Magnitude > 0.1 and move.Unit or Vector3.zero
+        if dir.Magnitude > 0 then
+            hrp.AssemblyLinearVelocity = Vector3.new(dir.X * speedSteal, hrp.AssemblyLinearVelocity.Y, dir.Z * speedSteal)
+        end
+    end)
+end
+
+local function stopSpeedSteal()
+    if stealConn then stealConn:Disconnect(); stealConn = nil end
+end
+
+-- GUI
+local ScreenGui = Instance.new("ScreenGui", player:WaitForChild("PlayerGui"))
+ScreenGui.Name = "UltraStyleSpeedGUI"
+ScreenGui.ResetOnSpawn = false
+
+local Main = Instance.new("Frame", ScreenGui)
+Main.Size = UDim2.new(0, 230, 0, 250)
+Main.Position = UDim2.new(1, -245, 0.25, 0)
+Main.BackgroundColor3 = Color3.fromRGB(10, 10, 10)
+Main.BackgroundTransparency = 0.35
+Instance.new("UICorner", Main).CornerRadius = UDim.new(0, 14)
+
+local Border = Instance.new("UIStroke", Main)
+Border.Color = Color3.new(1, 1, 1)
+Border.Thickness = 2
+Border.Transparency = 0.45
+
+-- Title
+local Title = Instance.new("TextLabel", Main)
+Title.Size = UDim2.new(1, -10, 0, 25)
+Title.Position = UDim2.new(0, 10, 0, 8)
+Title.BackgroundTransparency = 1
+Title.Text = "SPEED BOOSTER"
+Title.TextColor3 = Color3.new(1, 1, 1)
+Title.Font = Enum.Font.GothamBold
+Title.TextSize = 14
+
+-- Unsteal Section
+local UnstealLabel = Instance.new("TextLabel", Main)
+UnstealLabel.Size = UDim2.new(0.55, 0, 0, 22)
+UnstealLabel.Position = UDim2.new(0, 10, 0, 40)
+UnstealLabel.BackgroundTransparency = 1
+UnstealLabel.Text = "Speed Unsteal"
+UnstealLabel.TextColor3 = Color3.new(1, 1, 1)
+UnstealLabel.Font = Enum.Font.Gotham
+UnstealLabel.TextSize = 13
+UnstealLabel.TextXAlignment = Enum.TextXAlignment.Left
+
+local UnstealBox = Instance.new("TextBox", Main)
+UnstealBox.Size = UDim2.new(0.42, 0, 0, 22)
+UnstealBox.Position = UDim2.new(0.55, 0, 0, 40)
+UnstealBox.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+UnstealBox.BackgroundTransparency = 0.2
+UnstealBox.Text = tostring(speedUnsteal)
+UnstealBox.TextColor3 = Color3.new(1, 1, 1)
+UnstealBox.Font = Enum.Font.Gotham
+UnstealBox.TextSize = 13
+Instance.new("UICorner", UnstealBox).CornerRadius = UDim.new(0, 6)
+Instance.new("UIStroke", UnstealBox).Color = Color3.new(1, 1, 1)
+Instance.new("UIStroke", UnstealBox).Thickness = 1
+
+UnstealBox:GetPropertyChangedSignal("Text"):Connect(function()
+    local val = tonumber(UnstealBox.Text)
+    if val then speedUnsteal = val end
+end)
+
+-- Steal Section
+local StealLabel = Instance.new("TextLabel", Main)
+StealLabel.Size = UDim2.new(0.55, 0, 0, 22)
+StealLabel.Position = UDim2.new(0, 10, 0, 70)
+StealLabel.BackgroundTransparency = 1
+StealLabel.Text = "Speed Steal"
+StealLabel.TextColor3 = Color3.new(1, 1, 1)
+StealLabel.Font = Enum.Font.Gotham
+StealLabel.TextSize = 13
+StealLabel.TextXAlignment = Enum.TextXAlignment.Left
+
+local StealBox = Instance.new("TextBox", Main)
+StealBox.Size = UDim2.new(0.42, 0, 0, 22)
+StealBox.Position = UDim2.new(0.55, 0, 0, 70)
+StealBox.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+StealBox.BackgroundTransparency = 0.2
+StealBox.Text = tostring(speedSteal)
+StealBox.TextColor3 = Color3.new(1, 1, 1)
+StealBox.Font = Enum.Font.Gotham
+StealBox.TextSize = 13
+Instance.new("UICorner", StealBox).CornerRadius = UDim.new(0, 6)
+Instance.new("UIStroke", StealBox).Color = Color3.new(1, 1, 1)
+Instance.new("UIStroke", StealBox).Thickness = 1
+
+StealBox:GetPropertyChangedSignal("Text"):Connect(function()
+    local val = tonumber(StealBox.Text)
+    if val then speedSteal = val end
+end)
+
+-- Jump Boost Section
+local BoostLabel = Instance.new("TextLabel", Main)
+BoostLabel.Size = UDim2.new(0.55, 0, 0, 22)
+BoostLabel.Position = UDim2.new(0, 10, 0, 100)
+BoostLabel.BackgroundTransparency = 1
+BoostLabel.Text = "Jump Boost"
+BoostLabel.TextColor3 = Color3.new(1, 1, 1)
+BoostLabel.Font = Enum.Font.Gotham
+BoostLabel.TextSize = 13
+BoostLabel.TextXAlignment = Enum.TextXAlignment.Left
+
+local BoostBox = Instance.new("TextBox", Main)
+BoostBox.Size = UDim2.new(0.42, 0, 0, 22)
+BoostBox.Position = UDim2.new(0.55, 0, 0, 100)
+BoostBox.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+BoostBox.BackgroundTransparency = 0.2
+BoostBox.Text = tostring(jumpBoost)
+BoostBox.TextColor3 = Color3.new(1, 1, 1)
+BoostBox.Font = Enum.Font.Gotham
+BoostBox.TextSize = 13
+Instance.new("UICorner", BoostBox).CornerRadius = UDim.new(0, 6)
+Instance.new("UIStroke", BoostBox).Color = Color3.new(1, 1, 1)
+Instance.new("UIStroke", BoostBox).Thickness = 1
+
+BoostBox:GetPropertyChangedSignal("Text"):Connect(function()
+    local val = tonumber(BoostBox.Text)
+    if val then jumpBoost = val end
+end)
+
+-- Button (unique)
+local ActivateButton = Instance.new("TextButton", Main)
+ActivateButton.Size = UDim2.new(1, -20, 0, 30)
+ActivateButton.Position = UDim2.new(0, 10, 0, 140)
+ActivateButton.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+ActivateButton.BackgroundTransparency = 0.2
+ActivateButton.TextColor3 = Color3.new(1, 1, 1)
+ActivateButton.Font = Enum.Font.GothamBold
+ActivateButton.TextSize = 14
+ActivateButton.Text = "Activate UnSteal"
+Instance.new("UICorner", ActivateButton).CornerRadius = UDim.new(0, 10)
+Instance.new("UIStroke", ActivateButton).Color = Color3.new(1, 1, 1)
+Instance.new("UIStroke", ActivateButton).Thickness = 1
+
+-- NEW BUTTON JumpBoost
+local JumpButton = Instance.new("TextButton", Main)
+JumpButton.Size = UDim2.new(1, -20, 0, 30)
+JumpButton.Position = UDim2.new(0, 10, 0, 180)
+JumpButton.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+JumpButton.BackgroundTransparency = 0.2
+JumpButton.TextColor3 = Color3.new(1, 1, 1)
+JumpButton.Font = Enum.Font.GothamBold
+JumpButton.TextSize = 14
+JumpButton.Text = "Activate JumpBoost"
+Instance.new("UICorner", JumpButton).CornerRadius = UDim.new(0, 10)
+Instance.new("UIStroke", JumpButton).Color = Color3.new(1, 1, 1)
+Instance.new("UIStroke", JumpButton).Thickness = 1
+
+local function updateButtonText()
+    if enabledUnsteal then
+        ActivateButton.Text = "Activate Steal"
+    else
+        ActivateButton.Text = "Activate UnSteal"
+    end
+end
+
+ActivateButton.MouseButton1Click:Connect(function()
+    if enabledUnsteal then
+        enabledUnsteal = false
+        stopSpeedUnsteal()
+
+        enabledSteal = true
+        startSpeedSteal()
+    else
+        enabledSteal = false
+        stopSpeedSteal()
+
+        enabledUnsteal = true
+        startSpeedUnsteal()
+    end
+    updateButtonText()
+end)
+
+-- JumpBoost ON/OFF (version 2)
+local normalJumpPower = 50 -- jump normal
+
+JumpButton.MouseButton1Click:Connect(function()
+    enabledJumpBoost = not enabledJumpBoost
+
+    if enabledJumpBoost then
+        JumpButton.Text = "Deactivate JumpBoost"
+    else
+        JumpButton.Text = "Activate JumpBoost"
+    end
+end)
+
+RunService.Heartbeat:Connect(function()
+    local char = player.Character
+    local hum = char and char:FindFirstChildWhichIsA("Humanoid")
+
+    if hum then
+        hum.UseJumpPower = true
+        hum.JumpPower = enabledJumpBoost and jumpBoost or normalJumpPower
+    end
+end)
+
+-- Discord Text (plus bas)
+local Discord = Instance.new("TextLabel", Main)
+Discord.Size = UDim2.new(1, -10, 0, 18)
+Discord.Position = UDim2.new(0, 10, 1, -18)
+Discord.BackgroundTransparency = 1
+Discord.Text = "DISCORD.GG/NOOBCRASHER"
+Discord.TextColor3 = Color3.new(1, 1, 1)
+Discord.Font = Enum.Font.GothamBold
+Discord.TextSize = 12
+Discord.TextXAlignment = Enum.TextXAlignment.Center
+
+-- ⭐ Drag Functionality ⭐
+local dragging = false
+local dragStart
+local startPos
+
+Main.InputBegan:Connect(function(input)
+    if input.UserInputType == Enum.UserInputType.MouseButton1 then
+        dragging = true
+        dragStart = input.Position
+        startPos = Main.Position
+
+        input.Changed:Connect(function()
+            if input.UserInputState == Enum.UserInputState.End then
+                dragging = false
+            end
+        end)
+    end
+end)
+
+Main.InputChanged:Connect(function(input)
+    if input.UserInputType == Enum.UserInputType.MouseMovement then
+        if dragging then
+            local delta = input.Position - dragStart
+            Main.Position = UDim2.new(
+                startPos.X.Scale,
+                startPos.X.Offset + delta.X,
+                startPos.Y.Scale,
+                startPos.Y.Offset + delta.Y
+            )
+        end
+    end
+end)
