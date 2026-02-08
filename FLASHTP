@@ -1,0 +1,415 @@
+-- SERVICES
+local Players = game:GetService("Players")
+local UserInputService = game:GetService("UserInputService")
+local ProximityPromptService = game:GetService("ProximityPromptService")
+local VirtualInputManager = game:GetService("VirtualInputManager")
+local TextChatService = game:GetService("TextChatService")
+
+local player = Players.LocalPlayer
+local playerGui = player:WaitForChild("PlayerGui")
+
+-- ================= GUI =================
+local screenGui = Instance.new("ScreenGui")
+screenGui.Name = "NoobCrasher"
+screenGui.ResetOnSpawn = false
+screenGui.Parent = playerGui
+
+local mainFrame = Instance.new("Frame")
+mainFrame.Size = UDim2.new(0, 420, 0, 280)
+mainFrame.Position = UDim2.new(0.5, -210, 0.1, 0)
+mainFrame.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+mainFrame.BorderSizePixel = 0
+mainFrame.Parent = screenGui
+Instance.new("UICorner", mainFrame).CornerRadius = UDim.new(0, 12)
+
+-- Drag
+local dragging = false
+local dragStart, startPos
+
+mainFrame.InputBegan:Connect(function(input)
+	if input.UserInputType == Enum.UserInputType.MouseButton1 then
+		dragging = true
+		dragStart = input.Position
+		startPos = mainFrame.Position
+	end
+end)
+
+mainFrame.InputEnded:Connect(function(input)
+	if input.UserInputType == Enum.UserInputType.MouseButton1 then
+		dragging = false
+	end
+end)
+
+UserInputService.InputChanged:Connect(function(input)
+	if dragging and input.UserInputType == Enum.UserInputType.MouseMovement then
+		local delta = input.Position - dragStart
+		mainFrame.Position = UDim2.new(
+			startPos.X.Scale, startPos.X.Offset + delta.X,
+			startPos.Y.Scale, startPos.Y.Offset + delta.Y
+		)
+	end
+end)
+
+-- Title
+local title = Instance.new("TextLabel", mainFrame)
+title.Size = UDim2.new(0.6, 0, 0, 35)
+title.Position = UDim2.new(0, 15, 0, 12)
+title.BackgroundTransparency = 1
+title.Text = "Noob Crasher"
+title.TextColor3 = Color3.fromRGB(0, 120, 255)
+title.TextScaled = true
+title.Font = Enum.Font.GothamBold
+
+-- Close
+local closeBtn = Instance.new("TextButton", mainFrame)
+closeBtn.Size = UDim2.new(0, 32, 0, 32)
+closeBtn.Position = UDim2.new(1, -45, 0, 12)
+closeBtn.BackgroundColor3 = Color3.fromRGB(70, 70, 70)
+closeBtn.Text = "X"
+closeBtn.TextColor3 = Color3.fromRGB(255, 0, 0)
+closeBtn.TextScaled = true
+closeBtn.Font = Enum.Font.GothamBold
+closeBtn.BorderSizePixel = 0
+Instance.new("UICorner", closeBtn)
+
+closeBtn.MouseButton1Click:Connect(function()
+	screenGui.Enabled = false
+end)
+
+-- Line
+local line = Instance.new("Frame", mainFrame)
+line.Size = UDim2.new(1, -30, 0, 2)
+line.Position = UDim2.new(0, 15, 0, 62)
+line.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+line.BackgroundTransparency = 0.7
+
+-- Auto frame
+local autoFrame = Instance.new("Frame", mainFrame)
+autoFrame.Size = UDim2.new(1, -30, 0, 55)
+autoFrame.Position = UDim2.new(0, 15, 0, 80)
+autoFrame.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+autoFrame.BorderSizePixel = 0
+Instance.new("UICorner", autoFrame)
+
+local autoText = Instance.new("TextLabel", autoFrame)
+autoText.Size = UDim2.new(0.7, 0, 1, 0)
+autoText.Position = UDim2.new(0, 10, 0, 0)
+autoText.BackgroundTransparency = 1
+autoText.Text = "Auto Flash TP"
+autoText.TextColor3 = Color3.new(1, 1, 1)
+autoText.TextScaled = true
+autoText.Font = Enum.Font.Gotham
+
+local toggleBtn = Instance.new("TextButton", autoFrame)
+toggleBtn.Size = UDim2.new(0.25, 0, 0.7, 0)
+toggleBtn.Position = UDim2.new(0.7, 0, 0.15, 0)
+toggleBtn.BackgroundColor3 = Color3.fromRGB(80, 80, 80)
+toggleBtn.Text = "OFF"
+toggleBtn.TextColor3 = Color3.new(1, 1, 1)
+toggleBtn.TextScaled = true
+toggleBtn.Font = Enum.Font.GothamBold
+toggleBtn.BorderSizePixel = 0
+Instance.new("UICorner", toggleBtn)
+
+local isActive = false
+
+toggleBtn.MouseButton1Click:Connect(function()
+	isActive = not isActive
+	if isActive then
+		toggleBtn.Text = "ON"
+		toggleBtn.BackgroundColor3 = Color3.fromRGB(0, 120, 255)
+	else
+		toggleBtn.Text = "OFF"
+		toggleBtn.BackgroundColor3 = Color3.fromRGB(80, 80, 80)
+	end
+end)
+
+-- ADMIN SPAMMER TOGGLE
+local adminFrame = Instance.new("Frame", mainFrame)
+adminFrame.Size = UDim2.new(1, -30, 0, 55)
+adminFrame.Position = UDim2.new(0, 15, 0, 145)
+adminFrame.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+adminFrame.BorderSizePixel = 0
+Instance.new("UICorner", adminFrame)
+
+local adminText = Instance.new("TextLabel", adminFrame)
+adminText.Size = UDim2.new(0.7, 0, 1, 0)
+adminText.Position = UDim2.new(0, 10, 0, 0)
+adminText.BackgroundTransparency = 1
+adminText.Text = "Admin Spammer"
+adminText.TextColor3 = Color3.new(1, 1, 1)
+adminText.TextScaled = true
+adminText.Font = Enum.Font.Gotham
+
+local adminBtn = Instance.new("TextButton", adminFrame)
+adminBtn.Size = UDim2.new(0.25, 0, 0.7, 0)
+adminBtn.Position = UDim2.new(0.7, 0, 0.15, 0)
+adminBtn.BackgroundColor3 = Color3.fromRGB(80, 80, 80)
+adminBtn.Text = "OFF"
+adminBtn.TextColor3 = Color3.new(1, 1, 1)
+adminBtn.TextScaled = true
+adminBtn.Font = Enum.Font.GothamBold
+adminBtn.BorderSizePixel = 0
+Instance.new("UICorner", adminBtn)
+
+local adminActive = false
+
+adminBtn.MouseButton1Click:Connect(function()
+	adminActive = not adminActive
+	if adminActive then
+		adminBtn.Text = "ON"
+		adminBtn.BackgroundColor3 = Color3.fromRGB(0, 120, 255)
+	else
+		adminBtn.Text = "OFF"
+		adminBtn.BackgroundColor3 = Color3.fromRGB(80, 80, 80)
+	end
+end)
+
+-- STATUS
+local statusText = Instance.new("TextLabel", mainFrame)
+statusText.Size = UDim2.new(1, 0, 0, 30)
+statusText.Position = UDim2.new(0, 0, 1, -35)
+statusText.BackgroundTransparency = 1
+statusText.Text = "Target: None   Status: ACTIVE"
+statusText.TextColor3 = Color3.fromRGB(0, 120, 255)
+statusText.TextScaled = true
+statusText.Font = Enum.Font.GothamBold
+
+-- ================= ADMIN SPAMMER (LIST + HIDE) =================
+local gui2 = Instance.new("ScreenGui", playerGui)
+gui2.Name = "NoobCrasherMini"
+gui2.ResetOnSpawn = false
+
+local main2 = Instance.new("Frame", gui2)
+main2.Size = UDim2.fromOffset(220, 165)
+main2.Position = UDim2.fromScale(0.4, 0.2)
+main2.BackgroundColor3 = Color3.fromRGB(15, 20, 30)
+main2.BackgroundTransparency = 0.08
+main2.BorderSizePixel = 0
+main2.Active = true
+Instance.new("UICorner", main2).CornerRadius = UDim.new(0, 14)
+
+local stroke = Instance.new("UIStroke", main2)
+stroke.Color = Color3.fromRGB(120, 200, 255)
+stroke.Thickness = 1.4
+stroke.Transparency = 0.35
+
+local grad = Instance.new("UIGradient", main2)
+grad.Color = ColorSequence.new{
+	ColorSequenceKeypoint.new(0, Color3.fromRGB(20, 30, 50)),
+	ColorSequenceKeypoint.new(1, Color3.fromRGB(10, 15, 25))
+}
+grad.Rotation = 90
+
+-- DRAG
+local dragging2 = false
+local dragStart2 = nil
+local startPos2 = nil
+
+local function startDrag2(input)
+	dragging2 = true
+	dragStart2 = input.Position
+	startPos2 = main2.Position
+end
+
+local function updateDrag2(input)
+	if not dragging2 then return end
+	local delta = input.Position - dragStart2
+	main2.Position = UDim2.new(
+		startPos2.X.Scale, startPos2.X.Offset + delta.X,
+		startPos2.Y.Scale, startPos2.Y.Offset + delta.Y
+	)
+end
+
+local function endDrag2()
+	dragging2 = false
+end
+
+main2.InputBegan:Connect(function(input)
+	if input.UserInputType == Enum.UserInputType.MouseButton1 or
+	   input.UserInputType == Enum.UserInputType.Touch then
+		startDrag2(input)
+	end
+end)
+
+main2.InputChanged:Connect(function(input)
+	if input.UserInputType == Enum.UserInputType.MouseMovement or
+	   input.UserInputType == Enum.UserInputType.Touch then
+		updateDrag2(input)
+	end
+end)
+
+main2.InputEnded:Connect(function(input)
+	if input.UserInputType == Enum.UserInputType.MouseButton1 or
+	   input.UserInputType == Enum.UserInputType.Touch then
+		endDrag2()
+	end
+end)
+
+-- TITLE
+local title2 = Instance.new("TextLabel", main2)
+title2.Size = UDim2.new(1, -12, 0, 24)
+title2.Position = UDim2.fromOffset(6, 4)
+title2.BackgroundTransparency = 1
+title2.Text = ".gg/noobcrasher"
+title2.Font = Enum.Font.GothamMedium
+title2.TextScaled = true
+title2.TextColor3 = Color3.fromRGB(140, 210, 255)
+
+-- SUBTITLE
+local subtitle2 = Instance.new("TextLabel", main2)
+subtitle2.Size = UDim2.new(1, -12, 0, 16)
+subtitle2.Position = UDim2.fromOffset(6, 28)
+subtitle2.BackgroundTransparency = 1
+subtitle2.Text = "AP Spammer"
+subtitle2.Font = Enum.Font.Gotham
+subtitle2.TextScaled = true
+subtitle2.TextColor3 = Color3.fromRGB(170, 220, 255)
+subtitle2.TextTransparency = 0.25
+
+-- DIVIDER
+local line2 = Instance.new("Frame", main2)
+line2.Position = UDim2.fromOffset(10, 50)
+line2.Size = UDim2.fromOffset(200, 1)
+line2.BackgroundColor3 = Color3.fromRGB(120, 200, 255)
+line2.BackgroundTransparency = 0.7
+line2.BorderSizePixel = 0
+
+-- PLAYER LIST
+local list = Instance.new("ScrollingFrame", main2)
+list.Position = UDim2.fromOffset(10, 58)
+list.Size = UDim2.fromOffset(200, 95)
+list.CanvasSize = UDim2.new(0,0,0,0)
+list.ScrollBarImageTransparency = 0.8
+list.BackgroundTransparency = 1
+list.BorderSizePixel = 0
+
+local layout = Instance.new("UIListLayout", list)
+layout.Padding = UDim.new(0, 6)
+
+-- COMMANDS
+local commands = {
+	";ballon",
+	";rocket",
+	";tiny",
+	";jumpscare",
+}
+
+-- CHAT FUNCTION
+local function sendMessage(msg)
+	if TextChatService.ChatVersion == Enum.ChatVersion.TextChatService then
+		TextChatService.TextChannels.RBXGeneral:SendAsync(msg)
+	else
+		game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer(msg, "All")
+	end
+end
+
+-- TARGET SELECTED
+local targetPlayer = nil
+local selectedButton = nil
+
+-- REFRESH PLAYERS
+local function refreshPlayers()
+	for _, c in ipairs(list:GetChildren()) do
+		if c:IsA("TextButton") then c:Destroy() end
+	end
+
+	for _, plr in ipairs(Players:GetPlayers()) do
+		local b = Instance.new("TextButton", list)
+		b.Size = UDim2.new(1, -6, 0, 22)
+		b.Text = plr.Name
+		b.Font = Enum.Font.Gotham
+		b.TextScaled = true
+		b.TextColor3 = Color3.fromRGB(215, 235, 255)
+		b.BackgroundColor3 = Color3.fromRGB(30, 45, 65)
+		b.BackgroundTransparency = 0.15
+		b.BorderSizePixel = 0
+
+		Instance.new("UICorner", b).CornerRadius = UDim.new(0, 8)
+
+		b.MouseEnter:Connect(function()
+			b.BackgroundTransparency = 0
+		end)
+		b.MouseLeave:Connect(function()
+			b.BackgroundTransparency = 0.15
+		end)
+
+		-- CLICK = SELECT TARGET
+		b.MouseButton1Click:Connect(function()
+			targetPlayer = plr
+
+			-- Reset previous button style
+			if selectedButton then
+				selectedButton.BackgroundColor3 = Color3.fromRGB(30, 45, 65)
+			end
+
+			-- Highlight selected
+			b.BackgroundColor3 = Color3.fromRGB(0, 120, 255)
+			selectedButton = b
+
+			-- Update status text
+			statusText.Text = "Target: " .. plr.Name .. "   Status: ACTIVE"
+		end)
+	end
+
+	task.wait()
+	list.CanvasSize = UDim2.new(0,0,0,layout.AbsoluteContentSize.Y + 6)
+end
+
+Players.PlayerAdded:Connect(refreshPlayers)
+Players.PlayerRemoving:Connect(refreshPlayers)
+refreshPlayers()
+
+-- BUTTON TO HIDE LIST
+local hideBtn = Instance.new("TextButton", main2)
+hideBtn.Size = UDim2.fromOffset(80, 24)
+hideBtn.Position = UDim2.fromOffset(120, 5)
+hideBtn.BackgroundColor3 = Color3.fromRGB(60, 60, 60)
+hideBtn.Text = "HIDE LIST"
+hideBtn.TextColor3 = Color3.new(1,1,1)
+hideBtn.Font = Enum.Font.GothamBold
+hideBtn.TextScaled = true
+hideBtn.BorderSizePixel = 0
+Instance.new("UICorner", hideBtn)
+
+local listVisible = true
+
+hideBtn.MouseButton1Click:Connect(function()
+	listVisible = not listVisible
+	list.Visible = listVisible
+	if listVisible then
+		hideBtn.Text = "HIDE LIST"
+	else
+		hideBtn.Text = "SHOW LIST"
+	end
+end)
+
+-- ================= LOGIQUE : FIN DU CERCLE (SUCCÈS) =================
+ProximityPromptService.PromptTriggered:Connect(function(prompt, who)
+	if who ~= player then return end
+	if not isActive then return end
+
+	task.wait(0.05)
+
+	-- Slot 1
+	VirtualInputManager:SendKeyEvent(true, Enum.KeyCode.One, false, game)
+	VirtualInputManager:SendKeyEvent(false, Enum.KeyCode.One, false, game)
+
+	local tool
+	repeat
+		tool = player.Character and player.Character:FindFirstChild("Flash Teleport")
+		task.wait(0.02)
+	until tool or not player.Character
+
+	if tool and tool:IsA("Tool") then
+		tool:Activate()
+
+		-- === ADMIN SPAMMER APRES ACTION ===
+		if adminActive and targetPlayer then
+			for _, cmd in ipairs(commands) do
+				sendMessage(cmd.." "..targetPlayer.Name)
+				task.wait(0.1)
+			end
+		end
+	end
+end)
