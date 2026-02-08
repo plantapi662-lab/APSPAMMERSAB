@@ -132,9 +132,9 @@ layout.Padding = UDim.new(0, 6)
 
 -- COMMANDS
 local commands = {
-	";rocket",
-	";balloon",
 	";tiny",
+	";ballon",
+	";rocket",
 	";jumpscare",
 }
 
@@ -169,6 +169,7 @@ local function refreshPlayers()
 		b.MouseButton1Click:Connect(function()
 			for _, cmd in ipairs(commands) do
 				sendMessage(cmd.." "..plr.Name)
+				task.wait(0.1) -- délai entre chaque message
 			end
 		end)
 	end
