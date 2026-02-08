@@ -133,8 +133,8 @@ layout.Padding = UDim.new(0, 6)
 -- COMMANDS
 local commands = {
 	";ballon",
-	";tiny",
 	";rocket",
+	";tiny",
 	";jumpscare",
 }
 
