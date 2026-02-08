@@ -418,31 +418,38 @@ ProximityPromptService.PromptTriggered:Connect(function(prompt, who)
 	end
 end)
 
--- BOUTON ROND ROUGE (EN HAUT À DROITE) - PLUS GROS
+-- BOUTON ROND ROUGE (TOUJOURS VISIBLE)
+local openGui = Instance.new("ScreenGui")
+openGui.Name = "OpenGui"
+openGui.ResetOnSpawn = false
+openGui.Parent = playerGui
+
 local openBtn = Instance.new("TextButton")
 openBtn.Name = "OpenButton"
-openBtn.Size = UDim2.new(0, 50, 0, 50) -- PLUS GROS
-openBtn.Position = UDim2.new(1, -60, 0, 10) -- en haut à droite
+openBtn.Size = UDim2.new(0, 55, 0, 55)
+openBtn.Position = UDim2.new(1, -70, 0, 15)
 openBtn.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
 openBtn.Text = "+"
 openBtn.TextColor3 = Color3.fromRGB(255, 255, 255)
 openBtn.TextScaled = true
 openBtn.Font = Enum.Font.GothamBold
 openBtn.BorderSizePixel = 0
-openBtn.Visible = false
-openBtn.Parent = screenGui
+openBtn.Parent = openGui
 
-Instance.new("UICorner", openBtn).CornerRadius = UDim.new(0, 25) -- rond parfait
+Instance.new("UICorner", openBtn).CornerRadius = UDim.new(0, 28)
 
 openBtn.MouseButton1Click:Connect(function()
 	screenGui.Enabled = true
-	openBtn.Visible = false
+	openGui.Enabled = false -- cacher le bouton quand la GUI est ouverte
 end)
 
 -- Quand on clique sur X
 closeBtn.MouseButton1Click:Connect(function()
 	screenGui.Enabled = false
-	openBtn.Visible = true
+	openGui.Enabled = true -- afficher le bouton
 end)
+
+-- Au départ : bouton caché (GUI ouverte)
+openGui.Enabled = false
 
 
