@@ -44,27 +44,48 @@ grad.Color = ColorSequence.new{
 }
 grad.Rotation = 90
 
--- DRAG SYSTEM
-local dragging, dragStart, startPos
-main.InputBegan:Connect(function(i)
-	if i.UserInputType == Enum.UserInputType.MouseButton1 then
-		dragging = true
-		dragStart = i.Position
-		startPos = main.Position
+-- DRAG SYSTEM (PC + MOBILE)
+local dragging = false
+local dragStart = nil
+local startPos = nil
+
+local function startDrag(input)
+	dragging = true
+	dragStart = input.Position
+	startPos = main.Position
+end
+
+local function updateDrag(input)
+	if not dragging then return end
+	local delta = input.Position - dragStart
+	main.Position = UDim2.new(
+		startPos.X.Scale, startPos.X.Offset + delta.X,
+		startPos.Y.Scale, startPos.Y.Offset + delta.Y
+	)
+end
+
+local function endDrag()
+	dragging = false
+end
+
+main.InputBegan:Connect(function(input)
+	if input.UserInputType == Enum.UserInputType.MouseButton1 or
+	   input.UserInputType == Enum.UserInputType.Touch then
+		startDrag(input)
 	end
 end)
-UIS.InputChanged:Connect(function(i)
-	if dragging and i.UserInputType == Enum.UserInputType.MouseMovement then
-		local delta = i.Position - dragStart
-		main.Position = UDim2.new(
-			startPos.X.Scale, startPos.X.Offset + delta.X,
-			startPos.Y.Scale, startPos.Y.Offset + delta.Y
-		)
+
+main.InputChanged:Connect(function(input)
+	if input.UserInputType == Enum.UserInputType.MouseMovement or
+	   input.UserInputType == Enum.UserInputType.Touch then
+		updateDrag(input)
 	end
 end)
-UIS.InputEnded:Connect(function(i)
-	if i.UserInputType == Enum.UserInputType.MouseButton1 then
-		dragging = false
+
+main.InputEnded:Connect(function(input)
+	if input.UserInputType == Enum.UserInputType.MouseButton1 or
+	   input.UserInputType == Enum.UserInputType.Touch then
+		endDrag()
 	end
 end)
 
@@ -83,7 +104,7 @@ local subtitle = Instance.new("TextLabel", main)
 subtitle.Size = UDim2.new(1, -12, 0, 16)
 subtitle.Position = UDim2.fromOffset(6, 28)
 subtitle.BackgroundTransparency = 1
-subtitle.Text = "AP Spammer"
+subtitle.Text = "ap spammer"
 subtitle.Font = Enum.Font.Gotham
 subtitle.TextScaled = true
 subtitle.TextColor3 = Color3.fromRGB(170, 220, 255)
