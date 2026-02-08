@@ -1,0 +1,161 @@
+-- SERVICES
+local Players = game:GetService("Players")
+local TextChatService = game:GetService("TextChatService")
+local UIS = game:GetService("UserInputService")
+local CoreGui = game:GetService("CoreGui")
+
+-- CHAT FUNCTION
+local function sendMessage(msg)
+	if TextChatService.ChatVersion == Enum.ChatVersion.TextChatService then
+		TextChatService.TextChannels.RBXGeneral:SendAsync(msg)
+	else
+		game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer(msg, "All")
+	end
+end
+
+-- GUI ROOT
+local gui = Instance.new("ScreenGui", CoreGui)
+gui.Name = "NoobCrasherMini"
+gui.ResetOnSpawn = false
+
+-- MAIN FRAME
+local main = Instance.new("Frame", gui)
+main.Size = UDim2.fromOffset(220, 165)
+main.Position = UDim2.fromScale(0.4, 0.2)
+main.BackgroundColor3 = Color3.fromRGB(15, 20, 30)
+main.BackgroundTransparency = 0.08
+main.BorderSizePixel = 0
+main.Active = true
+
+-- ROUNDED CORNERS
+Instance.new("UICorner", main).CornerRadius = UDim.new(0, 14)
+
+-- STROKE / GLOW
+local stroke = Instance.new("UIStroke", main)
+stroke.Color = Color3.fromRGB(120, 200, 255)
+stroke.Thickness = 1.4
+stroke.Transparency = 0.35
+
+-- GRADIENT
+local grad = Instance.new("UIGradient", main)
+grad.Color = ColorSequence.new{
+	ColorSequenceKeypoint.new(0, Color3.fromRGB(20, 30, 50)),
+	ColorSequenceKeypoint.new(1, Color3.fromRGB(10, 15, 25))
+}
+grad.Rotation = 90
+
+-- DRAG SYSTEM
+local dragging, dragStart, startPos
+main.InputBegan:Connect(function(i)
+	if i.UserInputType == Enum.UserInputType.MouseButton1 then
+		dragging = true
+		dragStart = i.Position
+		startPos = main.Position
+	end
+end)
+UIS.InputChanged:Connect(function(i)
+	if dragging and i.UserInputType == Enum.UserInputType.MouseMovement then
+		local delta = i.Position - dragStart
+		main.Position = UDim2.new(
+			startPos.X.Scale, startPos.X.Offset + delta.X,
+			startPos.Y.Scale, startPos.Y.Offset + delta.Y
+		)
+	end
+end)
+UIS.InputEnded:Connect(function(i)
+	if i.UserInputType == Enum.UserInputType.MouseButton1 then
+		dragging = false
+	end
+end)
+
+-- TITLE
+local title = Instance.new("TextLabel", main)
+title.Size = UDim2.new(1, -12, 0, 24)
+title.Position = UDim2.fromOffset(6, 4)
+title.BackgroundTransparency = 1
+title.Text = ".gg/noobcrasher"
+title.Font = Enum.Font.GothamMedium
+title.TextScaled = true
+title.TextColor3 = Color3.fromRGB(140, 210, 255)
+
+-- SUBTITLE
+local subtitle = Instance.new("TextLabel", main)
+subtitle.Size = UDim2.new(1, -12, 0, 16)
+subtitle.Position = UDim2.fromOffset(6, 28)
+subtitle.BackgroundTransparency = 1
+subtitle.Text = "AP Spammer"
+subtitle.Font = Enum.Font.Gotham
+subtitle.TextScaled = true
+subtitle.TextColor3 = Color3.fromRGB(170, 220, 255)
+subtitle.TextTransparency = 0.25
+
+-- DIVIDER
+local line = Instance.new("Frame", main)
+line.Position = UDim2.fromOffset(10, 50)
+line.Size = UDim2.fromOffset(200, 1)
+line.BackgroundColor3 = Color3.fromRGB(120, 200, 255)
+line.BackgroundTransparency = 0.7
+line.BorderSizePixel = 0
+
+-- PLAYER LIST
+local list = Instance.new("ScrollingFrame", main)
+list.Position = UDim2.fromOffset(10, 58)
+list.Size = UDim2.fromOffset(200, 95)
+list.CanvasSize = UDim2.new(0,0,0,0)
+list.ScrollBarImageTransparency = 0.8
+list.BackgroundTransparency = 1
+list.BorderSizePixel = 0
+
+local layout = Instance.new("UIListLayout", list)
+layout.Padding = UDim.new(0, 6)
+
+-- COMMANDS
+local commands = {
+	";rocket",
+	";balloon",
+	";tiny",
+	";jumpscare",
+}
+
+-- REFRESH PLAYERS
+local function refreshPlayers()
+	for _, c in ipairs(list:GetChildren()) do
+		if c:IsA("TextButton") then c:Destroy() end
+	end
+
+	for _, plr in ipairs(Players:GetPlayers()) do
+		local b = Instance.new("TextButton", list)
+		b.Size = UDim2.new(1, -6, 0, 22)
+		b.Text = plr.Name
+		b.Font = Enum.Font.Gotham
+		b.TextScaled = true
+		b.TextColor3 = Color3.fromRGB(215, 235, 255)
+		b.BackgroundColor3 = Color3.fromRGB(30, 45, 65)
+		b.BackgroundTransparency = 0.15
+		b.BorderSizePixel = 0
+
+		Instance.new("UICorner", b).CornerRadius = UDim.new(0, 8)
+
+		-- hover effect
+		b.MouseEnter:Connect(function()
+			b.BackgroundTransparency = 0
+		end)
+		b.MouseLeave:Connect(function()
+			b.BackgroundTransparency = 0.15
+		end)
+
+		-- CLICK = SPAM
+		b.MouseButton1Click:Connect(function()
+			for _, cmd in ipairs(commands) do
+				sendMessage(cmd.." "..plr.Name)
+			end
+		end)
+	end
+
+	task.wait()
+	list.CanvasSize = UDim2.new(0,0,0,layout.AbsoluteContentSize.Y + 6)
+end
+
+Players.PlayerAdded:Connect(refreshPlayers)
+Players.PlayerRemoving:Connect(refreshPlayers)
+refreshPlayers()
