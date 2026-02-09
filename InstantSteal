@@ -1,0 +1,146 @@
+-- SERVICES
+local Players = game:GetService("Players")
+local UserInputService = game:GetService("UserInputService")
+local CoreGui = game:GetService("CoreGui")
+local player = Players.LocalPlayer
+
+-- STATE
+local status = false
+local points = {}
+local toggleTP = false
+
+-- GUI
+local gui = Instance.new("ScreenGui")
+gui.Name = "NexoraHubInstant"
+gui.Parent = CoreGui
+
+local main = Instance.new("Frame", gui)
+main.Size = UDim2.new(0, 300, 0, 260)
+main.Position = UDim2.new(0.5, -150, 0.5, -130)
+main.BackgroundColor3 = Color3.fromRGB(32, 32, 36) -- PLUS GRIS
+main.BorderSizePixel = 0
+Instance.new("UICorner", main).CornerRadius = UDim.new(0, 16)
+
+-- DRAG
+local dragging, dragStart, startPos
+main.InputBegan:Connect(function(input)
+	if input.UserInputType == Enum.UserInputType.MouseButton1 then
+		dragging = true
+		dragStart = input.Position
+		startPos = main.Position
+	end
+end)
+
+UserInputService.InputChanged:Connect(function(input)
+	if dragging and input.UserInputType == Enum.UserInputType.MouseMovement then
+		local delta = input.Position - dragStart
+		main.Position = UDim2.new(
+			startPos.X.Scale, startPos.X.Offset + delta.X,
+			startPos.Y.Scale, startPos.Y.Offset + delta.Y
+		)
+	end
+end)
+
+UserInputService.InputEnded:Connect(function(input)
+	if input.UserInputType == Enum.UserInputType.MouseButton1 then
+		dragging = false
+	end
+end)
+
+-- TITLE (ENCORE PLUS GRAND)
+local title = Instance.new("TextLabel", main)
+title.Size = UDim2.new(1, 0, 0, 70)
+title.Position = UDim2.new(0, 0, 0, 6)
+title.BackgroundTransparency = 1
+title.RichText = true
+title.Text = '<font color="rgb(255,255,255)">NEXORAHUB </font><font color="rgb(0,140,255)">INSTANT</font>'
+title.Font = Enum.Font.GothamBlack
+title.TextSize = 26 -- PLUS GRAND
+title.TextWrapped = true
+title.TextYAlignment = Enum.TextYAlignment.Center
+
+
+-- BUTTON CREATOR (PLUS PETITS + TEXTE PLUS GROS)
+local function button(text, y, bg, txtColor)
+	local b = Instance.new("TextButton", main)
+	b.Size = UDim2.new(0.85, 0, 0, 42) -- PLUS COURT
+	b.Position = UDim2.new(0.075, 0, 0, y) -- CENTRÉ
+	b.BackgroundColor3 = bg
+	b.Text = text
+	b.TextColor3 = txtColor or Color3.new(1,1,1)
+	b.Font = Enum.Font.GothamBold
+	b.TextSize = 16 -- TEXTE PLUS GRAND
+	b.BorderSizePixel = 0
+	Instance.new("UICorner", b).CornerRadius = UDim.new(0, 10)
+	return b
+end
+
+-- COLORS
+local gray = Color3.fromRGB(50, 50, 55) -- GRIS CLAIR
+local blue = Color3.fromRGB(0, 140, 255)
+
+-- BUTTONS
+local statusBtn = button("Status: Off", 80, gray, Color3.fromRGB(255, 80, 80))
+local setBtn = button("Set Points (0/2)", 130, gray, Color3.new(1,1,1))
+local resetBtn = button("Reset Points", 130, gray, blue)
+local tpBtn = button("TELEPORT", 190, blue, Color3.new(1,1,1))
+
+resetBtn.Visible = false
+
+-- STATUS
+statusBtn.MouseButton1Click:Connect(function()
+	status = not status
+	if status then
+		statusBtn.Text = "Status: On"
+		statusBtn.TextColor3 = Color3.fromRGB(90, 255, 90)
+	else
+		statusBtn.Text = "Status: Off"
+		statusBtn.TextColor3 = Color3.fromRGB(255, 80, 80)
+	end
+end)
+
+-- SET POINTS
+setBtn.MouseButton1Click:Connect(function()
+	if not player.Character or not player.Character:FindFirstChild("HumanoidRootPart") then return end
+	if #points >= 2 then return end
+
+	table.insert(points, player.Character.HumanoidRootPart.CFrame)
+	setBtn.Text = "Set Points (" .. #points .. "/2)"
+
+	if #points == 2 then
+		setBtn.Visible = false
+		resetBtn.Visible = true
+	end
+end)
+
+-- RESET
+resetBtn.MouseButton1Click:Connect(function()
+	points = {}
+	toggleTP = false
+	setBtn.Text = "Set Points (0/2)"
+	setBtn.Visible = true
+	resetBtn.Visible = false
+end)
+
+-- TELEPORT
+tpBtn.MouseButton1Click:Connect(function()
+	if not status then
+		tpBtn.Text = "STATUS OFF ❌"
+		task.wait(1)
+		tpBtn.Text = "TELEPORT"
+		return
+	end
+
+	if #points < 2 then
+		tpBtn.Text = "POINTS MANQUANTS ❌"
+		task.wait(1)
+		tpBtn.Text = "TELEPORT"
+		return
+	end
+
+	if player.Character and player.Character:FindFirstChild("HumanoidRootPart") then
+		toggleTP = not toggleTP
+		player.Character.HumanoidRootPart.CFrame =
+			toggleTP and points[1] or points[2]
+	end
+end)
