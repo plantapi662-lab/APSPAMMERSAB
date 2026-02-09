@@ -19,6 +19,7 @@ main.Size = UDim2.new(0, 300, 0, 260)
 main.Position = UDim2.new(0.5, -150, 0.5, -130)
 main.BackgroundColor3 = Color3.fromRGB(32, 32, 36) -- PLUS GRIS
 main.BorderSizePixel = 0
+main.Active = true
 Instance.new("UICorner", main).CornerRadius = UDim.new(0, 16)
 
 -- DRAG (PC + MOBILE)
