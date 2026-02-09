@@ -21,31 +21,39 @@ main.BackgroundColor3 = Color3.fromRGB(32, 32, 36) -- PLUS GRIS
 main.BorderSizePixel = 0
 Instance.new("UICorner", main).CornerRadius = UDim.new(0, 16)
 
--- DRAG
+-- DRAG (PC + MOBILE)
 local dragging, dragStart, startPos
-main.InputBegan:Connect(function(input)
-	if input.UserInputType == Enum.UserInputType.MouseButton1 then
+
+local function startDrag(input)
+	if input.UserInputType == Enum.UserInputType.MouseButton1 or
+	   input.UserInputType == Enum.UserInputType.Touch then
 		dragging = true
 		dragStart = input.Position
 		startPos = main.Position
 	end
-end)
+end
 
-UserInputService.InputChanged:Connect(function(input)
-	if dragging and input.UserInputType == Enum.UserInputType.MouseMovement then
+local function updateDrag(input)
+	if dragging and (input.UserInputType == Enum.UserInputType.MouseMovement or
+					input.UserInputType == Enum.UserInputType.Touch) then
 		local delta = input.Position - dragStart
 		main.Position = UDim2.new(
 			startPos.X.Scale, startPos.X.Offset + delta.X,
 			startPos.Y.Scale, startPos.Y.Offset + delta.Y
 		)
 	end
-end)
+end
 
-UserInputService.InputEnded:Connect(function(input)
-	if input.UserInputType == Enum.UserInputType.MouseButton1 then
+local function stopDrag(input)
+	if input.UserInputType == Enum.UserInputType.MouseButton1 or
+	   input.UserInputType == Enum.UserInputType.Touch then
 		dragging = false
 	end
-end)
+end
+
+main.InputBegan:Connect(startDrag)
+UserInputService.InputChanged:Connect(updateDrag)
+UserInputService.InputEnded:Connect(stopDrag)
 
 -- TITLE (ENCORE PLUS GRAND)
 local title = Instance.new("TextLabel", main)
