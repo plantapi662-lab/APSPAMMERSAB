@@ -17,8 +17,8 @@ local Settings = {
     LagEnabled = false,
     IsAutoLagging = false,
     AntiDeathEnabled = true,
-    PacketRate = 30,
-    MaxPacketRate = 15,
+    PacketRate = 15,
+    MaxPacketRate = 50,
 }
 
 local blacklistedNames = {
@@ -257,7 +257,7 @@ tpBtn.MouseButton1Click:Connect(function()
 
         -- Active lag + packetrate = 20 pendant 3 secondes
         Settings.LagEnabled = true
-        Settings.PacketRate = 15
+        Settings.PacketRate = 30
         UpdateLagVisuals()
 
         task.wait(2)
