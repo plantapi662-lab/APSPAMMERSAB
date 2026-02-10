@@ -17,7 +17,7 @@ local Settings = {
     LagEnabled = false,
     IsAutoLagging = false,
     AntiDeathEnabled = true,
-    PacketRate = 5,
+    PacketRate = 30,
     MaxPacketRate = 50,
 }
 
