@@ -1,0 +1,237 @@
+local Players = game:GetService("Players")
+local RunService = game:GetService("RunService")
+local UIS = game:GetService("UserInputService")
+
+local player = Players.LocalPlayer
+local PlayerGui = player:WaitForChild("PlayerGui")
+
+----------------------------------------------------
+-- GUI
+----------------------------------------------------
+
+local screenGui = Instance.new("ScreenGui")
+screenGui.Name = "FlashTPGui"
+screenGui.ResetOnSpawn = false
+screenGui.Parent = PlayerGui
+
+local main = Instance.new("Frame")
+main.Size = UDim2.new(0, 420, 0, 230)
+main.Position = UDim2.new(0.5, -210, 0.7, 0)
+main.BackgroundColor3 = Color3.fromRGB(20,20,25)
+main.BorderSizePixel = 0
+main.Parent = screenGui
+main.Active = true
+main.Draggable = true
+Instance.new("UICorner", main).CornerRadius = UDim.new(0, 14)
+
+
+-- Drag mobile (touch)
+local dragging = false
+local dragStart = Vector2.new()
+local startPos = UDim2.new()
+
+main.InputBegan:Connect(function(input)
+	if input.UserInputType == Enum.UserInputType.Touch then
+		dragging = true
+		dragStart = input.Position
+		startPos = main.Position
+	end
+end)
+
+main.InputChanged:Connect(function(input)
+	if input.UserInputType == Enum.UserInputType.Touch then
+		if dragging then
+			local delta = input.Position - dragStart
+			main.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+		end
+	end
+end)
+
+main.InputEnded:Connect(function(input)
+	if input.UserInputType == Enum.UserInputType.Touch then
+		dragging = false
+	end
+end)
+
+
+-- CLOSE BUTTON
+local close = Instance.new("TextButton")
+close.Size = UDim2.new(0, 28, 0, 28)
+close.Position = UDim2.new(1, -35, 0, 8)
+close.Text = "X"
+close.Font = Enum.Font.GothamBold
+close.TextSize = 14
+close.BackgroundColor3 = Color3.fromRGB(35,35,40)
+close.TextColor3 = Color3.new(1,1,1)
+close.Parent = main
+Instance.new("UICorner", close).CornerRadius = UDim.new(1,0)
+
+close.MouseButton1Click:Connect(function()
+	screenGui:Destroy()
+end)
+
+-- TITLE
+local title = Instance.new("TextLabel")
+title.Size = UDim2.new(1,0,0,30)
+title.Position = UDim2.new(0,0,0,10)
+title.BackgroundTransparency = 1
+title.Text = "⚡ Flash TP ⚡"
+title.Font = Enum.Font.GothamBold
+title.TextSize = 20
+title.TextColor3 = Color3.fromRGB(255,215,0)
+title.Parent = main
+
+-- DISCORD
+local discord = Instance.new("TextLabel")
+discord.Size = UDim2.new(1,0,0,20)
+discord.Position = UDim2.new(0,0,0,38)
+discord.BackgroundTransparency = 1
+discord.Text = "DISCORD.GG/NEXORAHUB"
+discord.Font = Enum.Font.Gotham
+discord.TextSize = 13
+discord.TextColor3 = Color3.fromRGB(170,170,170)
+discord.Parent = main
+
+-- TIMING LABEL (gros)
+local timingLabel = Instance.new("TextLabel")
+timingLabel.Size = UDim2.new(1,0,0,30)
+timingLabel.Position = UDim2.new(0,0,0,65)
+timingLabel.BackgroundTransparency = 1
+timingLabel.Text = "TIMING (S)"
+timingLabel.Font = Enum.Font.GothamBold
+timingLabel.TextSize = 22
+timingLabel.TextColor3 = Color3.new(1,1,1)
+timingLabel.Parent = main
+
+-- GROS INPUT FULL WIDTH
+local timingBox = Instance.new("TextBox")
+timingBox.Size = UDim2.new(0.9,0,0,45)
+timingBox.Position = UDim2.new(0.05,0,0,95)
+timingBox.BackgroundColor3 = Color3.fromRGB(30,30,35)
+timingBox.TextColor3 = Color3.new(1,1,1)
+timingBox.PlaceholderText = "Enter timing (Max 1.50)"
+timingBox.Text = ""
+timingBox.Font = Enum.Font.Gotham
+timingBox.TextSize = 18
+timingBox.Parent = main
+Instance.new("UICorner", timingBox).CornerRadius = UDim.new(0,10)
+
+-- PROGRESS BAR BG
+local progressBg = Instance.new("Frame")
+progressBg.Size = UDim2.new(0.9,0,0,18)
+progressBg.Position = UDim2.new(0.05,0,0,155)
+progressBg.BackgroundColor3 = Color3.fromRGB(40,40,45)
+progressBg.Visible = false
+progressBg.Parent = main
+Instance.new("UICorner", progressBg).CornerRadius = UDim.new(0,8)
+
+local progressBar = Instance.new("Frame")
+progressBar.Size = UDim2.new(0,0,1,0)
+progressBar.BackgroundColor3 = Color3.fromRGB(0,255,120)
+progressBar.Parent = progressBg
+Instance.new("UICorner", progressBar).CornerRadius = UDim.new(0,8)
+
+-- ALIGN BUTTON
+local align = Instance.new("TextButton")
+align.Size = UDim2.new(0.6,0,0,35)
+align.Position = UDim2.new(0.2,0,1,-45)
+align.Text = "ALIGN (F)"
+align.Font = Enum.Font.GothamSemibold
+align.TextSize = 16
+align.BackgroundColor3 = Color3.fromRGB(35,35,40)
+align.TextColor3 = Color3.new(1,1,1)
+align.Parent = main
+Instance.new("UICorner", align).CornerRadius = UDim.new(0,10)
+
+----------------------------------------------------
+-- LOGIC
+----------------------------------------------------
+
+local holding = false
+local holdDuration = 0
+local startTime = 0
+local targetTiming = 0
+local alignEnabled = false
+
+timingBox.FocusLost:Connect(function()
+	local val = tonumber(timingBox.Text)
+	if val and val > 0 and val <= 1.50 then
+		targetTiming = val
+	else
+		timingBox.Text = ""
+		targetTiming = 0
+	end
+end)
+
+local function activateTool()
+	local tool = player.Backpack:FindFirstChild("Flash Teleport") 
+		or player.Character:FindFirstChild("Flash Teleport")
+	if tool then
+		tool:Activate()
+	end
+end
+
+RunService.Heartbeat:Connect(function()
+	if holding then
+		local currentTime = os.clock() - startTime
+		local percent = currentTime / holdDuration
+		progressBar.Size = UDim2.new(math.clamp(percent,0,1),0,1,0)
+
+		if alignEnabled and targetTiming > 0 then
+			if currentTime >= targetTiming then
+				alignEnabled = false
+				align.BackgroundColor3 = Color3.fromRGB(35,35,40)
+				activateTool()
+			end
+		end
+	end
+end)
+
+local function hookPrompt(prompt)
+	prompt.PromptButtonHoldBegan:Connect(function()
+		holding = true
+		holdDuration = prompt.HoldDuration
+		startTime = os.clock()
+		progressBg.Visible = true
+	end)
+
+	prompt.PromptButtonHoldEnded:Connect(function()
+		holding = false
+		progressBg.Visible = false
+	end)
+
+	prompt.Triggered:Connect(function()
+		holding = false
+		progressBg.Visible = false
+	end)
+end
+
+for _,v in pairs(workspace:GetDescendants()) do
+	if v:IsA("ProximityPrompt") then
+		hookPrompt(v)
+	end
+end
+
+workspace.DescendantAdded:Connect(function(v)
+	if v:IsA("ProximityPrompt") then
+		hookPrompt(v)
+	end
+end)
+
+local function toggleAlign()
+	alignEnabled = not alignEnabled
+	if alignEnabled then
+		align.BackgroundColor3 = Color3.fromRGB(255,215,0)
+	else
+		align.BackgroundColor3 = Color3.fromRGB(35,35,40)
+	end
+end
+
+align.MouseButton1Click:Connect(toggleAlign)
+
+UIS.InputBegan:Connect(function(input,gp)
+	if gp then return end
+	if input.KeyCode == Enum.KeyCode.F then
+		toggleAlign()
+	end
+end)
