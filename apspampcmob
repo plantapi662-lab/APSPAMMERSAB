@@ -187,7 +187,7 @@ local function refreshPlayers()
         b.MouseButton1Click:Connect(function()
             for _, cmd in ipairs(commands) do
                 local args = {
-                    "78a772b6-9e1c-4827-ab8b-04a07838f298",
+                    "f888ee6e-c86d-46e1-93d7-0639d6635d42",
                     plr,
                     cmd
                 }
