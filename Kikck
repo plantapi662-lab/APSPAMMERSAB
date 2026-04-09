@@ -1,0 +1,10 @@
+local player = game.Players.LocalPlayer
+local UserInputService = game:GetService("UserInputService")
+
+UserInputService.InputBegan:Connect(function(input, gameProcessed)
+    if gameProcessed then return end -- ignore si le joueur tape dans un chat ou UI
+    if input.KeyCode == Enum.KeyCode.Y then
+        -- Kick le joueur local avec un message
+        player:Kick("You have been kiecked!")
+    end
+end)
