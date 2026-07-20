@@ -7,7 +7,7 @@
  Y888P  ~Y8888P' Y888888P      888888D      Y88888P ~Y8888P' YP   YP  CONVERTER 
 ]=]
 
--- Instances: 169 | Scripts: 23 | Modules: 0 | Tags: 0
+-- Instances: 170 | Scripts: 24 | Modules: 0 | Tags: 0
 local G2L = {};
 
 -- StarterGui.NebulaHub
@@ -67,901 +67,892 @@ G2L["7"] = Instance.new("UICorner", G2L["6"]);
 
 
 
+-- StarterGui.NebulaHub.FrameGamePlay.HotBardFRAME.Minumise.LocalScript
+G2L["8"] = Instance.new("LocalScript", G2L["6"]);
+
+
+
 -- StarterGui.NebulaHub.FrameGamePlay.HotBardFRAME.NebulaHUB
-G2L["8"] = Instance.new("TextLabel", G2L["4"]);
-G2L["8"]["BorderSizePixel"] = 0;
-G2L["8"]["TextSize"] = 23;
-G2L["8"]["BackgroundColor3"] = Color3.fromRGB(16, 16, 16);
-G2L["8"]["FontFace"] = Font.new([[rbxasset://fonts/families/LuckiestGuy.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["8"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["8"]["Size"] = UDim2.new(0, 123, 0, 35);
-G2L["8"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["8"]["Text"] = [[NebulaHub]];
-G2L["8"]["Name"] = [[NebulaHUB]];
-G2L["8"]["Position"] = UDim2.new(0.02493, 0, 0.01357, 0);
+G2L["9"] = Instance.new("TextLabel", G2L["4"]);
+G2L["9"]["BorderSizePixel"] = 0;
+G2L["9"]["TextSize"] = 23;
+G2L["9"]["BackgroundColor3"] = Color3.fromRGB(16, 16, 16);
+G2L["9"]["FontFace"] = Font.new([[rbxasset://fonts/families/LuckiestGuy.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["9"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["9"]["Size"] = UDim2.new(0, 123, 0, 35);
+G2L["9"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["9"]["Text"] = [[NebulaHub]];
+G2L["9"]["Name"] = [[NebulaHUB]];
+G2L["9"]["Position"] = UDim2.new(0.02493, 0, 0.01357, 0);
 
 
 -- StarterGui.NebulaHub.FrameGamePlay.HotBardFRAME.TextLabel
-G2L["9"] = Instance.new("TextLabel", G2L["4"]);
-G2L["9"]["BorderSizePixel"] = 0;
-G2L["9"]["TextSize"] = 14;
-G2L["9"]["BackgroundColor3"] = Color3.fromRGB(16, 16, 16);
-G2L["9"]["FontFace"] = Font.new([[rbxasset://fonts/families/LuckiestGuy.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["9"]["TextColor3"] = Color3.fromRGB(182, 182, 182);
-G2L["9"]["Size"] = UDim2.new(0, 172, 0, 29);
-G2L["9"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["9"]["Text"] = [[discord.gg/PR6NSeghqf]];
-G2L["9"]["Position"] = UDim2.new(0.25694, 0, 0.07692, 0);
+G2L["a"] = Instance.new("TextLabel", G2L["4"]);
+G2L["a"]["BorderSizePixel"] = 0;
+G2L["a"]["TextSize"] = 14;
+G2L["a"]["BackgroundColor3"] = Color3.fromRGB(16, 16, 16);
+G2L["a"]["FontFace"] = Font.new([[rbxasset://fonts/families/LuckiestGuy.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["a"]["TextColor3"] = Color3.fromRGB(182, 182, 182);
+G2L["a"]["Size"] = UDim2.new(0, 172, 0, 29);
+G2L["a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["a"]["Text"] = [[discord.gg/PR6NSeghqf]];
+G2L["a"]["Position"] = UDim2.new(0.25694, 0, 0.07692, 0);
 
 
 -- StarterGui.NebulaHub.FrameGamePlay.HotBardFRAME.SELECTION
-G2L["a"] = Instance.new("Frame", G2L["4"]);
-G2L["a"]["BorderSizePixel"] = 0;
-G2L["a"]["BackgroundColor3"] = Color3.fromRGB(16, 16, 16);
-G2L["a"]["Size"] = UDim2.new(0, 242, 0, 29);
-G2L["a"]["Position"] = UDim2.new(0.54389, 0, 0.07692, 0);
-G2L["a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["a"]["Name"] = [[SELECTION]];
+G2L["b"] = Instance.new("Frame", G2L["4"]);
+G2L["b"]["BorderSizePixel"] = 0;
+G2L["b"]["BackgroundColor3"] = Color3.fromRGB(16, 16, 16);
+G2L["b"]["Size"] = UDim2.new(0, 242, 0, 29);
+G2L["b"]["Position"] = UDim2.new(0.54389, 0, 0.07692, 0);
+G2L["b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["b"]["Name"] = [[SELECTION]];
 
 
 -- StarterGui.NebulaHub.FrameGamePlay.HotBardFRAME.SELECTION.UIStroke
-G2L["b"] = Instance.new("UIStroke", G2L["a"]);
-G2L["b"]["Color"] = Color3.fromRGB(26, 26, 26);
+G2L["c"] = Instance.new("UIStroke", G2L["b"]);
+G2L["c"]["Color"] = Color3.fromRGB(26, 26, 26);
 
 
 -- StarterGui.NebulaHub.FrameGamePlay.HotBardFRAME.SELECTION.UICorner
-G2L["c"] = Instance.new("UICorner", G2L["a"]);
+G2L["d"] = Instance.new("UICorner", G2L["b"]);
 
 
 
 -- StarterGui.NebulaHub.FrameGamePlay.HotBardFRAME.SELECTION.Gameplay
-G2L["d"] = Instance.new("TextButton", G2L["a"]);
-G2L["d"]["BorderSizePixel"] = 0;
-G2L["d"]["TextSize"] = 14;
-G2L["d"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["d"]["BackgroundColor3"] = Color3.fromRGB(120, 22, 232);
-G2L["d"]["FontFace"] = Font.new([[rbxasset://fonts/families/LuckiestGuy.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["d"]["Size"] = UDim2.new(0, 69, 0, 27);
-G2L["d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["d"]["Text"] = [[GAMEPLAY]];
-G2L["d"]["Name"] = [[Gameplay]];
-G2L["d"]["Position"] = UDim2.new(0.025, 0, 0.034, 0);
+G2L["e"] = Instance.new("TextButton", G2L["b"]);
+G2L["e"]["BorderSizePixel"] = 0;
+G2L["e"]["TextSize"] = 14;
+G2L["e"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["e"]["BackgroundColor3"] = Color3.fromRGB(120, 22, 232);
+G2L["e"]["FontFace"] = Font.new([[rbxasset://fonts/families/LuckiestGuy.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["e"]["Size"] = UDim2.new(0, 69, 0, 27);
+G2L["e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["e"]["Text"] = [[GAMEPLAY]];
+G2L["e"]["Name"] = [[Gameplay]];
+G2L["e"]["Position"] = UDim2.new(0.025, 0, 0.034, 0);
 
 
 -- StarterGui.NebulaHub.FrameGamePlay.HotBardFRAME.SELECTION.Gameplay.UICorner
-G2L["e"] = Instance.new("UICorner", G2L["d"]);
-G2L["e"]["CornerRadius"] = UDim.new(0, 6);
+G2L["f"] = Instance.new("UICorner", G2L["e"]);
+G2L["f"]["CornerRadius"] = UDim.new(0, 6);
 
 
 -- StarterGui.NebulaHub.FrameGamePlay.HotBardFRAME.SELECTION.Esp
-G2L["f"] = Instance.new("TextButton", G2L["a"]);
-G2L["f"]["BorderSizePixel"] = 0;
-G2L["f"]["TextSize"] = 14;
-G2L["f"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["f"]["BackgroundColor3"] = Color3.fromRGB(16, 16, 16);
-G2L["f"]["FontFace"] = Font.new([[rbxasset://fonts/families/LuckiestGuy.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["f"]["Size"] = UDim2.new(0, 69, 0, 27);
-G2L["f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["f"]["Text"] = [[ESP]];
-G2L["f"]["Name"] = [[Esp]];
-G2L["f"]["Position"] = UDim2.new(0.35558, 0, 0.034, 0);
+G2L["10"] = Instance.new("TextButton", G2L["b"]);
+G2L["10"]["BorderSizePixel"] = 0;
+G2L["10"]["TextSize"] = 14;
+G2L["10"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["10"]["BackgroundColor3"] = Color3.fromRGB(16, 16, 16);
+G2L["10"]["FontFace"] = Font.new([[rbxasset://fonts/families/LuckiestGuy.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["10"]["Size"] = UDim2.new(0, 69, 0, 27);
+G2L["10"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["10"]["Text"] = [[ESP]];
+G2L["10"]["Name"] = [[Esp]];
+G2L["10"]["Position"] = UDim2.new(0.35558, 0, 0.034, 0);
 
 
 -- StarterGui.NebulaHub.FrameGamePlay.HotBardFRAME.SELECTION.Esp.LocalScript
-G2L["10"] = Instance.new("LocalScript", G2L["f"]);
+G2L["11"] = Instance.new("LocalScript", G2L["10"]);
 
 
 
 -- StarterGui.NebulaHub.FrameGamePlay.HotBardFRAME.SELECTION.Esp.UICorner
-G2L["11"] = Instance.new("UICorner", G2L["f"]);
-G2L["11"]["CornerRadius"] = UDim.new(0, 6);
+G2L["12"] = Instance.new("UICorner", G2L["10"]);
+G2L["12"]["CornerRadius"] = UDim.new(0, 6);
 
 
 -- StarterGui.NebulaHub.FrameGamePlay.HotBardFRAME.SELECTION.Autofarm
-G2L["12"] = Instance.new("TextButton", G2L["a"]);
-G2L["12"]["BorderSizePixel"] = 0;
-G2L["12"]["TextSize"] = 14;
-G2L["12"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["12"]["BackgroundColor3"] = Color3.fromRGB(16, 16, 16);
-G2L["12"]["FontFace"] = Font.new([[rbxasset://fonts/families/LuckiestGuy.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["12"]["Size"] = UDim2.new(0, 69, 0, 27);
-G2L["12"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["12"]["Text"] = [[AUTOFARM]];
-G2L["12"]["Name"] = [[Autofarm]];
-G2L["12"]["Position"] = UDim2.new(0.68202, 0, 0.034, 0);
+G2L["13"] = Instance.new("TextButton", G2L["b"]);
+G2L["13"]["BorderSizePixel"] = 0;
+G2L["13"]["TextSize"] = 14;
+G2L["13"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["13"]["BackgroundColor3"] = Color3.fromRGB(16, 16, 16);
+G2L["13"]["FontFace"] = Font.new([[rbxasset://fonts/families/LuckiestGuy.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["13"]["Size"] = UDim2.new(0, 69, 0, 27);
+G2L["13"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["13"]["Text"] = [[AUTOFARM]];
+G2L["13"]["Name"] = [[Autofarm]];
+G2L["13"]["Position"] = UDim2.new(0.68202, 0, 0.034, 0);
 
 
 -- StarterGui.NebulaHub.FrameGamePlay.HotBardFRAME.SELECTION.Autofarm.LocalScript
-G2L["13"] = Instance.new("LocalScript", G2L["12"]);
+G2L["14"] = Instance.new("LocalScript", G2L["13"]);
 
 
 
 -- StarterGui.NebulaHub.FrameGamePlay.HotBardFRAME.SELECTION.Autofarm.UICorner
-G2L["14"] = Instance.new("UICorner", G2L["12"]);
-G2L["14"]["CornerRadius"] = UDim.new(0, 6);
+G2L["15"] = Instance.new("UICorner", G2L["13"]);
+G2L["15"]["CornerRadius"] = UDim.new(0, 6);
 
 
 -- StarterGui.NebulaHub.FrameGamePlay.ScrollingFrame
-G2L["15"] = Instance.new("ScrollingFrame", G2L["2"]);
-G2L["15"]["Active"] = true;
-G2L["15"]["BorderSizePixel"] = 0;
-G2L["15"]["BackgroundColor3"] = Color3.fromRGB(16, 16, 16);
-G2L["15"]["Size"] = UDim2.new(0, 614, 0, 302);
-G2L["15"]["ScrollBarImageColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["15"]["Position"] = UDim2.new(0.02493, 0, 0.12325, 0);
-G2L["15"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["16"] = Instance.new("ScrollingFrame", G2L["2"]);
+G2L["16"]["Active"] = true;
+G2L["16"]["BorderSizePixel"] = 0;
+G2L["16"]["BackgroundColor3"] = Color3.fromRGB(16, 16, 16);
+G2L["16"]["Size"] = UDim2.new(0, 614, 0, 302);
+G2L["16"]["ScrollBarImageColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["16"]["Position"] = UDim2.new(0.02493, 0, 0.12325, 0);
+G2L["16"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 
 
 -- StarterGui.NebulaHub.FrameGamePlay.ScrollingFrame.DATAS
-G2L["16"] = Instance.new("Frame", G2L["15"]);
-G2L["16"]["BorderSizePixel"] = 0;
-G2L["16"]["BackgroundColor3"] = Color3.fromRGB(120, 22, 232);
-G2L["16"]["Size"] = UDim2.new(0, 4, 0, 18);
-G2L["16"]["Position"] = UDim2.new(0, 0, 0.01568, 0);
-G2L["16"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["16"]["Name"] = [[DATAS]];
+G2L["17"] = Instance.new("Frame", G2L["16"]);
+G2L["17"]["BorderSizePixel"] = 0;
+G2L["17"]["BackgroundColor3"] = Color3.fromRGB(120, 22, 232);
+G2L["17"]["Size"] = UDim2.new(0, 4, 0, 18);
+G2L["17"]["Position"] = UDim2.new(0, 0, 0.01568, 0);
+G2L["17"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["17"]["Name"] = [[DATAS]];
 
 
 -- StarterGui.NebulaHub.FrameGamePlay.ScrollingFrame.DATAS.UICorner
-G2L["17"] = Instance.new("UICorner", G2L["16"]);
+G2L["18"] = Instance.new("UICorner", G2L["17"]);
 
 
 
 -- StarterGui.NebulaHub.FrameGamePlay.ScrollingFrame.DATAS.TOOLS
-G2L["18"] = Instance.new("TextLabel", G2L["16"]);
-G2L["18"]["BorderSizePixel"] = 0;
-G2L["18"]["TextSize"] = 14;
-G2L["18"]["BackgroundColor3"] = Color3.fromRGB(16, 16, 16);
-G2L["18"]["FontFace"] = Font.new([[rbxasset://fonts/families/LuckiestGuy.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["18"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["18"]["Size"] = UDim2.new(0, 37, 0, 20);
-G2L["18"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["18"]["Text"] = [[DATAS]];
-G2L["18"]["Name"] = [[TOOLS]];
-G2L["18"]["Position"] = UDim2.new(3, 0, 0.05556, 0);
+G2L["19"] = Instance.new("TextLabel", G2L["17"]);
+G2L["19"]["BorderSizePixel"] = 0;
+G2L["19"]["TextSize"] = 14;
+G2L["19"]["BackgroundColor3"] = Color3.fromRGB(16, 16, 16);
+G2L["19"]["FontFace"] = Font.new([[rbxasset://fonts/families/LuckiestGuy.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["19"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["19"]["Size"] = UDim2.new(0, 37, 0, 20);
+G2L["19"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["19"]["Text"] = [[DATAS]];
+G2L["19"]["Name"] = [[TOOLS]];
+G2L["19"]["Position"] = UDim2.new(3, 0, 0.05556, 0);
 
 
 -- StarterGui.NebulaHub.FrameGamePlay.ScrollingFrame.DATAS.MurderIS
-G2L["19"] = Instance.new("TextBox", G2L["16"]);
-G2L["19"]["Name"] = [[MurderIS]];
-G2L["19"]["PlaceholderColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["19"]["BorderSizePixel"] = 0;
-G2L["19"]["TextEditable"] = false;
-G2L["19"]["TextSize"] = 14;
-G2L["19"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["19"]["BackgroundColor3"] = Color3.fromRGB(28, 28, 28);
-G2L["19"]["FontFace"] = Font.new([[rbxasset://fonts/families/LuckiestGuy.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["19"]["ClearTextOnFocus"] = false;
-G2L["19"]["Size"] = UDim2.new(0, 200, 0, 37);
-G2L["19"]["Position"] = UDim2.new(0, 0, 1.83333, 0);
-G2L["19"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["19"]["Text"] = [[MURDER IS: UNKNOWN]];
+G2L["1a"] = Instance.new("TextBox", G2L["17"]);
+G2L["1a"]["Name"] = [[MurderIS]];
+G2L["1a"]["PlaceholderColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1a"]["BorderSizePixel"] = 0;
+G2L["1a"]["TextEditable"] = false;
+G2L["1a"]["TextSize"] = 14;
+G2L["1a"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1a"]["BackgroundColor3"] = Color3.fromRGB(28, 28, 28);
+G2L["1a"]["FontFace"] = Font.new([[rbxasset://fonts/families/LuckiestGuy.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["1a"]["ClearTextOnFocus"] = false;
+G2L["1a"]["Size"] = UDim2.new(0, 200, 0, 37);
+G2L["1a"]["Position"] = UDim2.new(0, 0, 1.83333, 0);
+G2L["1a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1a"]["Text"] = [[MURDER IS: UNKNOWN]];
 
 
 -- StarterGui.NebulaHub.FrameGamePlay.ScrollingFrame.DATAS.MurderIS.LocalScript
-G2L["1a"] = Instance.new("LocalScript", G2L["19"]);
+G2L["1b"] = Instance.new("LocalScript", G2L["1a"]);
 
 
 
 -- StarterGui.NebulaHub.FrameGamePlay.ScrollingFrame.DATAS.MurderIS.UICorner
-G2L["1b"] = Instance.new("UICorner", G2L["19"]);
+G2L["1c"] = Instance.new("UICorner", G2L["1a"]);
 
 
 
 -- StarterGui.NebulaHub.FrameGamePlay.ScrollingFrame.DATAS.SheriffIS
-G2L["1c"] = Instance.new("TextBox", G2L["16"]);
-G2L["1c"]["Name"] = [[SheriffIS]];
-G2L["1c"]["PlaceholderColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["1c"]["BorderSizePixel"] = 0;
-G2L["1c"]["TextEditable"] = false;
-G2L["1c"]["TextSize"] = 14;
-G2L["1c"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["1c"]["BackgroundColor3"] = Color3.fromRGB(28, 28, 28);
-G2L["1c"]["FontFace"] = Font.new([[rbxasset://fonts/families/LuckiestGuy.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["1c"]["ClearTextOnFocus"] = false;
-G2L["1c"]["Size"] = UDim2.new(0, 200, 0, 37);
-G2L["1c"]["Position"] = UDim2.new(0, 0, 4.16667, 0);
-G2L["1c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["1c"]["Text"] = [[SHERIFF IS: UNKNOWN]];
+G2L["1d"] = Instance.new("TextBox", G2L["17"]);
+G2L["1d"]["Name"] = [[SheriffIS]];
+G2L["1d"]["PlaceholderColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1d"]["BorderSizePixel"] = 0;
+G2L["1d"]["TextEditable"] = false;
+G2L["1d"]["TextSize"] = 14;
+G2L["1d"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1d"]["BackgroundColor3"] = Color3.fromRGB(28, 28, 28);
+G2L["1d"]["FontFace"] = Font.new([[rbxasset://fonts/families/LuckiestGuy.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["1d"]["ClearTextOnFocus"] = false;
+G2L["1d"]["Size"] = UDim2.new(0, 200, 0, 37);
+G2L["1d"]["Position"] = UDim2.new(0, 0, 4.16667, 0);
+G2L["1d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1d"]["Text"] = [[SHERIFF IS: UNKNOWN]];
 
 
 -- StarterGui.NebulaHub.FrameGamePlay.ScrollingFrame.DATAS.SheriffIS.UICorner
-G2L["1d"] = Instance.new("UICorner", G2L["1c"]);
+G2L["1e"] = Instance.new("UICorner", G2L["1d"]);
 
 
 
 -- StarterGui.NebulaHub.FrameGamePlay.ScrollingFrame.TeleportationFrame
-G2L["1e"] = Instance.new("Frame", G2L["15"]);
-G2L["1e"]["BorderSizePixel"] = 0;
-G2L["1e"]["BackgroundColor3"] = Color3.fromRGB(16, 16, 16);
-G2L["1e"]["Size"] = UDim2.new(0, 214, 0, 259);
-G2L["1e"]["Position"] = UDim2.new(0.64169, 0, 0.06022, 0);
-G2L["1e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["1e"]["Name"] = [[TeleportationFrame]];
+G2L["1f"] = Instance.new("Frame", G2L["16"]);
+G2L["1f"]["BorderSizePixel"] = 0;
+G2L["1f"]["BackgroundColor3"] = Color3.fromRGB(16, 16, 16);
+G2L["1f"]["Size"] = UDim2.new(0, 214, 0, 259);
+G2L["1f"]["Position"] = UDim2.new(0.64169, 0, 0.06022, 0);
+G2L["1f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1f"]["Name"] = [[TeleportationFrame]];
 
 
 -- StarterGui.NebulaHub.FrameGamePlay.ScrollingFrame.TeleportationFrame.TeleportToMurderer
-G2L["1f"] = Instance.new("TextButton", G2L["1e"]);
-G2L["1f"]["BorderSizePixel"] = 0;
-G2L["1f"]["TextSize"] = 14;
-G2L["1f"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["1f"]["BackgroundColor3"] = Color3.fromRGB(232, 41, 41);
-G2L["1f"]["FontFace"] = Font.new([[rbxasset://fonts/families/LuckiestGuy.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["1f"]["Size"] = UDim2.new(0, 205, 0, 37);
-G2L["1f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["1f"]["Text"] = [[TELEPORT TO MURDERER]];
-G2L["1f"]["Name"] = [[TeleportToMurderer]];
-G2L["1f"]["Position"] = UDim2.new(0.01715, 0, 0.49114, 0);
+G2L["20"] = Instance.new("TextButton", G2L["1f"]);
+G2L["20"]["BorderSizePixel"] = 0;
+G2L["20"]["TextSize"] = 14;
+G2L["20"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["20"]["BackgroundColor3"] = Color3.fromRGB(232, 41, 41);
+G2L["20"]["FontFace"] = Font.new([[rbxasset://fonts/families/LuckiestGuy.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["20"]["Size"] = UDim2.new(0, 205, 0, 37);
+G2L["20"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["20"]["Text"] = [[TELEPORT TO MURDERER]];
+G2L["20"]["Name"] = [[TeleportToMurderer]];
+G2L["20"]["Position"] = UDim2.new(0.01715, 0, 0.49114, 0);
 
 
 -- StarterGui.NebulaHub.FrameGamePlay.ScrollingFrame.TeleportationFrame.TeleportToMurderer.LocalScript
-G2L["20"] = Instance.new("LocalScript", G2L["1f"]);
+G2L["21"] = Instance.new("LocalScript", G2L["20"]);
 
 
 
 -- StarterGui.NebulaHub.FrameGamePlay.ScrollingFrame.TeleportationFrame.TeleportToMurderer.UICorner
-G2L["21"] = Instance.new("UICorner", G2L["1f"]);
+G2L["22"] = Instance.new("UICorner", G2L["20"]);
 
 
 
 -- StarterGui.NebulaHub.FrameGamePlay.ScrollingFrame.TeleportationFrame.TeleportToSheriff
-G2L["22"] = Instance.new("TextButton", G2L["1e"]);
-G2L["22"]["BorderSizePixel"] = 0;
-G2L["22"]["TextSize"] = 14;
-G2L["22"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["22"]["BackgroundColor3"] = Color3.fromRGB(149, 65, 232);
-G2L["22"]["FontFace"] = Font.new([[rbxasset://fonts/families/LuckiestGuy.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["22"]["Size"] = UDim2.new(0, 205, 0, 37);
-G2L["22"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["22"]["Text"] = [[TELEPORT TO SHERIFF]];
-G2L["22"]["Name"] = [[TeleportToSheriff]];
-G2L["22"]["Position"] = UDim2.new(0.017, 0, 0.66, 0);
+G2L["23"] = Instance.new("TextButton", G2L["1f"]);
+G2L["23"]["BorderSizePixel"] = 0;
+G2L["23"]["TextSize"] = 14;
+G2L["23"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["23"]["BackgroundColor3"] = Color3.fromRGB(149, 65, 232);
+G2L["23"]["FontFace"] = Font.new([[rbxasset://fonts/families/LuckiestGuy.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["23"]["Size"] = UDim2.new(0, 205, 0, 37);
+G2L["23"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["23"]["Text"] = [[TELEPORT TO SHERIFF]];
+G2L["23"]["Name"] = [[TeleportToSheriff]];
+G2L["23"]["Position"] = UDim2.new(0.017, 0, 0.66, 0);
 
 
 -- StarterGui.NebulaHub.FrameGamePlay.ScrollingFrame.TeleportationFrame.TeleportToSheriff.LocalScript
-G2L["23"] = Instance.new("LocalScript", G2L["22"]);
+G2L["24"] = Instance.new("LocalScript", G2L["23"]);
 
 
 
 -- StarterGui.NebulaHub.FrameGamePlay.ScrollingFrame.TeleportationFrame.TeleportToSheriff.UICorner
-G2L["24"] = Instance.new("UICorner", G2L["22"]);
+G2L["25"] = Instance.new("UICorner", G2L["23"]);
 
 
 
 -- StarterGui.NebulaHub.FrameGamePlay.ScrollingFrame.TeleportationFrame.TeleportRandomPlayer
-G2L["25"] = Instance.new("TextButton", G2L["1e"]);
-G2L["25"]["BorderSizePixel"] = 0;
-G2L["25"]["TextSize"] = 14;
-G2L["25"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["25"]["BackgroundColor3"] = Color3.fromRGB(28, 28, 28);
-G2L["25"]["FontFace"] = Font.new([[rbxasset://fonts/families/LuckiestGuy.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["25"]["Size"] = UDim2.new(0, 205, 0, 37);
-G2L["25"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["25"]["Text"] = [[Teleport Random Player]];
-G2L["25"]["Name"] = [[TeleportRandomPlayer]];
-G2L["25"]["Position"] = UDim2.new(0.01869, 0, 0.33205, 0);
+G2L["26"] = Instance.new("TextButton", G2L["1f"]);
+G2L["26"]["BorderSizePixel"] = 0;
+G2L["26"]["TextSize"] = 14;
+G2L["26"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["26"]["BackgroundColor3"] = Color3.fromRGB(28, 28, 28);
+G2L["26"]["FontFace"] = Font.new([[rbxasset://fonts/families/LuckiestGuy.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["26"]["Size"] = UDim2.new(0, 205, 0, 37);
+G2L["26"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["26"]["Text"] = [[Teleport Random Player]];
+G2L["26"]["Name"] = [[TeleportRandomPlayer]];
+G2L["26"]["Position"] = UDim2.new(0.01869, 0, 0.33205, 0);
 
 
 -- StarterGui.NebulaHub.FrameGamePlay.ScrollingFrame.TeleportationFrame.TeleportRandomPlayer.LocalScript
-G2L["26"] = Instance.new("LocalScript", G2L["25"]);
+G2L["27"] = Instance.new("LocalScript", G2L["26"]);
 
 
 
 -- StarterGui.NebulaHub.FrameGamePlay.ScrollingFrame.TeleportationFrame.TeleportRandomPlayer.UICorner
-G2L["27"] = Instance.new("UICorner", G2L["25"]);
+G2L["28"] = Instance.new("UICorner", G2L["26"]);
 
 
 
 -- StarterGui.NebulaHub.FrameGamePlay.ScrollingFrame.TeleportationFrame.Teleport
-G2L["28"] = Instance.new("Frame", G2L["1e"]);
-G2L["28"]["BorderSizePixel"] = 0;
-G2L["28"]["BackgroundColor3"] = Color3.fromRGB(120, 22, 232);
-G2L["28"]["Size"] = UDim2.new(0, -4, 0, 18);
-G2L["28"]["Position"] = UDim2.new(-0.00398, 0, -0.11946, 0);
-G2L["28"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["28"]["Name"] = [[Teleport]];
+G2L["29"] = Instance.new("Frame", G2L["1f"]);
+G2L["29"]["BorderSizePixel"] = 0;
+G2L["29"]["BackgroundColor3"] = Color3.fromRGB(120, 22, 232);
+G2L["29"]["Size"] = UDim2.new(0, -4, 0, 18);
+G2L["29"]["Position"] = UDim2.new(-0.00398, 0, -0.11946, 0);
+G2L["29"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["29"]["Name"] = [[Teleport]];
 
 
 -- StarterGui.NebulaHub.FrameGamePlay.ScrollingFrame.TeleportationFrame.Teleport.UICorner
-G2L["29"] = Instance.new("UICorner", G2L["28"]);
+G2L["2a"] = Instance.new("UICorner", G2L["29"]);
 
 
 
 -- StarterGui.NebulaHub.FrameGamePlay.ScrollingFrame.TeleportationFrame.Teleport.TOOLS
-G2L["2a"] = Instance.new("TextLabel", G2L["28"]);
-G2L["2a"]["BorderSizePixel"] = 0;
-G2L["2a"]["TextSize"] = 14;
-G2L["2a"]["BackgroundColor3"] = Color3.fromRGB(16, 16, 16);
-G2L["2a"]["FontFace"] = Font.new([[rbxasset://fonts/families/LuckiestGuy.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["2a"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["2a"]["Size"] = UDim2.new(0, 37, 0, 20);
-G2L["2a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["2a"]["Text"] = [[TELEPORT]];
-G2L["2a"]["Name"] = [[TOOLS]];
-G2L["2a"]["Position"] = UDim2.new(5.25, 0, 0, 0);
+G2L["2b"] = Instance.new("TextLabel", G2L["29"]);
+G2L["2b"]["BorderSizePixel"] = 0;
+G2L["2b"]["TextSize"] = 14;
+G2L["2b"]["BackgroundColor3"] = Color3.fromRGB(16, 16, 16);
+G2L["2b"]["FontFace"] = Font.new([[rbxasset://fonts/families/LuckiestGuy.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["2b"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2b"]["Size"] = UDim2.new(0, 37, 0, 20);
+G2L["2b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2b"]["Text"] = [[TELEPORT]];
+G2L["2b"]["Name"] = [[TOOLS]];
+G2L["2b"]["Position"] = UDim2.new(5.25, 0, 0, 0);
 
 
 -- StarterGui.NebulaHub.FrameGamePlay.ScrollingFrame.TeleportationFrame.TeleportRandomPlayer
-G2L["2b"] = Instance.new("TextButton", G2L["1e"]);
-G2L["2b"]["BorderSizePixel"] = 0;
-G2L["2b"]["TextSize"] = 14;
-G2L["2b"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["2b"]["BackgroundColor3"] = Color3.fromRGB(28, 28, 28);
-G2L["2b"]["FontFace"] = Font.new([[rbxasset://fonts/families/LuckiestGuy.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["2b"]["Size"] = UDim2.new(0, 205, 0, 37);
-G2L["2b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["2b"]["Text"] = [[Teleport CHOSEN PLAYER]];
-G2L["2b"]["Name"] = [[TeleportRandomPlayer]];
-G2L["2b"]["Position"] = UDim2.new(0.01869, 0, 0.16602, 0);
+G2L["2c"] = Instance.new("TextButton", G2L["1f"]);
+G2L["2c"]["BorderSizePixel"] = 0;
+G2L["2c"]["TextSize"] = 14;
+G2L["2c"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2c"]["BackgroundColor3"] = Color3.fromRGB(28, 28, 28);
+G2L["2c"]["FontFace"] = Font.new([[rbxasset://fonts/families/LuckiestGuy.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["2c"]["Size"] = UDim2.new(0, 205, 0, 37);
+G2L["2c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2c"]["Text"] = [[Teleport CHOSEN PLAYER]];
+G2L["2c"]["Name"] = [[TeleportRandomPlayer]];
+G2L["2c"]["Position"] = UDim2.new(0.01869, 0, 0.16602, 0);
 
 
 -- StarterGui.NebulaHub.FrameGamePlay.ScrollingFrame.TeleportationFrame.TeleportRandomPlayer.UICorner
-G2L["2c"] = Instance.new("UICorner", G2L["2b"]);
+G2L["2d"] = Instance.new("UICorner", G2L["2c"]);
 
 
 
 -- StarterGui.NebulaHub.FrameGamePlay.ScrollingFrame.TeleportationFrame.EnterUsername
-G2L["2d"] = Instance.new("TextBox", G2L["1e"]);
-G2L["2d"]["Name"] = [[EnterUsername]];
-G2L["2d"]["BorderSizePixel"] = 0;
-G2L["2d"]["TextSize"] = 14;
-G2L["2d"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["2d"]["BackgroundColor3"] = Color3.fromRGB(28, 28, 28);
-G2L["2d"]["FontFace"] = Font.new([[rbxasset://fonts/families/LuckiestGuy.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["2d"]["PlaceholderText"] = [[ENTER PLAYER NAME...]];
-G2L["2d"]["Size"] = UDim2.new(0, 205, 0, 37);
-G2L["2d"]["Position"] = UDim2.new(0.01869, 0, 0, 0);
-G2L["2d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["2d"]["Text"] = [[]];
+G2L["2e"] = Instance.new("TextBox", G2L["1f"]);
+G2L["2e"]["Name"] = [[EnterUsername]];
+G2L["2e"]["BorderSizePixel"] = 0;
+G2L["2e"]["TextSize"] = 14;
+G2L["2e"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2e"]["BackgroundColor3"] = Color3.fromRGB(28, 28, 28);
+G2L["2e"]["FontFace"] = Font.new([[rbxasset://fonts/families/LuckiestGuy.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["2e"]["PlaceholderText"] = [[ENTER PLAYER NAME...]];
+G2L["2e"]["Size"] = UDim2.new(0, 205, 0, 37);
+G2L["2e"]["Position"] = UDim2.new(0.01869, 0, 0, 0);
+G2L["2e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2e"]["Text"] = [[]];
 
 
 -- StarterGui.NebulaHub.FrameGamePlay.ScrollingFrame.TeleportationFrame.EnterUsername.UICorner
-G2L["2e"] = Instance.new("UICorner", G2L["2d"]);
+G2L["2f"] = Instance.new("UICorner", G2L["2e"]);
 
 
 
 -- StarterGui.NebulaHub.FrameGamePlay.ScrollingFrame.BasicStuff
-G2L["2f"] = Instance.new("Frame", G2L["15"]);
-G2L["2f"]["BorderSizePixel"] = 0;
-G2L["2f"]["BackgroundColor3"] = Color3.fromRGB(16, 16, 16);
-G2L["2f"]["Size"] = UDim2.new(0, 200, 0, 165);
-G2L["2f"]["Position"] = UDim2.new(0, 0, 0.18067, 0);
-G2L["2f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["2f"]["Name"] = [[BasicStuff]];
+G2L["30"] = Instance.new("Frame", G2L["16"]);
+G2L["30"]["BorderSizePixel"] = 0;
+G2L["30"]["BackgroundColor3"] = Color3.fromRGB(16, 16, 16);
+G2L["30"]["Size"] = UDim2.new(0, 200, 0, 165);
+G2L["30"]["Position"] = UDim2.new(0, 0, 0.18067, 0);
+G2L["30"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["30"]["Name"] = [[BasicStuff]];
 
 
 -- StarterGui.NebulaHub.FrameGamePlay.ScrollingFrame.BasicStuff.Frame
-G2L["30"] = Instance.new("Frame", G2L["2f"]);
-G2L["30"]["BorderSizePixel"] = 0;
-G2L["30"]["BackgroundColor3"] = Color3.fromRGB(120, 22, 232);
-G2L["30"]["Size"] = UDim2.new(0, 4, 0, 22);
-G2L["30"]["Position"] = UDim2.new(0, 0, 0.0881, 0);
-G2L["30"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["31"] = Instance.new("Frame", G2L["30"]);
+G2L["31"]["BorderSizePixel"] = 0;
+G2L["31"]["BackgroundColor3"] = Color3.fromRGB(120, 22, 232);
+G2L["31"]["Size"] = UDim2.new(0, 4, 0, 22);
+G2L["31"]["Position"] = UDim2.new(0, 0, 0.0881, 0);
+G2L["31"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 
 
 -- StarterGui.NebulaHub.FrameGamePlay.ScrollingFrame.BasicStuff.Frame.UICorner
-G2L["31"] = Instance.new("UICorner", G2L["30"]);
+G2L["32"] = Instance.new("UICorner", G2L["31"]);
 
 
 
 -- StarterGui.NebulaHub.FrameGamePlay.ScrollingFrame.BasicStuff.Frame.TOOLS
-G2L["32"] = Instance.new("TextLabel", G2L["30"]);
-G2L["32"]["BorderSizePixel"] = 0;
-G2L["32"]["TextSize"] = 14;
-G2L["32"]["BackgroundColor3"] = Color3.fromRGB(16, 16, 16);
-G2L["32"]["FontFace"] = Font.new([[rbxasset://fonts/families/LuckiestGuy.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["32"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["32"]["Size"] = UDim2.new(0, 37, 0, 20);
-G2L["32"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["32"]["Text"] = [[BASIC STUFF]];
-G2L["32"]["Name"] = [[TOOLS]];
-G2L["32"]["Position"] = UDim2.new(7.78139, 0, 0.09091, 0);
-
-
--- StarterGui.NebulaHub.FrameGamePlay.ScrollingFrame.BasicStuff.TextLabel
-G2L["33"] = Instance.new("TextLabel", G2L["2f"]);
+G2L["33"] = Instance.new("TextLabel", G2L["31"]);
 G2L["33"]["BorderSizePixel"] = 0;
 G2L["33"]["TextSize"] = 14;
 G2L["33"]["BackgroundColor3"] = Color3.fromRGB(16, 16, 16);
 G2L["33"]["FontFace"] = Font.new([[rbxasset://fonts/families/LuckiestGuy.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
 G2L["33"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["33"]["Size"] = UDim2.new(0, 53, 0, 25);
+G2L["33"]["Size"] = UDim2.new(0, 37, 0, 20);
 G2L["33"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["33"]["Text"] = [[Noclip]];
-G2L["33"]["Position"] = UDim2.new(0.02, 0, 0.28485, 0);
+G2L["33"]["Text"] = [[BASIC STUFF]];
+G2L["33"]["Name"] = [[TOOLS]];
+G2L["33"]["Position"] = UDim2.new(7.78139, 0, 0.09091, 0);
+
+
+-- StarterGui.NebulaHub.FrameGamePlay.ScrollingFrame.BasicStuff.TextLabel
+G2L["34"] = Instance.new("TextLabel", G2L["30"]);
+G2L["34"]["BorderSizePixel"] = 0;
+G2L["34"]["TextSize"] = 14;
+G2L["34"]["BackgroundColor3"] = Color3.fromRGB(16, 16, 16);
+G2L["34"]["FontFace"] = Font.new([[rbxasset://fonts/families/LuckiestGuy.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["34"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["34"]["Size"] = UDim2.new(0, 53, 0, 25);
+G2L["34"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["34"]["Text"] = [[Noclip]];
+G2L["34"]["Position"] = UDim2.new(0.02, 0, 0.28485, 0);
 
 
 -- StarterGui.NebulaHub.FrameGamePlay.ScrollingFrame.BasicStuff.ToggleNoClip
-G2L["34"] = Instance.new("Frame", G2L["2f"]);
-G2L["34"]["BorderSizePixel"] = 0;
-G2L["34"]["BackgroundColor3"] = Color3.fromRGB(31, 31, 31);
-G2L["34"]["Size"] = UDim2.new(0, 55, 0, 26);
-G2L["34"]["Position"] = UDim2.new(0.73604, 0, 0.28347, 0);
-G2L["34"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["34"]["Name"] = [[ToggleNoClip]];
+G2L["35"] = Instance.new("Frame", G2L["30"]);
+G2L["35"]["BorderSizePixel"] = 0;
+G2L["35"]["BackgroundColor3"] = Color3.fromRGB(31, 31, 31);
+G2L["35"]["Size"] = UDim2.new(0, 55, 0, 26);
+G2L["35"]["Position"] = UDim2.new(0.73604, 0, 0.28347, 0);
+G2L["35"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["35"]["Name"] = [[ToggleNoClip]];
 
 
 -- StarterGui.NebulaHub.FrameGamePlay.ScrollingFrame.BasicStuff.ToggleNoClip.LocalScript
-G2L["35"] = Instance.new("LocalScript", G2L["34"]);
+G2L["36"] = Instance.new("LocalScript", G2L["35"]);
 
 
 
 -- StarterGui.NebulaHub.FrameGamePlay.ScrollingFrame.BasicStuff.ToggleNoClip.Circle
-G2L["36"] = Instance.new("Frame", G2L["34"]);
-G2L["36"]["BorderSizePixel"] = 0;
-G2L["36"]["BackgroundColor3"] = Color3.fromRGB(62, 62, 62);
-G2L["36"]["Size"] = UDim2.new(0, 21, 0, 22);
-G2L["36"]["Position"] = UDim2.new(-0.00368, 0, -0.01365, 0);
-G2L["36"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["36"]["Name"] = [[Circle]];
+G2L["37"] = Instance.new("Frame", G2L["35"]);
+G2L["37"]["BorderSizePixel"] = 0;
+G2L["37"]["BackgroundColor3"] = Color3.fromRGB(62, 62, 62);
+G2L["37"]["Size"] = UDim2.new(0, 21, 0, 22);
+G2L["37"]["Position"] = UDim2.new(-0.00368, 0, -0.01365, 0);
+G2L["37"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["37"]["Name"] = [[Circle]];
 
 
 -- StarterGui.NebulaHub.FrameGamePlay.ScrollingFrame.BasicStuff.ToggleNoClip.Circle.UICorner
-G2L["37"] = Instance.new("UICorner", G2L["36"]);
-G2L["37"]["CornerRadius"] = UDim.new(1, 0);
-
-
--- StarterGui.NebulaHub.FrameGamePlay.ScrollingFrame.BasicStuff.ToggleNoClip.UICorner
-G2L["38"] = Instance.new("UICorner", G2L["34"]);
+G2L["38"] = Instance.new("UICorner", G2L["37"]);
 G2L["38"]["CornerRadius"] = UDim.new(1, 0);
 
 
+-- StarterGui.NebulaHub.FrameGamePlay.ScrollingFrame.BasicStuff.ToggleNoClip.UICorner
+G2L["39"] = Instance.new("UICorner", G2L["35"]);
+G2L["39"]["CornerRadius"] = UDim.new(1, 0);
+
+
 -- StarterGui.NebulaHub.FrameGamePlay.ScrollingFrame.BasicStuff.FlyGUI
-G2L["39"] = Instance.new("TextButton", G2L["2f"]);
-G2L["39"]["TextStrokeTransparency"] = 0;
-G2L["39"]["BorderSizePixel"] = 0;
-G2L["39"]["TextSize"] = 15;
-G2L["39"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["39"]["BackgroundColor3"] = Color3.fromRGB(28, 28, 28);
-G2L["39"]["FontFace"] = Font.new([[rbxasset://fonts/families/LuckiestGuy.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["39"]["Size"] = UDim2.new(0, 200, 0, 37);
-G2L["39"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["39"]["Text"] = [[FLY GUI]];
-G2L["39"]["Name"] = [[FlyGUI]];
-G2L["39"]["Position"] = UDim2.new(0.02, 0, 0.68485, 0);
+G2L["3a"] = Instance.new("TextButton", G2L["30"]);
+G2L["3a"]["TextStrokeTransparency"] = 0;
+G2L["3a"]["BorderSizePixel"] = 0;
+G2L["3a"]["TextSize"] = 15;
+G2L["3a"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["3a"]["BackgroundColor3"] = Color3.fromRGB(28, 28, 28);
+G2L["3a"]["FontFace"] = Font.new([[rbxasset://fonts/families/LuckiestGuy.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["3a"]["Size"] = UDim2.new(0, 200, 0, 37);
+G2L["3a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["3a"]["Text"] = [[FLY GUI]];
+G2L["3a"]["Name"] = [[FlyGUI]];
+G2L["3a"]["Position"] = UDim2.new(0.02, 0, 0.68485, 0);
 
 
 -- StarterGui.NebulaHub.FrameGamePlay.ScrollingFrame.BasicStuff.FlyGUI.LocalScript
-G2L["3a"] = Instance.new("LocalScript", G2L["39"]);
+G2L["3b"] = Instance.new("LocalScript", G2L["3a"]);
 
 
 
 -- StarterGui.NebulaHub.FrameGamePlay.ScrollingFrame.BasicStuff.FlyGUI.UICorner
-G2L["3b"] = Instance.new("UICorner", G2L["39"]);
-G2L["3b"]["CornerRadius"] = UDim.new(0, 6);
+G2L["3c"] = Instance.new("UICorner", G2L["3a"]);
+G2L["3c"]["CornerRadius"] = UDim.new(0, 6);
 
 
 -- StarterGui.NebulaHub.FrameGamePlay.ScrollingFrame.BasicStuff.TextLabel
-G2L["3c"] = Instance.new("TextLabel", G2L["2f"]);
-G2L["3c"]["BorderSizePixel"] = 0;
-G2L["3c"]["TextSize"] = 14;
-G2L["3c"]["BackgroundColor3"] = Color3.fromRGB(16, 16, 16);
-G2L["3c"]["FontFace"] = Font.new([[rbxasset://fonts/families/LuckiestGuy.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["3c"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["3c"]["Size"] = UDim2.new(0, 59, 0, 25);
-G2L["3c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["3c"]["Text"] = [[INFINITE JUMP]];
-G2L["3c"]["Position"] = UDim2.new(0.125, 0, 0.47273, 0);
+G2L["3d"] = Instance.new("TextLabel", G2L["30"]);
+G2L["3d"]["BorderSizePixel"] = 0;
+G2L["3d"]["TextSize"] = 14;
+G2L["3d"]["BackgroundColor3"] = Color3.fromRGB(16, 16, 16);
+G2L["3d"]["FontFace"] = Font.new([[rbxasset://fonts/families/LuckiestGuy.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["3d"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["3d"]["Size"] = UDim2.new(0, 59, 0, 25);
+G2L["3d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["3d"]["Text"] = [[INFINITE JUMP]];
+G2L["3d"]["Position"] = UDim2.new(0.125, 0, 0.47273, 0);
 
 
 -- StarterGui.NebulaHub.FrameGamePlay.ScrollingFrame.BasicStuff.ToggleInfiniteJump
-G2L["3d"] = Instance.new("Frame", G2L["2f"]);
-G2L["3d"]["BorderSizePixel"] = 0;
-G2L["3d"]["BackgroundColor3"] = Color3.fromRGB(31, 31, 31);
-G2L["3d"]["Size"] = UDim2.new(0, 55, 0, 26);
-G2L["3d"]["Position"] = UDim2.new(0.73104, 0, 0.47134, 0);
-G2L["3d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["3d"]["Name"] = [[ToggleInfiniteJump]];
+G2L["3e"] = Instance.new("Frame", G2L["30"]);
+G2L["3e"]["BorderSizePixel"] = 0;
+G2L["3e"]["BackgroundColor3"] = Color3.fromRGB(31, 31, 31);
+G2L["3e"]["Size"] = UDim2.new(0, 55, 0, 26);
+G2L["3e"]["Position"] = UDim2.new(0.73104, 0, 0.47134, 0);
+G2L["3e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["3e"]["Name"] = [[ToggleInfiniteJump]];
 
 
 -- StarterGui.NebulaHub.FrameGamePlay.ScrollingFrame.BasicStuff.ToggleInfiniteJump.LocalScript
-G2L["3e"] = Instance.new("LocalScript", G2L["3d"]);
+G2L["3f"] = Instance.new("LocalScript", G2L["3e"]);
 
 
 
 -- StarterGui.NebulaHub.FrameGamePlay.ScrollingFrame.BasicStuff.ToggleInfiniteJump.Circle
-G2L["3f"] = Instance.new("Frame", G2L["3d"]);
-G2L["3f"]["BorderSizePixel"] = 0;
-G2L["3f"]["BackgroundColor3"] = Color3.fromRGB(62, 62, 62);
-G2L["3f"]["Size"] = UDim2.new(0, 21, 0, 22);
-G2L["3f"]["Position"] = UDim2.new(-0.00368, 0, -0.01365, 0);
-G2L["3f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["3f"]["Name"] = [[Circle]];
+G2L["40"] = Instance.new("Frame", G2L["3e"]);
+G2L["40"]["BorderSizePixel"] = 0;
+G2L["40"]["BackgroundColor3"] = Color3.fromRGB(62, 62, 62);
+G2L["40"]["Size"] = UDim2.new(0, 21, 0, 22);
+G2L["40"]["Position"] = UDim2.new(-0.00368, 0, -0.01365, 0);
+G2L["40"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["40"]["Name"] = [[Circle]];
 
 
 -- StarterGui.NebulaHub.FrameGamePlay.ScrollingFrame.BasicStuff.ToggleInfiniteJump.Circle.UICorner
-G2L["40"] = Instance.new("UICorner", G2L["3f"]);
-G2L["40"]["CornerRadius"] = UDim.new(1, 0);
-
-
--- StarterGui.NebulaHub.FrameGamePlay.ScrollingFrame.BasicStuff.ToggleInfiniteJump.UICorner
-G2L["41"] = Instance.new("UICorner", G2L["3d"]);
+G2L["41"] = Instance.new("UICorner", G2L["40"]);
 G2L["41"]["CornerRadius"] = UDim.new(1, 0);
 
 
+-- StarterGui.NebulaHub.FrameGamePlay.ScrollingFrame.BasicStuff.ToggleInfiniteJump.UICorner
+G2L["42"] = Instance.new("UICorner", G2L["3e"]);
+G2L["42"]["CornerRadius"] = UDim.new(1, 0);
+
+
 -- StarterGui.NebulaHub.FrameGamePlay.ScrollingFrame.MoreTools
-G2L["42"] = Instance.new("Frame", G2L["15"]);
-G2L["42"]["BorderSizePixel"] = 0;
-G2L["42"]["BackgroundColor3"] = Color3.fromRGB(16, 16, 16);
-G2L["42"]["Size"] = UDim2.new(0, 200, 0, 238);
-G2L["42"]["Position"] = UDim2.new(0.00651, 0, 0.40896, 0);
-G2L["42"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["42"]["Name"] = [[MoreTools]];
+G2L["43"] = Instance.new("Frame", G2L["16"]);
+G2L["43"]["BorderSizePixel"] = 0;
+G2L["43"]["BackgroundColor3"] = Color3.fromRGB(16, 16, 16);
+G2L["43"]["Size"] = UDim2.new(0, 200, 0, 238);
+G2L["43"]["Position"] = UDim2.new(0.00651, 0, 0.40896, 0);
+G2L["43"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["43"]["Name"] = [[MoreTools]];
 
 
 -- StarterGui.NebulaHub.FrameGamePlay.ScrollingFrame.MoreTools.Frame
-G2L["43"] = Instance.new("Frame", G2L["42"]);
-G2L["43"]["BorderSizePixel"] = 0;
-G2L["43"]["BackgroundColor3"] = Color3.fromRGB(120, 22, 232);
-G2L["43"]["Size"] = UDim2.new(0, 4, 0, 22);
-G2L["43"]["Position"] = UDim2.new(0, 0, 0.0042, 0);
-G2L["43"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["44"] = Instance.new("Frame", G2L["43"]);
+G2L["44"]["BorderSizePixel"] = 0;
+G2L["44"]["BackgroundColor3"] = Color3.fromRGB(120, 22, 232);
+G2L["44"]["Size"] = UDim2.new(0, 4, 0, 22);
+G2L["44"]["Position"] = UDim2.new(0, 0, 0.0042, 0);
+G2L["44"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 
 
 -- StarterGui.NebulaHub.FrameGamePlay.ScrollingFrame.MoreTools.Frame.UICorner
-G2L["44"] = Instance.new("UICorner", G2L["43"]);
+G2L["45"] = Instance.new("UICorner", G2L["44"]);
 
 
 
 -- StarterGui.NebulaHub.FrameGamePlay.ScrollingFrame.MoreTools.Frame.TOOLS
-G2L["45"] = Instance.new("TextLabel", G2L["43"]);
-G2L["45"]["BorderSizePixel"] = 0;
-G2L["45"]["TextSize"] = 14;
-G2L["45"]["BackgroundColor3"] = Color3.fromRGB(16, 16, 16);
-G2L["45"]["FontFace"] = Font.new([[rbxasset://fonts/families/LuckiestGuy.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["45"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["45"]["Size"] = UDim2.new(0, 37, 0, 20);
-G2L["45"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["45"]["Text"] = [[MORE TOOLS]];
-G2L["45"]["Name"] = [[TOOLS]];
-G2L["45"]["Position"] = UDim2.new(7.78139, 0, 0.09091, 0);
+G2L["46"] = Instance.new("TextLabel", G2L["44"]);
+G2L["46"]["BorderSizePixel"] = 0;
+G2L["46"]["TextSize"] = 14;
+G2L["46"]["BackgroundColor3"] = Color3.fromRGB(16, 16, 16);
+G2L["46"]["FontFace"] = Font.new([[rbxasset://fonts/families/LuckiestGuy.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["46"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["46"]["Size"] = UDim2.new(0, 37, 0, 20);
+G2L["46"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["46"]["Text"] = [[MORE TOOLS]];
+G2L["46"]["Name"] = [[TOOLS]];
+G2L["46"]["Position"] = UDim2.new(7.78139, 0, 0.09091, 0);
 
 
 -- StarterGui.NebulaHub.FrameGamePlay.ScrollingFrame.MoreTools.BringAllPlayers
-G2L["46"] = Instance.new("TextButton", G2L["42"]);
-G2L["46"]["BorderSizePixel"] = 0;
-G2L["46"]["TextSize"] = 18;
-G2L["46"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["46"]["BackgroundColor3"] = Color3.fromRGB(232, 41, 41);
-G2L["46"]["FontFace"] = Font.new([[rbxasset://fonts/families/LuckiestGuy.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["46"]["Size"] = UDim2.new(0, 205, 0, 37);
-G2L["46"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["46"]["Text"] = [[BRING ALL PLAYERS]];
-G2L["46"]["Name"] = [[BringAllPlayers]];
-G2L["46"]["Position"] = UDim2.new(0.017, 0, 0.13479, 0);
+G2L["47"] = Instance.new("TextButton", G2L["43"]);
+G2L["47"]["BorderSizePixel"] = 0;
+G2L["47"]["TextSize"] = 18;
+G2L["47"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["47"]["BackgroundColor3"] = Color3.fromRGB(232, 41, 41);
+G2L["47"]["FontFace"] = Font.new([[rbxasset://fonts/families/LuckiestGuy.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["47"]["Size"] = UDim2.new(0, 205, 0, 37);
+G2L["47"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["47"]["Text"] = [[BRING ALL PLAYERS]];
+G2L["47"]["Name"] = [[BringAllPlayers]];
+G2L["47"]["Position"] = UDim2.new(0.017, 0, 0.13479, 0);
 
 
 -- StarterGui.NebulaHub.FrameGamePlay.ScrollingFrame.MoreTools.BringAllPlayers.LocalScript
-G2L["47"] = Instance.new("LocalScript", G2L["46"]);
+G2L["48"] = Instance.new("LocalScript", G2L["47"]);
 
 
 
 -- StarterGui.NebulaHub.FrameGamePlay.ScrollingFrame.MoreTools.BringAllPlayers.UICorner
-G2L["48"] = Instance.new("UICorner", G2L["46"]);
+G2L["49"] = Instance.new("UICorner", G2L["47"]);
 
 
 
 -- StarterGui.NebulaHub.FrameGamePlay.ScrollingFrame.Aimbot
-G2L["49"] = Instance.new("Frame", G2L["15"]);
-G2L["49"]["BorderSizePixel"] = 0;
-G2L["49"]["BackgroundColor3"] = Color3.fromRGB(16, 16, 16);
-G2L["49"]["Size"] = UDim2.new(0, 200, 0, 238);
-G2L["49"]["Position"] = UDim2.new(0.65472, 0, 0.37255, 0);
-G2L["49"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["49"]["Name"] = [[Aimbot]];
+G2L["4a"] = Instance.new("Frame", G2L["16"]);
+G2L["4a"]["BorderSizePixel"] = 0;
+G2L["4a"]["BackgroundColor3"] = Color3.fromRGB(16, 16, 16);
+G2L["4a"]["Size"] = UDim2.new(0, 200, 0, 238);
+G2L["4a"]["Position"] = UDim2.new(0.65472, 0, 0.37255, 0);
+G2L["4a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["4a"]["Name"] = [[Aimbot]];
 
 
 -- StarterGui.NebulaHub.FrameGamePlay.ScrollingFrame.Aimbot.Frame
-G2L["4a"] = Instance.new("Frame", G2L["49"]);
-G2L["4a"]["BorderSizePixel"] = 0;
-G2L["4a"]["BackgroundColor3"] = Color3.fromRGB(120, 22, 232);
-G2L["4a"]["Size"] = UDim2.new(0, 4, 0, 22);
-G2L["4a"]["Position"] = UDim2.new(0, 0, 0.0042, 0);
-G2L["4a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["4b"] = Instance.new("Frame", G2L["4a"]);
+G2L["4b"]["BorderSizePixel"] = 0;
+G2L["4b"]["BackgroundColor3"] = Color3.fromRGB(120, 22, 232);
+G2L["4b"]["Size"] = UDim2.new(0, 4, 0, 22);
+G2L["4b"]["Position"] = UDim2.new(0, 0, 0.0042, 0);
+G2L["4b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 
 
 -- StarterGui.NebulaHub.FrameGamePlay.ScrollingFrame.Aimbot.Frame.UICorner
-G2L["4b"] = Instance.new("UICorner", G2L["4a"]);
+G2L["4c"] = Instance.new("UICorner", G2L["4b"]);
 
 
 
 -- StarterGui.NebulaHub.FrameGamePlay.ScrollingFrame.Aimbot.Frame.TOOLS
-G2L["4c"] = Instance.new("TextLabel", G2L["4a"]);
-G2L["4c"]["BorderSizePixel"] = 0;
-G2L["4c"]["TextSize"] = 14;
-G2L["4c"]["BackgroundColor3"] = Color3.fromRGB(16, 16, 16);
-G2L["4c"]["FontFace"] = Font.new([[rbxasset://fonts/families/LuckiestGuy.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["4c"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["4c"]["Size"] = UDim2.new(0, 37, 0, 20);
-G2L["4c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["4c"]["Text"] = [[AIMBOT]];
-G2L["4c"]["Name"] = [[TOOLS]];
-G2L["4c"]["Position"] = UDim2.new(3.78137, 0, 0.09091, 0);
-
-
--- StarterGui.NebulaHub.FrameGamePlay.ScrollingFrame.Aimbot.AimbotSheriffText
-G2L["4d"] = Instance.new("TextLabel", G2L["49"]);
+G2L["4d"] = Instance.new("TextLabel", G2L["4b"]);
 G2L["4d"]["BorderSizePixel"] = 0;
-G2L["4d"]["TextSize"] = 16;
+G2L["4d"]["TextSize"] = 14;
 G2L["4d"]["BackgroundColor3"] = Color3.fromRGB(16, 16, 16);
 G2L["4d"]["FontFace"] = Font.new([[rbxasset://fonts/families/LuckiestGuy.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
 G2L["4d"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["4d"]["Size"] = UDim2.new(0, 122, 0, 35);
+G2L["4d"]["Size"] = UDim2.new(0, 37, 0, 20);
 G2L["4d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["4d"]["Text"] = [[Aimbot Sheriff]];
-G2L["4d"]["Name"] = [[AimbotSheriffText]];
-G2L["4d"]["Position"] = UDim2.new(0.02, 0, 0.11798, 0);
+G2L["4d"]["Text"] = [[AIMBOT]];
+G2L["4d"]["Name"] = [[TOOLS]];
+G2L["4d"]["Position"] = UDim2.new(3.78137, 0, 0.09091, 0);
+
+
+-- StarterGui.NebulaHub.FrameGamePlay.ScrollingFrame.Aimbot.AimbotSheriffText
+G2L["4e"] = Instance.new("TextLabel", G2L["4a"]);
+G2L["4e"]["BorderSizePixel"] = 0;
+G2L["4e"]["TextSize"] = 16;
+G2L["4e"]["BackgroundColor3"] = Color3.fromRGB(16, 16, 16);
+G2L["4e"]["FontFace"] = Font.new([[rbxasset://fonts/families/LuckiestGuy.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["4e"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["4e"]["Size"] = UDim2.new(0, 122, 0, 35);
+G2L["4e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["4e"]["Text"] = [[Aimbot Sheriff]];
+G2L["4e"]["Name"] = [[AimbotSheriffText]];
+G2L["4e"]["Position"] = UDim2.new(0.02, 0, 0.11798, 0);
 
 
 -- StarterGui.NebulaHub.FrameGamePlay.ScrollingFrame.Aimbot.ToggleAimbotSheriff
-G2L["4e"] = Instance.new("Frame", G2L["49"]);
-G2L["4e"]["BorderSizePixel"] = 0;
-G2L["4e"]["BackgroundColor3"] = Color3.fromRGB(31, 31, 31);
-G2L["4e"]["Size"] = UDim2.new(0, 55, 0, 26);
-G2L["4e"]["Position"] = UDim2.new(0.72104, 0, 0.13521, 0);
-G2L["4e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["4e"]["Name"] = [[ToggleAimbotSheriff]];
+G2L["4f"] = Instance.new("Frame", G2L["4a"]);
+G2L["4f"]["BorderSizePixel"] = 0;
+G2L["4f"]["BackgroundColor3"] = Color3.fromRGB(31, 31, 31);
+G2L["4f"]["Size"] = UDim2.new(0, 55, 0, 26);
+G2L["4f"]["Position"] = UDim2.new(0.72104, 0, 0.13521, 0);
+G2L["4f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["4f"]["Name"] = [[ToggleAimbotSheriff]];
 
 
 -- StarterGui.NebulaHub.FrameGamePlay.ScrollingFrame.Aimbot.ToggleAimbotSheriff.LocalScript
-G2L["4f"] = Instance.new("LocalScript", G2L["4e"]);
+G2L["50"] = Instance.new("LocalScript", G2L["4f"]);
 
 
 
 -- StarterGui.NebulaHub.FrameGamePlay.ScrollingFrame.Aimbot.ToggleAimbotSheriff.Circle
-G2L["50"] = Instance.new("Frame", G2L["4e"]);
-G2L["50"]["BorderSizePixel"] = 0;
-G2L["50"]["BackgroundColor3"] = Color3.fromRGB(62, 62, 62);
-G2L["50"]["Size"] = UDim2.new(0, 21, 0, 22);
-G2L["50"]["Position"] = UDim2.new(-0.00368, 0, -0.01365, 0);
-G2L["50"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["50"]["Name"] = [[Circle]];
+G2L["51"] = Instance.new("Frame", G2L["4f"]);
+G2L["51"]["BorderSizePixel"] = 0;
+G2L["51"]["BackgroundColor3"] = Color3.fromRGB(62, 62, 62);
+G2L["51"]["Size"] = UDim2.new(0, 21, 0, 22);
+G2L["51"]["Position"] = UDim2.new(-0.00368, 0, -0.01365, 0);
+G2L["51"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["51"]["Name"] = [[Circle]];
 
 
 -- StarterGui.NebulaHub.FrameGamePlay.ScrollingFrame.Aimbot.ToggleAimbotSheriff.Circle.UICorner
-G2L["51"] = Instance.new("UICorner", G2L["50"]);
-G2L["51"]["CornerRadius"] = UDim.new(1, 0);
-
-
--- StarterGui.NebulaHub.FrameGamePlay.ScrollingFrame.Aimbot.ToggleAimbotSheriff.UICorner
-G2L["52"] = Instance.new("UICorner", G2L["4e"]);
+G2L["52"] = Instance.new("UICorner", G2L["51"]);
 G2L["52"]["CornerRadius"] = UDim.new(1, 0);
 
 
+-- StarterGui.NebulaHub.FrameGamePlay.ScrollingFrame.Aimbot.ToggleAimbotSheriff.UICorner
+G2L["53"] = Instance.new("UICorner", G2L["4f"]);
+G2L["53"]["CornerRadius"] = UDim.new(1, 0);
+
+
 -- StarterGui.NebulaHub.FrameGamePlay.ScrollingFrame.Aimbot.TeleportRandomPlayer
-G2L["53"] = Instance.new("TextButton", G2L["49"]);
-G2L["53"]["BorderSizePixel"] = 0;
-G2L["53"]["TextSize"] = 14;
-G2L["53"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["53"]["BackgroundColor3"] = Color3.fromRGB(28, 28, 28);
-G2L["53"]["FontFace"] = Font.new([[rbxasset://fonts/families/LuckiestGuy.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["53"]["Size"] = UDim2.new(0, 205, 0, 37);
-G2L["53"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["53"]["Text"] = [[Shoot the morder]];
-G2L["53"]["Name"] = [[TeleportRandomPlayer]];
-G2L["53"]["Position"] = UDim2.new(0.01869, 0, 0.29423, 0);
+G2L["54"] = Instance.new("TextButton", G2L["4a"]);
+G2L["54"]["BorderSizePixel"] = 0;
+G2L["54"]["TextSize"] = 14;
+G2L["54"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["54"]["BackgroundColor3"] = Color3.fromRGB(28, 28, 28);
+G2L["54"]["FontFace"] = Font.new([[rbxasset://fonts/families/LuckiestGuy.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["54"]["Size"] = UDim2.new(0, 205, 0, 37);
+G2L["54"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["54"]["Text"] = [[Shoot the morder]];
+G2L["54"]["Name"] = [[TeleportRandomPlayer]];
+G2L["54"]["Position"] = UDim2.new(0.01869, 0, 0.29423, 0);
 
 
 -- StarterGui.NebulaHub.FrameGamePlay.ScrollingFrame.Aimbot.TeleportRandomPlayer.LocalScript
-G2L["54"] = Instance.new("LocalScript", G2L["53"]);
+G2L["55"] = Instance.new("LocalScript", G2L["54"]);
 
 
 
 -- StarterGui.NebulaHub.FrameGamePlay.ScrollingFrame.Aimbot.TeleportRandomPlayer.UICorner
-G2L["55"] = Instance.new("UICorner", G2L["53"]);
+G2L["56"] = Instance.new("UICorner", G2L["54"]);
 
 
 
 -- StarterGui.NebulaHub.FrameGamePlay.UIDragDetector
-G2L["56"] = Instance.new("UIDragDetector", G2L["2"]);
+G2L["57"] = Instance.new("UIDragDetector", G2L["2"]);
 
 
 
 -- StarterGui.NebulaHub.FrameEsp
-G2L["57"] = Instance.new("Frame", G2L["1"]);
-G2L["57"]["Visible"] = false;
-G2L["57"]["BorderSizePixel"] = 0;
-G2L["57"]["BackgroundColor3"] = Color3.fromRGB(16, 16, 16);
-G2L["57"]["Size"] = UDim2.new(0, 638, 0, 357);
-G2L["57"]["Position"] = UDim2.new(0.44567, 0, 0.45304, 0);
-G2L["57"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["57"]["Name"] = [[FrameEsp]];
+G2L["58"] = Instance.new("Frame", G2L["1"]);
+G2L["58"]["Visible"] = false;
+G2L["58"]["BorderSizePixel"] = 0;
+G2L["58"]["BackgroundColor3"] = Color3.fromRGB(16, 16, 16);
+G2L["58"]["Size"] = UDim2.new(0, 638, 0, 357);
+G2L["58"]["Position"] = UDim2.new(0.44567, 0, 0.45304, 0);
+G2L["58"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["58"]["Name"] = [[FrameEsp]];
 
 
 -- StarterGui.NebulaHub.FrameEsp.UICorner
-G2L["58"] = Instance.new("UICorner", G2L["57"]);
+G2L["59"] = Instance.new("UICorner", G2L["58"]);
 
 
 
 -- StarterGui.NebulaHub.FrameEsp.HotBardFRAME
-G2L["59"] = Instance.new("Frame", G2L["57"]);
-G2L["59"]["BorderSizePixel"] = 0;
-G2L["59"]["BackgroundColor3"] = Color3.fromRGB(16, 16, 16);
-G2L["59"]["Size"] = UDim2.new(0, 638, 0, 39);
-G2L["59"]["Position"] = UDim2.new(0, 0, -0, 0);
-G2L["59"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["59"]["Name"] = [[HotBardFRAME]];
+G2L["5a"] = Instance.new("Frame", G2L["58"]);
+G2L["5a"]["BorderSizePixel"] = 0;
+G2L["5a"]["BackgroundColor3"] = Color3.fromRGB(16, 16, 16);
+G2L["5a"]["Size"] = UDim2.new(0, 638, 0, 39);
+G2L["5a"]["Position"] = UDim2.new(0, 0, -0, 0);
+G2L["5a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["5a"]["Name"] = [[HotBardFRAME]];
 
 
 -- StarterGui.NebulaHub.FrameEsp.HotBardFRAME.NebulaHUB
-G2L["5a"] = Instance.new("TextLabel", G2L["59"]);
-G2L["5a"]["BorderSizePixel"] = 0;
-G2L["5a"]["TextSize"] = 23;
-G2L["5a"]["BackgroundColor3"] = Color3.fromRGB(16, 16, 16);
-G2L["5a"]["FontFace"] = Font.new([[rbxasset://fonts/families/LuckiestGuy.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["5a"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["5a"]["Size"] = UDim2.new(0, 123, 0, 35);
-G2L["5a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["5a"]["Text"] = [[NebulaHub]];
-G2L["5a"]["Name"] = [[NebulaHUB]];
-G2L["5a"]["Position"] = UDim2.new(0.02493, 0, 0.06486, 0);
+G2L["5b"] = Instance.new("TextLabel", G2L["5a"]);
+G2L["5b"]["BorderSizePixel"] = 0;
+G2L["5b"]["TextSize"] = 23;
+G2L["5b"]["BackgroundColor3"] = Color3.fromRGB(16, 16, 16);
+G2L["5b"]["FontFace"] = Font.new([[rbxasset://fonts/families/LuckiestGuy.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["5b"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["5b"]["Size"] = UDim2.new(0, 123, 0, 35);
+G2L["5b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["5b"]["Text"] = [[NebulaHub]];
+G2L["5b"]["Name"] = [[NebulaHUB]];
+G2L["5b"]["Position"] = UDim2.new(0.02493, 0, 0.06486, 0);
 
 
 -- StarterGui.NebulaHub.FrameEsp.HotBardFRAME.TextLabel
-G2L["5b"] = Instance.new("TextLabel", G2L["59"]);
-G2L["5b"]["BorderSizePixel"] = 0;
-G2L["5b"]["TextSize"] = 14;
-G2L["5b"]["BackgroundColor3"] = Color3.fromRGB(16, 16, 16);
-G2L["5b"]["FontFace"] = Font.new([[rbxasset://fonts/families/LuckiestGuy.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["5b"]["TextColor3"] = Color3.fromRGB(182, 182, 182);
-G2L["5b"]["Size"] = UDim2.new(0, 172, 0, 29);
-G2L["5b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["5b"]["Text"] = [[discord.gg/PR6NSeghqf]];
-G2L["5b"]["Position"] = UDim2.new(0.25694, 0, 0.07692, 0);
+G2L["5c"] = Instance.new("TextLabel", G2L["5a"]);
+G2L["5c"]["BorderSizePixel"] = 0;
+G2L["5c"]["TextSize"] = 14;
+G2L["5c"]["BackgroundColor3"] = Color3.fromRGB(16, 16, 16);
+G2L["5c"]["FontFace"] = Font.new([[rbxasset://fonts/families/LuckiestGuy.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["5c"]["TextColor3"] = Color3.fromRGB(182, 182, 182);
+G2L["5c"]["Size"] = UDim2.new(0, 172, 0, 29);
+G2L["5c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["5c"]["Text"] = [[discord.gg/PR6NSeghqf]];
+G2L["5c"]["Position"] = UDim2.new(0.25694, 0, 0.07692, 0);
 
 
 -- StarterGui.NebulaHub.FrameEsp.HotBardFRAME.SELECTION
-G2L["5c"] = Instance.new("Frame", G2L["59"]);
-G2L["5c"]["BorderSizePixel"] = 0;
-G2L["5c"]["BackgroundColor3"] = Color3.fromRGB(16, 16, 16);
-G2L["5c"]["Size"] = UDim2.new(0, 242, 0, 29);
-G2L["5c"]["Position"] = UDim2.new(0.54389, 0, 0.07692, 0);
-G2L["5c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["5c"]["Name"] = [[SELECTION]];
+G2L["5d"] = Instance.new("Frame", G2L["5a"]);
+G2L["5d"]["BorderSizePixel"] = 0;
+G2L["5d"]["BackgroundColor3"] = Color3.fromRGB(16, 16, 16);
+G2L["5d"]["Size"] = UDim2.new(0, 242, 0, 29);
+G2L["5d"]["Position"] = UDim2.new(0.54389, 0, 0.07692, 0);
+G2L["5d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["5d"]["Name"] = [[SELECTION]];
 
 
 -- StarterGui.NebulaHub.FrameEsp.HotBardFRAME.SELECTION.UIStroke
-G2L["5d"] = Instance.new("UIStroke", G2L["5c"]);
-G2L["5d"]["Color"] = Color3.fromRGB(26, 26, 26);
+G2L["5e"] = Instance.new("UIStroke", G2L["5d"]);
+G2L["5e"]["Color"] = Color3.fromRGB(26, 26, 26);
 
 
 -- StarterGui.NebulaHub.FrameEsp.HotBardFRAME.SELECTION.UICorner
-G2L["5e"] = Instance.new("UICorner", G2L["5c"]);
+G2L["5f"] = Instance.new("UICorner", G2L["5d"]);
 
 
 
 -- StarterGui.NebulaHub.FrameEsp.HotBardFRAME.SELECTION.Gameplay
-G2L["5f"] = Instance.new("TextButton", G2L["5c"]);
-G2L["5f"]["BorderSizePixel"] = 0;
-G2L["5f"]["TextSize"] = 14;
-G2L["5f"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["5f"]["BackgroundColor3"] = Color3.fromRGB(16, 16, 16);
-G2L["5f"]["FontFace"] = Font.new([[rbxasset://fonts/families/LuckiestGuy.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["5f"]["Size"] = UDim2.new(0, 69, 0, 27);
-G2L["5f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["5f"]["Text"] = [[GAMEPLAY]];
-G2L["5f"]["Name"] = [[Gameplay]];
-G2L["5f"]["Position"] = UDim2.new(0.025, 0, 0.034, 0);
+G2L["60"] = Instance.new("TextButton", G2L["5d"]);
+G2L["60"]["BorderSizePixel"] = 0;
+G2L["60"]["TextSize"] = 14;
+G2L["60"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["60"]["BackgroundColor3"] = Color3.fromRGB(16, 16, 16);
+G2L["60"]["FontFace"] = Font.new([[rbxasset://fonts/families/LuckiestGuy.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["60"]["Size"] = UDim2.new(0, 69, 0, 27);
+G2L["60"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["60"]["Text"] = [[GAMEPLAY]];
+G2L["60"]["Name"] = [[Gameplay]];
+G2L["60"]["Position"] = UDim2.new(0.025, 0, 0.034, 0);
 
 
 -- StarterGui.NebulaHub.FrameEsp.HotBardFRAME.SELECTION.Gameplay.LocalScript
-G2L["60"] = Instance.new("LocalScript", G2L["5f"]);
+G2L["61"] = Instance.new("LocalScript", G2L["60"]);
 
 
 
 -- StarterGui.NebulaHub.FrameEsp.HotBardFRAME.SELECTION.Gameplay.UICorner
-G2L["61"] = Instance.new("UICorner", G2L["5f"]);
-G2L["61"]["CornerRadius"] = UDim.new(0, 6);
+G2L["62"] = Instance.new("UICorner", G2L["60"]);
+G2L["62"]["CornerRadius"] = UDim.new(0, 6);
 
 
 -- StarterGui.NebulaHub.FrameEsp.HotBardFRAME.SELECTION.Esp
-G2L["62"] = Instance.new("TextButton", G2L["5c"]);
-G2L["62"]["BorderSizePixel"] = 0;
-G2L["62"]["TextSize"] = 14;
-G2L["62"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["62"]["BackgroundColor3"] = Color3.fromRGB(120, 22, 232);
-G2L["62"]["FontFace"] = Font.new([[rbxasset://fonts/families/LuckiestGuy.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["62"]["Size"] = UDim2.new(0, 69, 0, 27);
-G2L["62"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["62"]["Text"] = [[ESP]];
-G2L["62"]["Name"] = [[Esp]];
-G2L["62"]["Position"] = UDim2.new(0.35558, 0, 0.034, 0);
+G2L["63"] = Instance.new("TextButton", G2L["5d"]);
+G2L["63"]["BorderSizePixel"] = 0;
+G2L["63"]["TextSize"] = 14;
+G2L["63"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["63"]["BackgroundColor3"] = Color3.fromRGB(120, 22, 232);
+G2L["63"]["FontFace"] = Font.new([[rbxasset://fonts/families/LuckiestGuy.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["63"]["Size"] = UDim2.new(0, 69, 0, 27);
+G2L["63"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["63"]["Text"] = [[ESP]];
+G2L["63"]["Name"] = [[Esp]];
+G2L["63"]["Position"] = UDim2.new(0.35558, 0, 0.034, 0);
 
 
 -- StarterGui.NebulaHub.FrameEsp.HotBardFRAME.SELECTION.Esp.UICorner
-G2L["63"] = Instance.new("UICorner", G2L["62"]);
-G2L["63"]["CornerRadius"] = UDim.new(0, 6);
+G2L["64"] = Instance.new("UICorner", G2L["63"]);
+G2L["64"]["CornerRadius"] = UDim.new(0, 6);
 
 
 -- StarterGui.NebulaHub.FrameEsp.HotBardFRAME.SELECTION.Autofarm
-G2L["64"] = Instance.new("TextButton", G2L["5c"]);
-G2L["64"]["BorderSizePixel"] = 0;
-G2L["64"]["TextSize"] = 14;
-G2L["64"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["64"]["BackgroundColor3"] = Color3.fromRGB(16, 16, 16);
-G2L["64"]["FontFace"] = Font.new([[rbxasset://fonts/families/LuckiestGuy.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["64"]["Size"] = UDim2.new(0, 69, 0, 27);
-G2L["64"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["64"]["Text"] = [[AUTOFARM]];
-G2L["64"]["Name"] = [[Autofarm]];
-G2L["64"]["Position"] = UDim2.new(0.68202, 0, 0.034, 0);
+G2L["65"] = Instance.new("TextButton", G2L["5d"]);
+G2L["65"]["BorderSizePixel"] = 0;
+G2L["65"]["TextSize"] = 14;
+G2L["65"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["65"]["BackgroundColor3"] = Color3.fromRGB(16, 16, 16);
+G2L["65"]["FontFace"] = Font.new([[rbxasset://fonts/families/LuckiestGuy.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["65"]["Size"] = UDim2.new(0, 69, 0, 27);
+G2L["65"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["65"]["Text"] = [[AUTOFARM]];
+G2L["65"]["Name"] = [[Autofarm]];
+G2L["65"]["Position"] = UDim2.new(0.68202, 0, 0.034, 0);
 
 
 -- StarterGui.NebulaHub.FrameEsp.HotBardFRAME.SELECTION.Autofarm.LocalScript
-G2L["65"] = Instance.new("LocalScript", G2L["64"]);
+G2L["66"] = Instance.new("LocalScript", G2L["65"]);
 
 
 
 -- StarterGui.NebulaHub.FrameEsp.HotBardFRAME.SELECTION.Autofarm.UICorner
-G2L["66"] = Instance.new("UICorner", G2L["64"]);
-G2L["66"]["CornerRadius"] = UDim.new(0, 6);
+G2L["67"] = Instance.new("UICorner", G2L["65"]);
+G2L["67"]["CornerRadius"] = UDim.new(0, 6);
 
 
 -- StarterGui.NebulaHub.FrameEsp.HotBardFRAME.UICorner
-G2L["67"] = Instance.new("UICorner", G2L["59"]);
+G2L["68"] = Instance.new("UICorner", G2L["5a"]);
 
 
 
 -- StarterGui.NebulaHub.FrameEsp.HotBardFRAME.Minumise
-G2L["68"] = Instance.new("TextButton", G2L["59"]);
-G2L["68"]["TextStrokeTransparency"] = 0;
-G2L["68"]["BorderSizePixel"] = 0;
-G2L["68"]["TextSize"] = 20;
-G2L["68"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["68"]["BackgroundColor3"] = Color3.fromRGB(28, 28, 28);
-G2L["68"]["FontFace"] = Font.new([[rbxasset://fonts/families/LuckiestGuy.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["68"]["Size"] = UDim2.new(0, 33, 0, 31);
-G2L["68"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["68"]["Text"] = [[-]];
-G2L["68"]["Name"] = [[Minumise]];
-G2L["68"]["Position"] = UDim2.new(0.9373, 0, 0.01357, 0);
+G2L["69"] = Instance.new("TextButton", G2L["5a"]);
+G2L["69"]["TextStrokeTransparency"] = 0;
+G2L["69"]["BorderSizePixel"] = 0;
+G2L["69"]["TextSize"] = 20;
+G2L["69"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["69"]["BackgroundColor3"] = Color3.fromRGB(28, 28, 28);
+G2L["69"]["FontFace"] = Font.new([[rbxasset://fonts/families/LuckiestGuy.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["69"]["Size"] = UDim2.new(0, 33, 0, 31);
+G2L["69"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["69"]["Text"] = [[-]];
+G2L["69"]["Name"] = [[Minumise]];
+G2L["69"]["Position"] = UDim2.new(0.9373, 0, 0.01357, 0);
 
 
 -- StarterGui.NebulaHub.FrameEsp.HotBardFRAME.Minumise.UICorner
-G2L["69"] = Instance.new("UICorner", G2L["68"]);
+G2L["6a"] = Instance.new("UICorner", G2L["69"]);
 
 
 
 -- StarterGui.NebulaHub.FrameEsp.Options
-G2L["6a"] = Instance.new("Frame", G2L["57"]);
-G2L["6a"]["BorderSizePixel"] = 0;
-G2L["6a"]["BackgroundColor3"] = Color3.fromRGB(16, 16, 16);
-G2L["6a"]["Size"] = UDim2.new(0, 608, 0, 302);
-G2L["6a"]["Position"] = UDim2.new(0.02508, 0, 0.10644, 0);
-G2L["6a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["6a"]["Name"] = [[Options]];
+G2L["6b"] = Instance.new("Frame", G2L["58"]);
+G2L["6b"]["BorderSizePixel"] = 0;
+G2L["6b"]["BackgroundColor3"] = Color3.fromRGB(16, 16, 16);
+G2L["6b"]["Size"] = UDim2.new(0, 608, 0, 302);
+G2L["6b"]["Position"] = UDim2.new(0.02508, 0, 0.10644, 0);
+G2L["6b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["6b"]["Name"] = [[Options]];
 
 
 -- StarterGui.NebulaHub.FrameEsp.Options.Frame
-G2L["6b"] = Instance.new("Frame", G2L["6a"]);
-G2L["6b"]["BorderSizePixel"] = 0;
-G2L["6b"]["BackgroundColor3"] = Color3.fromRGB(120, 22, 232);
-G2L["6b"]["Size"] = UDim2.new(0, 4, 0, 18);
-G2L["6b"]["Position"] = UDim2.new(0, 0, 0.05629, 0);
-G2L["6b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["6c"] = Instance.new("Frame", G2L["6b"]);
+G2L["6c"]["BorderSizePixel"] = 0;
+G2L["6c"]["BackgroundColor3"] = Color3.fromRGB(120, 22, 232);
+G2L["6c"]["Size"] = UDim2.new(0, 4, 0, 18);
+G2L["6c"]["Position"] = UDim2.new(0, 0, 0.05629, 0);
+G2L["6c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 
 
 -- StarterGui.NebulaHub.FrameEsp.Options.Frame.UICorner
-G2L["6c"] = Instance.new("UICorner", G2L["6b"]);
+G2L["6d"] = Instance.new("UICorner", G2L["6c"]);
 
 
 
 -- StarterGui.NebulaHub.FrameEsp.Options.Frame.ESP SETTINGS
-G2L["6d"] = Instance.new("TextLabel", G2L["6b"]);
-G2L["6d"]["BorderSizePixel"] = 0;
-G2L["6d"]["TextSize"] = 14;
-G2L["6d"]["BackgroundColor3"] = Color3.fromRGB(16, 16, 16);
-G2L["6d"]["FontFace"] = Font.new([[rbxasset://fonts/families/LuckiestGuy.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["6d"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["6d"]["Size"] = UDim2.new(0, 54, 0, 20);
-G2L["6d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["6d"]["Text"] = [[ESP SETTINGS]];
-G2L["6d"]["Name"] = [[ESP SETTINGS]];
-G2L["6d"]["Position"] = UDim2.new(6.5, 0, 0, 0);
-
-
--- StarterGui.NebulaHub.FrameEsp.Options.Frame.PlayersESP
-G2L["6e"] = Instance.new("TextLabel", G2L["6b"]);
+G2L["6e"] = Instance.new("TextLabel", G2L["6c"]);
 G2L["6e"]["BorderSizePixel"] = 0;
 G2L["6e"]["TextSize"] = 14;
 G2L["6e"]["BackgroundColor3"] = Color3.fromRGB(16, 16, 16);
@@ -969,13 +960,13 @@ G2L["6e"]["FontFace"] = Font.new([[rbxasset://fonts/families/LuckiestGuy.json]],
 G2L["6e"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["6e"]["Size"] = UDim2.new(0, 54, 0, 20);
 G2L["6e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["6e"]["Text"] = [[PLAYERS ESP]];
-G2L["6e"]["Name"] = [[PlayersESP]];
-G2L["6e"]["Position"] = UDim2.new(3.5, 0, 2, 0);
+G2L["6e"]["Text"] = [[ESP SETTINGS]];
+G2L["6e"]["Name"] = [[ESP SETTINGS]];
+G2L["6e"]["Position"] = UDim2.new(6.5, 0, 0, 0);
 
 
--- StarterGui.NebulaHub.FrameEsp.Options.Frame.MurderESP
-G2L["6f"] = Instance.new("TextLabel", G2L["6b"]);
+-- StarterGui.NebulaHub.FrameEsp.Options.Frame.PlayersESP
+G2L["6f"] = Instance.new("TextLabel", G2L["6c"]);
 G2L["6f"]["BorderSizePixel"] = 0;
 G2L["6f"]["TextSize"] = 14;
 G2L["6f"]["BackgroundColor3"] = Color3.fromRGB(16, 16, 16);
@@ -983,491 +974,558 @@ G2L["6f"]["FontFace"] = Font.new([[rbxasset://fonts/families/LuckiestGuy.json]],
 G2L["6f"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["6f"]["Size"] = UDim2.new(0, 54, 0, 20);
 G2L["6f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["6f"]["Text"] = [[MURDER ESP]];
-G2L["6f"]["Name"] = [[MurderESP]];
-G2L["6f"]["Position"] = UDim2.new(3.5, 0, 3.33333, 8);
+G2L["6f"]["Text"] = [[PLAYERS ESP]];
+G2L["6f"]["Name"] = [[PlayersESP]];
+G2L["6f"]["Position"] = UDim2.new(3.5, 0, 2, 0);
 
 
 -- StarterGui.NebulaHub.FrameEsp.Options.Frame.MurderESP
-G2L["70"] = Instance.new("TextLabel", G2L["6b"]);
+G2L["70"] = Instance.new("TextLabel", G2L["6c"]);
 G2L["70"]["BorderSizePixel"] = 0;
 G2L["70"]["TextSize"] = 14;
 G2L["70"]["BackgroundColor3"] = Color3.fromRGB(16, 16, 16);
 G2L["70"]["FontFace"] = Font.new([[rbxasset://fonts/families/LuckiestGuy.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
 G2L["70"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["70"]["Size"] = UDim2.new(0, 70, 0, 20);
+G2L["70"]["Size"] = UDim2.new(0, 54, 0, 20);
 G2L["70"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["70"]["Text"] = [[SHERIFF ESP]];
+G2L["70"]["Text"] = [[MURDER ESP]];
 G2L["70"]["Name"] = [[MurderESP]];
-G2L["70"]["Position"] = UDim2.new(1, 0, 5, 8);
+G2L["70"]["Position"] = UDim2.new(3.5, 0, 3.33333, 8);
+
+
+-- StarterGui.NebulaHub.FrameEsp.Options.Frame.MurderESP
+G2L["71"] = Instance.new("TextLabel", G2L["6c"]);
+G2L["71"]["BorderSizePixel"] = 0;
+G2L["71"]["TextSize"] = 14;
+G2L["71"]["BackgroundColor3"] = Color3.fromRGB(16, 16, 16);
+G2L["71"]["FontFace"] = Font.new([[rbxasset://fonts/families/LuckiestGuy.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["71"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["71"]["Size"] = UDim2.new(0, 70, 0, 20);
+G2L["71"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["71"]["Text"] = [[SHERIFF ESP]];
+G2L["71"]["Name"] = [[MurderESP]];
+G2L["71"]["Position"] = UDim2.new(1, 0, 5, 8);
 
 
 -- StarterGui.NebulaHub.FrameEsp.Options.TogglePlayersESP
-G2L["71"] = Instance.new("Frame", G2L["6a"]);
-G2L["71"]["BorderSizePixel"] = 0;
-G2L["71"]["BackgroundColor3"] = Color3.fromRGB(31, 31, 31);
-G2L["71"]["Size"] = UDim2.new(0, 55, 0, 26);
-G2L["71"]["Position"] = UDim2.new(0.92104, 0, 0.15527, 0);
-G2L["71"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["71"]["Name"] = [[TogglePlayersESP]];
+G2L["72"] = Instance.new("Frame", G2L["6b"]);
+G2L["72"]["BorderSizePixel"] = 0;
+G2L["72"]["BackgroundColor3"] = Color3.fromRGB(31, 31, 31);
+G2L["72"]["Size"] = UDim2.new(0, 55, 0, 26);
+G2L["72"]["Position"] = UDim2.new(0.92104, 0, 0.15527, 0);
+G2L["72"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["72"]["Name"] = [[TogglePlayersESP]];
 
 
 -- StarterGui.NebulaHub.FrameEsp.Options.TogglePlayersESP.LocalScript
-G2L["72"] = Instance.new("LocalScript", G2L["71"]);
+G2L["73"] = Instance.new("LocalScript", G2L["72"]);
 
 
 
 -- StarterGui.NebulaHub.FrameEsp.Options.TogglePlayersESP.Circle
-G2L["73"] = Instance.new("Frame", G2L["71"]);
-G2L["73"]["BorderSizePixel"] = 0;
-G2L["73"]["BackgroundColor3"] = Color3.fromRGB(62, 62, 62);
-G2L["73"]["Size"] = UDim2.new(0, 21, 0, 22);
-G2L["73"]["Position"] = UDim2.new(-0.00368, 0, -0.01365, 0);
-G2L["73"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["73"]["Name"] = [[Circle]];
+G2L["74"] = Instance.new("Frame", G2L["72"]);
+G2L["74"]["BorderSizePixel"] = 0;
+G2L["74"]["BackgroundColor3"] = Color3.fromRGB(62, 62, 62);
+G2L["74"]["Size"] = UDim2.new(0, 21, 0, 22);
+G2L["74"]["Position"] = UDim2.new(-0.00368, 0, -0.01365, 0);
+G2L["74"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["74"]["Name"] = [[Circle]];
 
 
 -- StarterGui.NebulaHub.FrameEsp.Options.TogglePlayersESP.Circle.UICorner
-G2L["74"] = Instance.new("UICorner", G2L["73"]);
-G2L["74"]["CornerRadius"] = UDim.new(1, 0);
-
-
--- StarterGui.NebulaHub.FrameEsp.Options.TogglePlayersESP.UICorner
-G2L["75"] = Instance.new("UICorner", G2L["71"]);
+G2L["75"] = Instance.new("UICorner", G2L["74"]);
 G2L["75"]["CornerRadius"] = UDim.new(1, 0);
 
 
+-- StarterGui.NebulaHub.FrameEsp.Options.TogglePlayersESP.UICorner
+G2L["76"] = Instance.new("UICorner", G2L["72"]);
+G2L["76"]["CornerRadius"] = UDim.new(1, 0);
+
+
 -- StarterGui.NebulaHub.FrameEsp.Options.ToggleMurderESP
-G2L["76"] = Instance.new("Frame", G2L["6a"]);
-G2L["76"]["BorderSizePixel"] = 0;
-G2L["76"]["BackgroundColor3"] = Color3.fromRGB(31, 31, 31);
-G2L["76"]["Size"] = UDim2.new(0, 55, 0, 26);
-G2L["76"]["Position"] = UDim2.new(0.92104, 0, 0.27116, 0);
-G2L["76"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["76"]["Name"] = [[ToggleMurderESP]];
+G2L["77"] = Instance.new("Frame", G2L["6b"]);
+G2L["77"]["BorderSizePixel"] = 0;
+G2L["77"]["BackgroundColor3"] = Color3.fromRGB(31, 31, 31);
+G2L["77"]["Size"] = UDim2.new(0, 55, 0, 26);
+G2L["77"]["Position"] = UDim2.new(0.92104, 0, 0.27116, 0);
+G2L["77"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["77"]["Name"] = [[ToggleMurderESP]];
 
 
 -- StarterGui.NebulaHub.FrameEsp.Options.ToggleMurderESP.LocalScript
-G2L["77"] = Instance.new("LocalScript", G2L["76"]);
+G2L["78"] = Instance.new("LocalScript", G2L["77"]);
 
 
 
 -- StarterGui.NebulaHub.FrameEsp.Options.ToggleMurderESP.Circle
-G2L["78"] = Instance.new("Frame", G2L["76"]);
-G2L["78"]["BorderSizePixel"] = 0;
-G2L["78"]["BackgroundColor3"] = Color3.fromRGB(62, 62, 62);
-G2L["78"]["Size"] = UDim2.new(0, 21, 0, 22);
-G2L["78"]["Position"] = UDim2.new(-0.00368, 0, -0.01365, 0);
-G2L["78"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["78"]["Name"] = [[Circle]];
+G2L["79"] = Instance.new("Frame", G2L["77"]);
+G2L["79"]["BorderSizePixel"] = 0;
+G2L["79"]["BackgroundColor3"] = Color3.fromRGB(62, 62, 62);
+G2L["79"]["Size"] = UDim2.new(0, 21, 0, 22);
+G2L["79"]["Position"] = UDim2.new(-0.00368, 0, -0.01365, 0);
+G2L["79"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["79"]["Name"] = [[Circle]];
 
 
 -- StarterGui.NebulaHub.FrameEsp.Options.ToggleMurderESP.Circle.UICorner
-G2L["79"] = Instance.new("UICorner", G2L["78"]);
-G2L["79"]["CornerRadius"] = UDim.new(1, 0);
-
-
--- StarterGui.NebulaHub.FrameEsp.Options.ToggleMurderESP.UICorner
-G2L["7a"] = Instance.new("UICorner", G2L["76"]);
+G2L["7a"] = Instance.new("UICorner", G2L["79"]);
 G2L["7a"]["CornerRadius"] = UDim.new(1, 0);
 
 
+-- StarterGui.NebulaHub.FrameEsp.Options.ToggleMurderESP.UICorner
+G2L["7b"] = Instance.new("UICorner", G2L["77"]);
+G2L["7b"]["CornerRadius"] = UDim.new(1, 0);
+
+
 -- StarterGui.NebulaHub.FrameEsp.Options.ToggleSheriffESP
-G2L["7b"] = Instance.new("Frame", G2L["6a"]);
-G2L["7b"]["BorderSizePixel"] = 0;
-G2L["7b"]["BackgroundColor3"] = Color3.fromRGB(31, 31, 31);
-G2L["7b"]["Size"] = UDim2.new(0, 55, 0, 26);
-G2L["7b"]["Position"] = UDim2.new(0.92104, 0, 0.38044, 0);
-G2L["7b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["7b"]["Name"] = [[ToggleSheriffESP]];
+G2L["7c"] = Instance.new("Frame", G2L["6b"]);
+G2L["7c"]["BorderSizePixel"] = 0;
+G2L["7c"]["BackgroundColor3"] = Color3.fromRGB(31, 31, 31);
+G2L["7c"]["Size"] = UDim2.new(0, 55, 0, 26);
+G2L["7c"]["Position"] = UDim2.new(0.92104, 0, 0.38044, 0);
+G2L["7c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["7c"]["Name"] = [[ToggleSheriffESP]];
 
 
 -- StarterGui.NebulaHub.FrameEsp.Options.ToggleSheriffESP.LocalScript
-G2L["7c"] = Instance.new("LocalScript", G2L["7b"]);
+G2L["7d"] = Instance.new("LocalScript", G2L["7c"]);
 
 
 
 -- StarterGui.NebulaHub.FrameEsp.Options.ToggleSheriffESP.Circle
-G2L["7d"] = Instance.new("Frame", G2L["7b"]);
-G2L["7d"]["BorderSizePixel"] = 0;
-G2L["7d"]["BackgroundColor3"] = Color3.fromRGB(62, 62, 62);
-G2L["7d"]["Size"] = UDim2.new(0, 21, 0, 22);
-G2L["7d"]["Position"] = UDim2.new(-0.00368, 0, -0.01365, 0);
-G2L["7d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["7d"]["Name"] = [[Circle]];
+G2L["7e"] = Instance.new("Frame", G2L["7c"]);
+G2L["7e"]["BorderSizePixel"] = 0;
+G2L["7e"]["BackgroundColor3"] = Color3.fromRGB(62, 62, 62);
+G2L["7e"]["Size"] = UDim2.new(0, 21, 0, 22);
+G2L["7e"]["Position"] = UDim2.new(-0.00368, 0, -0.01365, 0);
+G2L["7e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["7e"]["Name"] = [[Circle]];
 
 
 -- StarterGui.NebulaHub.FrameEsp.Options.ToggleSheriffESP.Circle.UICorner
-G2L["7e"] = Instance.new("UICorner", G2L["7d"]);
-G2L["7e"]["CornerRadius"] = UDim.new(1, 0);
-
-
--- StarterGui.NebulaHub.FrameEsp.Options.ToggleSheriffESP.UICorner
-G2L["7f"] = Instance.new("UICorner", G2L["7b"]);
+G2L["7f"] = Instance.new("UICorner", G2L["7e"]);
 G2L["7f"]["CornerRadius"] = UDim.new(1, 0);
 
 
+-- StarterGui.NebulaHub.FrameEsp.Options.ToggleSheriffESP.UICorner
+G2L["80"] = Instance.new("UICorner", G2L["7c"]);
+G2L["80"]["CornerRadius"] = UDim.new(1, 0);
+
+
 -- StarterGui.NebulaHub.FrameEsp.UIDragDetector
-G2L["80"] = Instance.new("UIDragDetector", G2L["57"]);
+G2L["81"] = Instance.new("UIDragDetector", G2L["58"]);
 
 
 
 -- StarterGui.NebulaHub.FrameAutofarm
-G2L["81"] = Instance.new("Frame", G2L["1"]);
-G2L["81"]["Visible"] = false;
-G2L["81"]["BorderSizePixel"] = 0;
-G2L["81"]["BackgroundColor3"] = Color3.fromRGB(16, 16, 16);
-G2L["81"]["Size"] = UDim2.new(0, 638, 0, 357);
-G2L["81"]["Position"] = UDim2.new(0.44567, 0, 0.45477, 0);
-G2L["81"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["81"]["Name"] = [[FrameAutofarm]];
+G2L["82"] = Instance.new("Frame", G2L["1"]);
+G2L["82"]["Visible"] = false;
+G2L["82"]["BorderSizePixel"] = 0;
+G2L["82"]["BackgroundColor3"] = Color3.fromRGB(16, 16, 16);
+G2L["82"]["Size"] = UDim2.new(0, 638, 0, 357);
+G2L["82"]["Position"] = UDim2.new(0.44567, 0, 0.45477, 0);
+G2L["82"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["82"]["Name"] = [[FrameAutofarm]];
 
 
 -- StarterGui.NebulaHub.FrameAutofarm.UICorner
-G2L["82"] = Instance.new("UICorner", G2L["81"]);
+G2L["83"] = Instance.new("UICorner", G2L["82"]);
 
 
 
 -- StarterGui.NebulaHub.FrameAutofarm.HotBardFRAME
-G2L["83"] = Instance.new("Frame", G2L["81"]);
-G2L["83"]["BorderSizePixel"] = 0;
-G2L["83"]["BackgroundColor3"] = Color3.fromRGB(16, 16, 16);
-G2L["83"]["Size"] = UDim2.new(0, 638, 0, 39);
-G2L["83"]["Position"] = UDim2.new(0, 0, -0, 0);
-G2L["83"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["83"]["Name"] = [[HotBardFRAME]];
+G2L["84"] = Instance.new("Frame", G2L["82"]);
+G2L["84"]["BorderSizePixel"] = 0;
+G2L["84"]["BackgroundColor3"] = Color3.fromRGB(16, 16, 16);
+G2L["84"]["Size"] = UDim2.new(0, 638, 0, 39);
+G2L["84"]["Position"] = UDim2.new(0, 0, -0, 0);
+G2L["84"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["84"]["Name"] = [[HotBardFRAME]];
 
 
 -- StarterGui.NebulaHub.FrameAutofarm.HotBardFRAME.NebulaHUB
-G2L["84"] = Instance.new("TextLabel", G2L["83"]);
-G2L["84"]["BorderSizePixel"] = 0;
-G2L["84"]["TextSize"] = 23;
-G2L["84"]["BackgroundColor3"] = Color3.fromRGB(16, 16, 16);
-G2L["84"]["FontFace"] = Font.new([[rbxasset://fonts/families/LuckiestGuy.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["84"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["84"]["Size"] = UDim2.new(0, 123, 0, 35);
-G2L["84"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["84"]["Text"] = [[NebulaHub]];
-G2L["84"]["Name"] = [[NebulaHUB]];
-G2L["84"]["Position"] = UDim2.new(0.02493, 0, 0.03922, 0);
+G2L["85"] = Instance.new("TextLabel", G2L["84"]);
+G2L["85"]["BorderSizePixel"] = 0;
+G2L["85"]["TextSize"] = 23;
+G2L["85"]["BackgroundColor3"] = Color3.fromRGB(16, 16, 16);
+G2L["85"]["FontFace"] = Font.new([[rbxasset://fonts/families/LuckiestGuy.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["85"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["85"]["Size"] = UDim2.new(0, 123, 0, 35);
+G2L["85"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["85"]["Text"] = [[NebulaHub]];
+G2L["85"]["Name"] = [[NebulaHUB]];
+G2L["85"]["Position"] = UDim2.new(0.02493, 0, 0.03922, 0);
 
 
 -- StarterGui.NebulaHub.FrameAutofarm.HotBardFRAME.TextLabel
-G2L["85"] = Instance.new("TextLabel", G2L["83"]);
-G2L["85"]["BorderSizePixel"] = 0;
-G2L["85"]["TextSize"] = 14;
-G2L["85"]["BackgroundColor3"] = Color3.fromRGB(16, 16, 16);
-G2L["85"]["FontFace"] = Font.new([[rbxasset://fonts/families/LuckiestGuy.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["85"]["TextColor3"] = Color3.fromRGB(182, 182, 182);
-G2L["85"]["Size"] = UDim2.new(0, 172, 0, 29);
-G2L["85"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["85"]["Text"] = [[discord.gg/PR6NSeghqf]];
-G2L["85"]["Position"] = UDim2.new(0.25694, 0, 0.07692, 0);
+G2L["86"] = Instance.new("TextLabel", G2L["84"]);
+G2L["86"]["BorderSizePixel"] = 0;
+G2L["86"]["TextSize"] = 14;
+G2L["86"]["BackgroundColor3"] = Color3.fromRGB(16, 16, 16);
+G2L["86"]["FontFace"] = Font.new([[rbxasset://fonts/families/LuckiestGuy.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["86"]["TextColor3"] = Color3.fromRGB(182, 182, 182);
+G2L["86"]["Size"] = UDim2.new(0, 172, 0, 29);
+G2L["86"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["86"]["Text"] = [[discord.gg/PR6NSeghqf]];
+G2L["86"]["Position"] = UDim2.new(0.25694, 0, 0.07692, 0);
 
 
 -- StarterGui.NebulaHub.FrameAutofarm.HotBardFRAME.SELECTION
-G2L["86"] = Instance.new("Frame", G2L["83"]);
-G2L["86"]["BorderSizePixel"] = 0;
-G2L["86"]["BackgroundColor3"] = Color3.fromRGB(16, 16, 16);
-G2L["86"]["Size"] = UDim2.new(0, 242, 0, 29);
-G2L["86"]["Position"] = UDim2.new(0.54389, 0, 0.07692, 0);
-G2L["86"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["86"]["Name"] = [[SELECTION]];
+G2L["87"] = Instance.new("Frame", G2L["84"]);
+G2L["87"]["BorderSizePixel"] = 0;
+G2L["87"]["BackgroundColor3"] = Color3.fromRGB(16, 16, 16);
+G2L["87"]["Size"] = UDim2.new(0, 242, 0, 29);
+G2L["87"]["Position"] = UDim2.new(0.54389, 0, 0.07692, 0);
+G2L["87"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["87"]["Name"] = [[SELECTION]];
 
 
 -- StarterGui.NebulaHub.FrameAutofarm.HotBardFRAME.SELECTION.UIStroke
-G2L["87"] = Instance.new("UIStroke", G2L["86"]);
-G2L["87"]["Color"] = Color3.fromRGB(26, 26, 26);
+G2L["88"] = Instance.new("UIStroke", G2L["87"]);
+G2L["88"]["Color"] = Color3.fromRGB(26, 26, 26);
 
 
 -- StarterGui.NebulaHub.FrameAutofarm.HotBardFRAME.SELECTION.UICorner
-G2L["88"] = Instance.new("UICorner", G2L["86"]);
+G2L["89"] = Instance.new("UICorner", G2L["87"]);
 
 
 
 -- StarterGui.NebulaHub.FrameAutofarm.HotBardFRAME.SELECTION.Gameplay
-G2L["89"] = Instance.new("TextButton", G2L["86"]);
-G2L["89"]["BorderSizePixel"] = 0;
-G2L["89"]["TextSize"] = 14;
-G2L["89"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["89"]["BackgroundColor3"] = Color3.fromRGB(16, 16, 16);
-G2L["89"]["FontFace"] = Font.new([[rbxasset://fonts/families/LuckiestGuy.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["89"]["Size"] = UDim2.new(0, 69, 0, 27);
-G2L["89"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["89"]["Text"] = [[GAMEPLAY]];
-G2L["89"]["Name"] = [[Gameplay]];
-G2L["89"]["Position"] = UDim2.new(0.025, 0, 0.034, 0);
+G2L["8a"] = Instance.new("TextButton", G2L["87"]);
+G2L["8a"]["BorderSizePixel"] = 0;
+G2L["8a"]["TextSize"] = 14;
+G2L["8a"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["8a"]["BackgroundColor3"] = Color3.fromRGB(16, 16, 16);
+G2L["8a"]["FontFace"] = Font.new([[rbxasset://fonts/families/LuckiestGuy.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["8a"]["Size"] = UDim2.new(0, 69, 0, 27);
+G2L["8a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["8a"]["Text"] = [[GAMEPLAY]];
+G2L["8a"]["Name"] = [[Gameplay]];
+G2L["8a"]["Position"] = UDim2.new(0.025, 0, 0.034, 0);
 
 
 -- StarterGui.NebulaHub.FrameAutofarm.HotBardFRAME.SELECTION.Gameplay.LocalScript
-G2L["8a"] = Instance.new("LocalScript", G2L["89"]);
+G2L["8b"] = Instance.new("LocalScript", G2L["8a"]);
 
 
 
 -- StarterGui.NebulaHub.FrameAutofarm.HotBardFRAME.SELECTION.Gameplay.UICorner
-G2L["8b"] = Instance.new("UICorner", G2L["89"]);
-G2L["8b"]["CornerRadius"] = UDim.new(0, 6);
+G2L["8c"] = Instance.new("UICorner", G2L["8a"]);
+G2L["8c"]["CornerRadius"] = UDim.new(0, 6);
 
 
 -- StarterGui.NebulaHub.FrameAutofarm.HotBardFRAME.SELECTION.Esp
-G2L["8c"] = Instance.new("TextButton", G2L["86"]);
-G2L["8c"]["BorderSizePixel"] = 0;
-G2L["8c"]["TextSize"] = 14;
-G2L["8c"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["8c"]["BackgroundColor3"] = Color3.fromRGB(16, 16, 16);
-G2L["8c"]["FontFace"] = Font.new([[rbxasset://fonts/families/LuckiestGuy.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["8c"]["Size"] = UDim2.new(0, 69, 0, 27);
-G2L["8c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["8c"]["Text"] = [[ESP]];
-G2L["8c"]["Name"] = [[Esp]];
-G2L["8c"]["Position"] = UDim2.new(0.35558, 0, 0.034, 0);
+G2L["8d"] = Instance.new("TextButton", G2L["87"]);
+G2L["8d"]["BorderSizePixel"] = 0;
+G2L["8d"]["TextSize"] = 14;
+G2L["8d"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["8d"]["BackgroundColor3"] = Color3.fromRGB(16, 16, 16);
+G2L["8d"]["FontFace"] = Font.new([[rbxasset://fonts/families/LuckiestGuy.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["8d"]["Size"] = UDim2.new(0, 69, 0, 27);
+G2L["8d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["8d"]["Text"] = [[ESP]];
+G2L["8d"]["Name"] = [[Esp]];
+G2L["8d"]["Position"] = UDim2.new(0.35558, 0, 0.034, 0);
 
 
 -- StarterGui.NebulaHub.FrameAutofarm.HotBardFRAME.SELECTION.Esp.LocalScript
-G2L["8d"] = Instance.new("LocalScript", G2L["8c"]);
+G2L["8e"] = Instance.new("LocalScript", G2L["8d"]);
 
 
 
 -- StarterGui.NebulaHub.FrameAutofarm.HotBardFRAME.SELECTION.Esp.UICorner
-G2L["8e"] = Instance.new("UICorner", G2L["8c"]);
-G2L["8e"]["CornerRadius"] = UDim.new(0, 6);
+G2L["8f"] = Instance.new("UICorner", G2L["8d"]);
+G2L["8f"]["CornerRadius"] = UDim.new(0, 6);
 
 
 -- StarterGui.NebulaHub.FrameAutofarm.HotBardFRAME.SELECTION.Autofarm
-G2L["8f"] = Instance.new("TextButton", G2L["86"]);
-G2L["8f"]["BorderSizePixel"] = 0;
-G2L["8f"]["TextSize"] = 14;
-G2L["8f"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["8f"]["BackgroundColor3"] = Color3.fromRGB(120, 22, 232);
-G2L["8f"]["FontFace"] = Font.new([[rbxasset://fonts/families/LuckiestGuy.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["8f"]["Size"] = UDim2.new(0, 69, 0, 27);
-G2L["8f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["8f"]["Text"] = [[AUTOFARM]];
-G2L["8f"]["Name"] = [[Autofarm]];
-G2L["8f"]["Position"] = UDim2.new(0.68202, 0, 0.034, 0);
+G2L["90"] = Instance.new("TextButton", G2L["87"]);
+G2L["90"]["BorderSizePixel"] = 0;
+G2L["90"]["TextSize"] = 14;
+G2L["90"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["90"]["BackgroundColor3"] = Color3.fromRGB(120, 22, 232);
+G2L["90"]["FontFace"] = Font.new([[rbxasset://fonts/families/LuckiestGuy.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["90"]["Size"] = UDim2.new(0, 69, 0, 27);
+G2L["90"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["90"]["Text"] = [[AUTOFARM]];
+G2L["90"]["Name"] = [[Autofarm]];
+G2L["90"]["Position"] = UDim2.new(0.68202, 0, 0.034, 0);
 
 
 -- StarterGui.NebulaHub.FrameAutofarm.HotBardFRAME.SELECTION.Autofarm.UICorner
-G2L["90"] = Instance.new("UICorner", G2L["8f"]);
-G2L["90"]["CornerRadius"] = UDim.new(0, 6);
+G2L["91"] = Instance.new("UICorner", G2L["90"]);
+G2L["91"]["CornerRadius"] = UDim.new(0, 6);
 
 
 -- StarterGui.NebulaHub.FrameAutofarm.HotBardFRAME.UICorner
-G2L["91"] = Instance.new("UICorner", G2L["83"]);
+G2L["92"] = Instance.new("UICorner", G2L["84"]);
 
 
 
 -- StarterGui.NebulaHub.FrameAutofarm.HotBardFRAME.Minumise
-G2L["92"] = Instance.new("TextButton", G2L["83"]);
-G2L["92"]["TextStrokeTransparency"] = 0;
-G2L["92"]["BorderSizePixel"] = 0;
-G2L["92"]["TextSize"] = 20;
-G2L["92"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["92"]["BackgroundColor3"] = Color3.fromRGB(28, 28, 28);
-G2L["92"]["FontFace"] = Font.new([[rbxasset://fonts/families/LuckiestGuy.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["92"]["Size"] = UDim2.new(0, 33, 0, 31);
-G2L["92"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["92"]["Text"] = [[-]];
-G2L["92"]["Name"] = [[Minumise]];
-G2L["92"]["Position"] = UDim2.new(0.9373, 0, 0.01357, 0);
+G2L["93"] = Instance.new("TextButton", G2L["84"]);
+G2L["93"]["TextStrokeTransparency"] = 0;
+G2L["93"]["BorderSizePixel"] = 0;
+G2L["93"]["TextSize"] = 20;
+G2L["93"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["93"]["BackgroundColor3"] = Color3.fromRGB(28, 28, 28);
+G2L["93"]["FontFace"] = Font.new([[rbxasset://fonts/families/LuckiestGuy.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["93"]["Size"] = UDim2.new(0, 33, 0, 31);
+G2L["93"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["93"]["Text"] = [[-]];
+G2L["93"]["Name"] = [[Minumise]];
+G2L["93"]["Position"] = UDim2.new(0.9373, 0, 0.01357, 0);
 
 
 -- StarterGui.NebulaHub.FrameAutofarm.HotBardFRAME.Minumise.UICorner
-G2L["93"] = Instance.new("UICorner", G2L["92"]);
+G2L["94"] = Instance.new("UICorner", G2L["93"]);
 
 
 
 -- StarterGui.NebulaHub.FrameAutofarm.UIDragDetector
-G2L["94"] = Instance.new("UIDragDetector", G2L["81"]);
+G2L["95"] = Instance.new("UIDragDetector", G2L["82"]);
 
 
 
 -- StarterGui.NebulaHub.NebulaSpeedUI
-G2L["95"] = Instance.new("Frame", G2L["1"]);
-G2L["95"]["BorderSizePixel"] = 0;
-G2L["95"]["BackgroundColor3"] = Color3.fromRGB(16, 16, 16);
-G2L["95"]["Size"] = UDim2.new(0, 261, 0, 236);
-G2L["95"]["Position"] = UDim2.new(0.23812, 0, 0.17173, 0);
-G2L["95"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["95"]["Name"] = [[NebulaSpeedUI]];
+G2L["96"] = Instance.new("Frame", G2L["1"]);
+G2L["96"]["BorderSizePixel"] = 0;
+G2L["96"]["BackgroundColor3"] = Color3.fromRGB(16, 16, 16);
+G2L["96"]["Size"] = UDim2.new(0, 261, 0, 236);
+G2L["96"]["Position"] = UDim2.new(0.23812, 0, 0.17173, 0);
+G2L["96"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["96"]["Name"] = [[NebulaSpeedUI]];
 
 
 -- StarterGui.NebulaHub.NebulaSpeedUI.NebulaHUB
-G2L["96"] = Instance.new("TextLabel", G2L["95"]);
-G2L["96"]["BorderSizePixel"] = 0;
-G2L["96"]["TextSize"] = 23;
-G2L["96"]["BackgroundColor3"] = Color3.fromRGB(16, 16, 16);
-G2L["96"]["FontFace"] = Font.new([[rbxasset://fonts/families/LuckiestGuy.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["96"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["96"]["Size"] = UDim2.new(0, 123, 0, 35);
-G2L["96"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["96"]["Text"] = [[NebulaHub]];
-G2L["96"]["Name"] = [[NebulaHUB]];
-G2L["96"]["Position"] = UDim2.new(0.04408, 0, 0.0367, 0);
+G2L["97"] = Instance.new("TextLabel", G2L["96"]);
+G2L["97"]["BorderSizePixel"] = 0;
+G2L["97"]["TextSize"] = 23;
+G2L["97"]["BackgroundColor3"] = Color3.fromRGB(16, 16, 16);
+G2L["97"]["FontFace"] = Font.new([[rbxasset://fonts/families/LuckiestGuy.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["97"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["97"]["Size"] = UDim2.new(0, 123, 0, 35);
+G2L["97"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["97"]["Text"] = [[NebulaHub]];
+G2L["97"]["Name"] = [[NebulaHUB]];
+G2L["97"]["Position"] = UDim2.new(0.04408, 0, 0.0367, 0);
 
 
 -- StarterGui.NebulaHub.NebulaSpeedUI.UICorner
-G2L["97"] = Instance.new("UICorner", G2L["95"]);
-G2L["97"]["CornerRadius"] = UDim.new(0, 6);
+G2L["98"] = Instance.new("UICorner", G2L["96"]);
+G2L["98"]["CornerRadius"] = UDim.new(0, 6);
 
 
 -- StarterGui.NebulaHub.NebulaSpeedUI.CLOSE
-G2L["98"] = Instance.new("TextButton", G2L["95"]);
-G2L["98"]["TextStrokeTransparency"] = 0;
-G2L["98"]["BorderSizePixel"] = 0;
-G2L["98"]["TextSize"] = 20;
-G2L["98"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["98"]["BackgroundColor3"] = Color3.fromRGB(28, 28, 28);
-G2L["98"]["FontFace"] = Font.new([[rbxasset://fonts/families/LuckiestGuy.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["98"]["Size"] = UDim2.new(0, 33, 0, 31);
-G2L["98"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["98"]["Text"] = [[X]];
-G2L["98"]["Name"] = [[CLOSE]];
-G2L["98"]["Position"] = UDim2.new(0.84534, 0, 0.03643, 0);
+G2L["99"] = Instance.new("TextButton", G2L["96"]);
+G2L["99"]["TextStrokeTransparency"] = 0;
+G2L["99"]["BorderSizePixel"] = 0;
+G2L["99"]["TextSize"] = 20;
+G2L["99"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["99"]["BackgroundColor3"] = Color3.fromRGB(28, 28, 28);
+G2L["99"]["FontFace"] = Font.new([[rbxasset://fonts/families/LuckiestGuy.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["99"]["Size"] = UDim2.new(0, 33, 0, 31);
+G2L["99"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["99"]["Text"] = [[X]];
+G2L["99"]["Name"] = [[CLOSE]];
+G2L["99"]["Position"] = UDim2.new(0.84534, 0, 0.03643, 0);
 
 
 -- StarterGui.NebulaHub.NebulaSpeedUI.CLOSE.LocalScript
-G2L["99"] = Instance.new("LocalScript", G2L["98"]);
+G2L["9a"] = Instance.new("LocalScript", G2L["99"]);
 
 
 
 -- StarterGui.NebulaHub.NebulaSpeedUI.CLOSE.UICorner
-G2L["9a"] = Instance.new("UICorner", G2L["98"]);
+G2L["9b"] = Instance.new("UICorner", G2L["99"]);
 
 
 
 -- StarterGui.NebulaHub.NebulaSpeedUI.TeleportRandomPlayer
-G2L["9b"] = Instance.new("TextButton", G2L["95"]);
-G2L["9b"]["BorderSizePixel"] = 0;
-G2L["9b"]["TextSize"] = 20;
-G2L["9b"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["9b"]["BackgroundColor3"] = Color3.fromRGB(28, 28, 28);
-G2L["9b"]["FontFace"] = Font.new([[rbxasset://fonts/families/LuckiestGuy.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["9b"]["Size"] = UDim2.new(0, 242, 0, 37);
-G2L["9b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["9b"]["Text"] = [[ENABLE THE FLY]];
-G2L["9b"]["Name"] = [[TeleportRandomPlayer]];
-G2L["9b"]["Position"] = UDim2.new(0.03402, 0, 0.21096, 0);
+G2L["9c"] = Instance.new("TextButton", G2L["96"]);
+G2L["9c"]["BorderSizePixel"] = 0;
+G2L["9c"]["TextSize"] = 20;
+G2L["9c"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["9c"]["BackgroundColor3"] = Color3.fromRGB(28, 28, 28);
+G2L["9c"]["FontFace"] = Font.new([[rbxasset://fonts/families/LuckiestGuy.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["9c"]["Size"] = UDim2.new(0, 242, 0, 37);
+G2L["9c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["9c"]["Text"] = [[ENABLE THE FLY]];
+G2L["9c"]["Name"] = [[TeleportRandomPlayer]];
+G2L["9c"]["Position"] = UDim2.new(0.03402, 0, 0.21096, 0);
 
 
 -- StarterGui.NebulaHub.NebulaSpeedUI.TeleportRandomPlayer.LocalScript
-G2L["9c"] = Instance.new("LocalScript", G2L["9b"]);
+G2L["9d"] = Instance.new("LocalScript", G2L["9c"]);
 
 
 
 -- StarterGui.NebulaHub.NebulaSpeedUI.TeleportRandomPlayer.UICorner
-G2L["9d"] = Instance.new("UICorner", G2L["9b"]);
+G2L["9e"] = Instance.new("UICorner", G2L["9c"]);
 
 
 
 -- StarterGui.NebulaHub.NebulaSpeedUI.TOOLS
-G2L["9e"] = Instance.new("TextLabel", G2L["95"]);
-G2L["9e"]["BorderSizePixel"] = 0;
-G2L["9e"]["TextSize"] = 18;
-G2L["9e"]["BackgroundColor3"] = Color3.fromRGB(16, 16, 16);
-G2L["9e"]["FontFace"] = Font.new([[rbxasset://fonts/families/LuckiestGuy.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["9e"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["9e"]["Size"] = UDim2.new(0, 37, 0, 20);
-G2L["9e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["9e"]["Text"] = [[STATUS : ACTIVE]];
-G2L["9e"]["Name"] = [[TOOLS]];
-G2L["9e"]["Position"] = UDim2.new(0.2069, 0, 0.88982, 0);
-
-
--- StarterGui.NebulaHub.NebulaSpeedUI.SpeedLabel
-G2L["9f"] = Instance.new("TextLabel", G2L["95"]);
+G2L["9f"] = Instance.new("TextLabel", G2L["96"]);
 G2L["9f"]["BorderSizePixel"] = 0;
 G2L["9f"]["TextSize"] = 18;
 G2L["9f"]["BackgroundColor3"] = Color3.fromRGB(16, 16, 16);
 G2L["9f"]["FontFace"] = Font.new([[rbxasset://fonts/families/LuckiestGuy.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
 G2L["9f"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["9f"]["Size"] = UDim2.new(0, 42, 0, 20);
+G2L["9f"]["Size"] = UDim2.new(0, 37, 0, 20);
 G2L["9f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["9f"]["Text"] = [[Speed : 50]];
-G2L["9f"]["Name"] = [[SpeedLabel]];
-G2L["9f"]["Position"] = UDim2.new(0.11494, 0, 0.80083, 0);
+G2L["9f"]["Text"] = [[STATUS : ACTIVE]];
+G2L["9f"]["Name"] = [[TOOLS]];
+G2L["9f"]["Position"] = UDim2.new(0.2069, 0, 0.88982, 0);
 
 
--- StarterGui.NebulaHub.NebulaSpeedUI.TextButton
-G2L["a0"] = Instance.new("TextButton", G2L["95"]);
-G2L["a0"]["TextStrokeTransparency"] = 0;
+-- StarterGui.NebulaHub.NebulaSpeedUI.SpeedLabel
+G2L["a0"] = Instance.new("TextLabel", G2L["96"]);
 G2L["a0"]["BorderSizePixel"] = 0;
-G2L["a0"]["TextSize"] = 14;
-G2L["a0"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["a0"]["BackgroundColor3"] = Color3.fromRGB(28, 28, 28);
+G2L["a0"]["TextSize"] = 18;
+G2L["a0"]["BackgroundColor3"] = Color3.fromRGB(16, 16, 16);
 G2L["a0"]["FontFace"] = Font.new([[rbxasset://fonts/families/LuckiestGuy.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["a0"]["Size"] = UDim2.new(0, 74, 0, 50);
+G2L["a0"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["a0"]["Size"] = UDim2.new(0, 42, 0, 20);
 G2L["a0"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["a0"]["Text"] = [[ADD SPEED]];
-G2L["a0"]["Position"] = UDim2.new(0.67433, 0, 0.4661, 0);
-
-
--- StarterGui.NebulaHub.NebulaSpeedUI.TextButton.LocalScript
-G2L["a1"] = Instance.new("LocalScript", G2L["a0"]);
-
-
-
--- StarterGui.NebulaHub.NebulaSpeedUI.TextButton.UICorner
-G2L["a2"] = Instance.new("UICorner", G2L["a0"]);
-G2L["a2"]["CornerRadius"] = UDim.new(0, 6);
+G2L["a0"]["Text"] = [[Speed : 50]];
+G2L["a0"]["Name"] = [[SpeedLabel]];
+G2L["a0"]["Position"] = UDim2.new(0.11494, 0, 0.80083, 0);
 
 
 -- StarterGui.NebulaHub.NebulaSpeedUI.TextButton
-G2L["a3"] = Instance.new("TextButton", G2L["95"]);
-G2L["a3"]["TextStrokeTransparency"] = 0;
-G2L["a3"]["BorderSizePixel"] = 0;
-G2L["a3"]["TextSize"] = 14;
-G2L["a3"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["a3"]["BackgroundColor3"] = Color3.fromRGB(28, 28, 28);
-G2L["a3"]["FontFace"] = Font.new([[rbxasset://fonts/families/LuckiestGuy.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["a3"]["Size"] = UDim2.new(0, 74, 0, 50);
-G2L["a3"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["a3"]["Text"] = [[NOCLIP: OFF]];
-G2L["a3"]["Position"] = UDim2.new(0.34866, 0, 0.4661, 0);
-
-
--- StarterGui.NebulaHub.NebulaSpeedUI.TextButton.UICorner
-G2L["a4"] = Instance.new("UICorner", G2L["a3"]);
-G2L["a4"]["CornerRadius"] = UDim.new(0, 6);
-
-
--- StarterGui.NebulaHub.NebulaSpeedUI.TextButton
-G2L["a5"] = Instance.new("TextButton", G2L["95"]);
-G2L["a5"]["TextStrokeTransparency"] = 0;
-G2L["a5"]["BorderSizePixel"] = 0;
-G2L["a5"]["TextSize"] = 12;
-G2L["a5"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["a5"]["BackgroundColor3"] = Color3.fromRGB(28, 28, 28);
-G2L["a5"]["FontFace"] = Font.new([[rbxasset://fonts/families/LuckiestGuy.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["a5"]["Size"] = UDim2.new(0, 74, 0, 50);
-G2L["a5"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["a5"]["Text"] = [[DOWN SPEED]];
-G2L["a5"]["Position"] = UDim2.new(0.03065, 0, 0.4661, 0);
+G2L["a1"] = Instance.new("TextButton", G2L["96"]);
+G2L["a1"]["TextStrokeTransparency"] = 0;
+G2L["a1"]["BorderSizePixel"] = 0;
+G2L["a1"]["TextSize"] = 14;
+G2L["a1"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["a1"]["BackgroundColor3"] = Color3.fromRGB(28, 28, 28);
+G2L["a1"]["FontFace"] = Font.new([[rbxasset://fonts/families/LuckiestGuy.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["a1"]["Size"] = UDim2.new(0, 74, 0, 50);
+G2L["a1"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["a1"]["Text"] = [[ADD SPEED]];
+G2L["a1"]["Position"] = UDim2.new(0.67433, 0, 0.4661, 0);
 
 
 -- StarterGui.NebulaHub.NebulaSpeedUI.TextButton.LocalScript
-G2L["a6"] = Instance.new("LocalScript", G2L["a5"]);
+G2L["a2"] = Instance.new("LocalScript", G2L["a1"]);
 
 
 
 -- StarterGui.NebulaHub.NebulaSpeedUI.TextButton.UICorner
-G2L["a7"] = Instance.new("UICorner", G2L["a5"]);
-G2L["a7"]["CornerRadius"] = UDim.new(0, 6);
+G2L["a3"] = Instance.new("UICorner", G2L["a1"]);
+G2L["a3"]["CornerRadius"] = UDim.new(0, 6);
+
+
+-- StarterGui.NebulaHub.NebulaSpeedUI.TextButton
+G2L["a4"] = Instance.new("TextButton", G2L["96"]);
+G2L["a4"]["TextStrokeTransparency"] = 0;
+G2L["a4"]["BorderSizePixel"] = 0;
+G2L["a4"]["TextSize"] = 14;
+G2L["a4"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["a4"]["BackgroundColor3"] = Color3.fromRGB(28, 28, 28);
+G2L["a4"]["FontFace"] = Font.new([[rbxasset://fonts/families/LuckiestGuy.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["a4"]["Size"] = UDim2.new(0, 74, 0, 50);
+G2L["a4"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["a4"]["Text"] = [[NOCLIP: OFF]];
+G2L["a4"]["Position"] = UDim2.new(0.34866, 0, 0.4661, 0);
+
+
+-- StarterGui.NebulaHub.NebulaSpeedUI.TextButton.UICorner
+G2L["a5"] = Instance.new("UICorner", G2L["a4"]);
+G2L["a5"]["CornerRadius"] = UDim.new(0, 6);
+
+
+-- StarterGui.NebulaHub.NebulaSpeedUI.TextButton
+G2L["a6"] = Instance.new("TextButton", G2L["96"]);
+G2L["a6"]["TextStrokeTransparency"] = 0;
+G2L["a6"]["BorderSizePixel"] = 0;
+G2L["a6"]["TextSize"] = 12;
+G2L["a6"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["a6"]["BackgroundColor3"] = Color3.fromRGB(28, 28, 28);
+G2L["a6"]["FontFace"] = Font.new([[rbxasset://fonts/families/LuckiestGuy.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["a6"]["Size"] = UDim2.new(0, 74, 0, 50);
+G2L["a6"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["a6"]["Text"] = [[DOWN SPEED]];
+G2L["a6"]["Position"] = UDim2.new(0.03065, 0, 0.4661, 0);
+
+
+-- StarterGui.NebulaHub.NebulaSpeedUI.TextButton.LocalScript
+G2L["a7"] = Instance.new("LocalScript", G2L["a6"]);
+
+
+
+-- StarterGui.NebulaHub.NebulaSpeedUI.TextButton.UICorner
+G2L["a8"] = Instance.new("UICorner", G2L["a6"]);
+G2L["a8"]["CornerRadius"] = UDim.new(0, 6);
 
 
 -- StarterGui.NebulaHub.NebulaSpeedUI.UIDragDetector
-G2L["a8"] = Instance.new("UIDragDetector", G2L["95"]);
+G2L["a9"] = Instance.new("UIDragDetector", G2L["96"]);
 
 
 
 -- StarterGui.NebulaHub.UIScale
-G2L["a9"] = Instance.new("UIScale", G2L["1"]);
-G2L["a9"]["Scale"] = 0.5;
+G2L["aa"] = Instance.new("UIScale", G2L["1"]);
+G2L["aa"]["Scale"] = 0.75;
 
 
+-- StarterGui.NebulaHub.FrameGamePlay.HotBardFRAME.Minumise.LocalScript
+local function C_8()
+local script = G2L["8"];
+	local button = script.Parent
+	local frameGamePlay = button.Parent.Parent
+	local hotbar = button.Parent
+	
+	local TweenService = game:GetService("TweenService")
+	
+	local minimized = false
+	
+	local fullSize = frameGamePlay.Size
+	local miniSize = UDim2.new(fullSize.X.Scale, fullSize.X.Offset, 0, 39)
+	
+	local info = TweenInfo.new(0.3, Enum.EasingStyle.Quart, Enum.EasingDirection.Out)
+	
+	button.MouseButton1Click:Connect(function()
+		minimized = not minimized
+	
+		if minimized then
+			button.Text = "+"
+	
+			-- Cache immédiatement tout sauf la HotBardFRAME
+			for _, obj in ipairs(frameGamePlay:GetChildren()) do
+				if obj:IsA("GuiObject") and obj ~= hotbar then
+					obj.Visible = false
+				end
+			end
+	
+			TweenService:Create(frameGamePlay, info, {
+				Size = miniSize
+			}):Play()
+	
+		else
+			button.Text = "-"
+	
+			local tween = TweenService:Create(frameGamePlay, info, {
+				Size = fullSize
+			})
+	
+			tween:Play()
+			tween.Completed:Wait()
+	
+			-- Réaffiche une fois la frame ouverte
+			for _, obj in ipairs(frameGamePlay:GetChildren()) do
+				if obj:IsA("GuiObject") and obj ~= hotbar then
+					obj.Visible = true
+				end
+			end
+		end
+	end)
+end;
+task.spawn(C_8);
 -- StarterGui.NebulaHub.FrameGamePlay.HotBardFRAME.SELECTION.Esp.LocalScript
-local function C_10()
-local script = G2L["10"];
+local function C_11()
+local script = G2L["11"];
 	local button = script.Parent
 	
 	local screenGui = game.Players.LocalPlayer.PlayerGui:WaitForChild("NebulaHub")
@@ -1486,10 +1544,10 @@ local script = G2L["10"];
 		frameEsp.Visible = true
 	end)
 end;
-task.spawn(C_10);
+task.spawn(C_11);
 -- StarterGui.NebulaHub.FrameGamePlay.HotBardFRAME.SELECTION.Autofarm.LocalScript
-local function C_13()
-local script = G2L["13"];
+local function C_14()
+local script = G2L["14"];
 	local button = script.Parent
 	
 	local screenGui = game.Players.LocalPlayer.PlayerGui:WaitForChild("NebulaHub")
@@ -1508,10 +1566,10 @@ local script = G2L["13"];
 		FrameAutofarm.Visible = true
 	end)
 end;
-task.spawn(C_13);
+task.spawn(C_14);
 -- StarterGui.NebulaHub.FrameGamePlay.ScrollingFrame.DATAS.MurderIS.LocalScript
-local function C_1a()
-local script = G2L["1a"];
+local function C_1b()
+local script = G2L["1b"];
 	-- Met ceci dans un LocalScript séparé
 	
 	local Players = game:GetService("Players")
@@ -1591,10 +1649,10 @@ local script = G2L["1a"];
 	-- Premier scan au démarrage
 	scanMurder()
 end;
-task.spawn(C_1a);
+task.spawn(C_1b);
 -- StarterGui.NebulaHub.FrameGamePlay.ScrollingFrame.TeleportationFrame.TeleportToMurderer.LocalScript
-local function C_20()
-local script = G2L["20"];
+local function C_21()
+local script = G2L["21"];
 	-- LocalScript à mettre dans ton bouton
 	
 	local Players = game:GetService("Players")
@@ -1679,10 +1737,10 @@ local script = G2L["20"];
 	-- Quand on clique sur le bouton, on se téléporte
 	script.Parent.MouseButton1Click:Connect(teleportToMurder)
 end;
-task.spawn(C_20);
+task.spawn(C_21);
 -- StarterGui.NebulaHub.FrameGamePlay.ScrollingFrame.TeleportationFrame.TeleportToSheriff.LocalScript
-local function C_23()
-local script = G2L["23"];
+local function C_24()
+local script = G2L["24"];
 	-- LocalScript à mettre dans ton bouton
 	
 	local Players = game:GetService("Players")
@@ -1809,10 +1867,10 @@ local script = G2L["23"];
 	
 	print("✅ Script chargé ! Clique pour te téléporter sur les sheriffs un par un.")
 end;
-task.spawn(C_23);
+task.spawn(C_24);
 -- StarterGui.NebulaHub.FrameGamePlay.ScrollingFrame.TeleportationFrame.TeleportRandomPlayer.LocalScript
-local function C_26()
-local script = G2L["26"];
+local function C_27()
+local script = G2L["27"];
 	-- LocalScript à mettre dans ton bouton
 	
 	local Players = game:GetService("Players")
@@ -1888,10 +1946,10 @@ local script = G2L["26"];
 	
 	print("✅ Script chargé ! Clique pour te téléporter sur un joueur aléatoire.")
 end;
-task.spawn(C_26);
+task.spawn(C_27);
 -- StarterGui.NebulaHub.FrameGamePlay.ScrollingFrame.BasicStuff.ToggleNoClip.LocalScript
-local function C_35()
-local script = G2L["35"];
+local function C_36()
+local script = G2L["36"];
 	local toggle = script.Parent
 	local circle = toggle:WaitForChild("Circle")
 	
@@ -1974,10 +2032,10 @@ local script = G2L["35"];
 		end
 	end)
 end;
-task.spawn(C_35);
+task.spawn(C_36);
 -- StarterGui.NebulaHub.FrameGamePlay.ScrollingFrame.BasicStuff.FlyGUI.LocalScript
-local function C_3a()
-local script = G2L["3a"];
+local function C_3b()
+local script = G2L["3b"];
 	local button = script.Parent
 	local screenGui = game.Players.LocalPlayer.PlayerGui:WaitForChild("NebulaHub")
 	local frameToShow = screenGui:WaitForChild("NebulaSpeedUI")
@@ -1986,10 +2044,10 @@ local script = G2L["3a"];
 		frameToShow.Visible = true
 	end)
 end;
-task.spawn(C_3a);
+task.spawn(C_3b);
 -- StarterGui.NebulaHub.FrameGamePlay.ScrollingFrame.BasicStuff.ToggleInfiniteJump.LocalScript
-local function C_3e()
-local script = G2L["3e"];
+local function C_3f()
+local script = G2L["3f"];
 	local toggle = script.Parent
 	local circle = toggle:WaitForChild("Circle")
 	
@@ -2060,10 +2118,10 @@ local script = G2L["3e"];
 		end
 	end)
 end;
-task.spawn(C_3e);
+task.spawn(C_3f);
 -- StarterGui.NebulaHub.FrameGamePlay.ScrollingFrame.MoreTools.BringAllPlayers.LocalScript
-local function C_47()
-local script = G2L["47"];
+local function C_48()
+local script = G2L["48"];
 	-- BRING ALL - Version TextButton avec clics multiples
 	script.Parent.MouseButton1Click:Connect(function()
 		-- Empêcher les clics pendant l'exécution
@@ -2229,10 +2287,10 @@ local script = G2L["47"];
 		script.Parent:SetAttribute("IsRunning", false)
 	end)
 end;
-task.spawn(C_47);
+task.spawn(C_48);
 -- StarterGui.NebulaHub.FrameGamePlay.ScrollingFrame.Aimbot.ToggleAimbotSheriff.LocalScript
-local function C_4f()
-local script = G2L["4f"];
+local function C_50()
+local script = G2L["50"];
 	-- LocalScript (à mettre dans le bouton toggle)
 	
 	local player = game.Players.LocalPlayer
@@ -2431,10 +2489,10 @@ local script = G2L["4f"];
 	print("✅ AimBot Headshot chargé !")
 	print("📌 Active le toggle, même si tu tires sur un mur, la balle va dans la tête du murder")
 end;
-task.spawn(C_4f);
+task.spawn(C_50);
 -- StarterGui.NebulaHub.FrameGamePlay.ScrollingFrame.Aimbot.TeleportRandomPlayer.LocalScript
-local function C_54()
-local script = G2L["54"];
+local function C_55()
+local script = G2L["55"];
 	-- LocalScript (à mettre dans le bouton)
 	
 	local player = game.Players.LocalPlayer
@@ -2560,10 +2618,10 @@ local script = G2L["54"];
 	print("✅ Script chargé !")
 	print("📌 Clique sur le bouton pour headshot le murder (traversée des murs)")
 end;
-task.spawn(C_54);
+task.spawn(C_55);
 -- StarterGui.NebulaHub.FrameEsp.HotBardFRAME.SELECTION.Gameplay.LocalScript
-local function C_60()
-local script = G2L["60"];
+local function C_61()
+local script = G2L["61"];
 	local button = script.Parent
 	
 	local screenGui = game.Players.LocalPlayer.PlayerGui:WaitForChild("NebulaHub")
@@ -2582,10 +2640,10 @@ local script = G2L["60"];
 		FrameGamePlay.Visible = true
 	end)
 end;
-task.spawn(C_60);
+task.spawn(C_61);
 -- StarterGui.NebulaHub.FrameEsp.HotBardFRAME.SELECTION.Autofarm.LocalScript
-local function C_65()
-local script = G2L["65"];
+local function C_66()
+local script = G2L["66"];
 	local button = script.Parent
 	
 	local screenGui = game.Players.LocalPlayer.PlayerGui:WaitForChild("NebulaHub")
@@ -2604,10 +2662,10 @@ local script = G2L["65"];
 		FrameAutofarm.Visible = true
 	end)
 end;
-task.spawn(C_65);
+task.spawn(C_66);
 -- StarterGui.NebulaHub.FrameEsp.Options.TogglePlayersESP.LocalScript
-local function C_72()
-local script = G2L["72"];
+local function C_73()
+local script = G2L["73"];
 	local toggle = script.Parent
 	local circle = toggle:WaitForChild("Circle")
 	
@@ -2868,10 +2926,10 @@ local script = G2L["72"];
 	
 	end)
 end;
-task.spawn(C_72);
+task.spawn(C_73);
 -- StarterGui.NebulaHub.FrameEsp.Options.ToggleMurderESP.LocalScript
-local function C_77()
-local script = G2L["77"];
+local function C_78()
+local script = G2L["78"];
 	local toggle = script.Parent
 	local circle = toggle:WaitForChild("Circle")
 	
@@ -3136,10 +3194,10 @@ local script = G2L["77"];
 	
 	end)
 end;
-task.spawn(C_77);
+task.spawn(C_78);
 -- StarterGui.NebulaHub.FrameEsp.Options.ToggleSheriffESP.LocalScript
-local function C_7c()
-local script = G2L["7c"];
+local function C_7d()
+local script = G2L["7d"];
 	local toggle = script.Parent
 	local circle = toggle:WaitForChild("Circle")
 	
@@ -3391,10 +3449,10 @@ local script = G2L["7c"];
 	
 	end)
 end;
-task.spawn(C_7c);
+task.spawn(C_7d);
 -- StarterGui.NebulaHub.FrameAutofarm.HotBardFRAME.SELECTION.Gameplay.LocalScript
-local function C_8a()
-local script = G2L["8a"];
+local function C_8b()
+local script = G2L["8b"];
 	local button = script.Parent
 	
 	local screenGui = game.Players.LocalPlayer.PlayerGui:WaitForChild("NebulaHub")
@@ -3413,10 +3471,10 @@ local script = G2L["8a"];
 		FrameGamePlay.Visible = true
 	end)
 end;
-task.spawn(C_8a);
+task.spawn(C_8b);
 -- StarterGui.NebulaHub.FrameAutofarm.HotBardFRAME.SELECTION.Esp.LocalScript
-local function C_8d()
-local script = G2L["8d"];
+local function C_8e()
+local script = G2L["8e"];
 	local button = script.Parent
 	
 	local screenGui = game.Players.LocalPlayer.PlayerGui:WaitForChild("NebulaHub")
@@ -3435,10 +3493,10 @@ local script = G2L["8d"];
 		FrameEsp.Visible = true
 	end)
 end;
-task.spawn(C_8d);
+task.spawn(C_8e);
 -- StarterGui.NebulaHub.NebulaSpeedUI.CLOSE.LocalScript
-local function C_99()
-local script = G2L["99"];
+local function C_9a()
+local script = G2L["9a"];
 	local button = script.Parent
 	local currentFrame = button.Parent
 	
@@ -3446,10 +3504,10 @@ local script = G2L["99"];
 		currentFrame.Visible = false
 	end)
 end;
-task.spawn(C_99);
+task.spawn(C_9a);
 -- StarterGui.NebulaHub.NebulaSpeedUI.TeleportRandomPlayer.LocalScript
-local function C_9c()
-local script = G2L["9c"];
+local function C_9d()
+local script = G2L["9d"];
 	local button = script.Parent
 	local speedLabel = script.Parent.Parent:WaitForChild("SpeedLabel")
 	
@@ -3602,10 +3660,10 @@ local script = G2L["9c"];
 		setFlying(not FLYING)
 	end)
 end;
-task.spawn(C_9c);
+task.spawn(C_9d);
 -- StarterGui.NebulaHub.NebulaSpeedUI.TextButton.LocalScript
-local function C_a1()
-local script = G2L["a1"];
+local function C_a2()
+local script = G2L["a2"];
 	local button = script.Parent
 	local speedLabel = script.Parent.Parent:WaitForChild("SpeedLabel") -- Change le nom si besoin
 	
@@ -3615,10 +3673,10 @@ local script = G2L["a1"];
 		speedLabel.Text = "Speed : " .. currentSpeed
 	end)
 end;
-task.spawn(C_a1);
+task.spawn(C_a2);
 -- StarterGui.NebulaHub.NebulaSpeedUI.TextButton.LocalScript
-local function C_a6()
-local script = G2L["a6"];
+local function C_a7()
+local script = G2L["a7"];
 	local button = script.Parent
 	local speedLabel = script.Parent.Parent:WaitForChild("SpeedLabel") -- Change le nom si besoin
 	
@@ -3632,6 +3690,6 @@ local script = G2L["a6"];
 		speedLabel.Text = "Speed : " .. currentSpeed
 	end)
 end;
-task.spawn(C_a6);
+task.spawn(C_a7);
 
 return G2L["1"], require;
