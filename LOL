@@ -1,0 +1,3632 @@
+--[=[
+ d888b  db    db d888888b      .d888b.      db      db    db  .d8b.  
+88' Y8b 88    88   `88'        VP  `8D      88      88    88 d8' `8b 
+88      88    88    88            odD'      88      88    88 88ooo88 
+88  ooo 88    88    88          .88'        88      88    88 88~~~88 
+88. ~8~ 88b  d88   .88.        j88.         88booo. 88b  d88 88   88    @uniquadev
+ Y888P  ~Y8888P' Y888888P      888888D      Y88888P ~Y8888P' YP   YP  CONVERTER 
+]=]
+
+-- Instances: 167 | Scripts: 23 | Modules: 0 | Tags: 0
+local G2L = {};
+
+-- StarterGui.NebulaHub
+G2L["1"] = Instance.new("ScreenGui", game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"));
+G2L["1"]["Name"] = [[NebulaHub]];
+G2L["1"]["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling;
+G2L["1"]["ResetOnSpawn"] = false;
+
+
+-- StarterGui.NebulaHub.FrameGamePlay
+G2L["2"] = Instance.new("Frame", G2L["1"]);
+G2L["2"]["BorderSizePixel"] = 0;
+G2L["2"]["BackgroundColor3"] = Color3.fromRGB(16, 16, 16);
+G2L["2"]["Size"] = UDim2.new(0, 638, 0, 357);
+G2L["2"]["Position"] = UDim2.new(0.44567, 0, 0.45564, 0);
+G2L["2"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2"]["Name"] = [[FrameGamePlay]];
+
+
+-- StarterGui.NebulaHub.FrameGamePlay.HotBardFRAME
+G2L["3"] = Instance.new("Frame", G2L["2"]);
+G2L["3"]["BorderSizePixel"] = 0;
+G2L["3"]["BackgroundColor3"] = Color3.fromRGB(16, 16, 16);
+G2L["3"]["Size"] = UDim2.new(0, 638, 0, 39);
+G2L["3"]["Position"] = UDim2.new(0, 0, -0, 0);
+G2L["3"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["3"]["Name"] = [[HotBardFRAME]];
+
+
+-- StarterGui.NebulaHub.FrameGamePlay.HotBardFRAME.NebulaHUB
+G2L["4"] = Instance.new("TextLabel", G2L["3"]);
+G2L["4"]["BorderSizePixel"] = 0;
+G2L["4"]["TextSize"] = 23;
+G2L["4"]["BackgroundColor3"] = Color3.fromRGB(16, 16, 16);
+G2L["4"]["FontFace"] = Font.new([[rbxasset://fonts/families/LuckiestGuy.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["4"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["4"]["Size"] = UDim2.new(0, 123, 0, 35);
+G2L["4"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["4"]["Text"] = [[NebulaHub]];
+G2L["4"]["Name"] = [[NebulaHUB]];
+G2L["4"]["Position"] = UDim2.new(0.02493, 0, 0.01357, 0);
+
+
+-- StarterGui.NebulaHub.FrameGamePlay.HotBardFRAME.TextLabel
+G2L["5"] = Instance.new("TextLabel", G2L["3"]);
+G2L["5"]["BorderSizePixel"] = 0;
+G2L["5"]["TextSize"] = 14;
+G2L["5"]["BackgroundColor3"] = Color3.fromRGB(16, 16, 16);
+G2L["5"]["FontFace"] = Font.new([[rbxasset://fonts/families/LuckiestGuy.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["5"]["TextColor3"] = Color3.fromRGB(182, 182, 182);
+G2L["5"]["Size"] = UDim2.new(0, 172, 0, 29);
+G2L["5"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["5"]["Text"] = [[discord.gg/PR6NSeghqf]];
+G2L["5"]["Position"] = UDim2.new(0.25694, 0, 0.07692, 0);
+
+
+-- StarterGui.NebulaHub.FrameGamePlay.HotBardFRAME.SELECTION
+G2L["6"] = Instance.new("Frame", G2L["3"]);
+G2L["6"]["BorderSizePixel"] = 0;
+G2L["6"]["BackgroundColor3"] = Color3.fromRGB(16, 16, 16);
+G2L["6"]["Size"] = UDim2.new(0, 242, 0, 29);
+G2L["6"]["Position"] = UDim2.new(0.54389, 0, 0.07692, 0);
+G2L["6"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["6"]["Name"] = [[SELECTION]];
+
+
+-- StarterGui.NebulaHub.FrameGamePlay.HotBardFRAME.SELECTION.Gameplay
+G2L["7"] = Instance.new("TextButton", G2L["6"]);
+G2L["7"]["BorderSizePixel"] = 0;
+G2L["7"]["TextSize"] = 14;
+G2L["7"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["7"]["BackgroundColor3"] = Color3.fromRGB(120, 22, 232);
+G2L["7"]["FontFace"] = Font.new([[rbxasset://fonts/families/LuckiestGuy.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["7"]["Size"] = UDim2.new(0, 69, 0, 27);
+G2L["7"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["7"]["Text"] = [[GAMEPLAY]];
+G2L["7"]["Name"] = [[Gameplay]];
+G2L["7"]["Position"] = UDim2.new(0.025, 0, 0.034, 0);
+
+
+-- StarterGui.NebulaHub.FrameGamePlay.HotBardFRAME.SELECTION.Gameplay.UICorner
+G2L["8"] = Instance.new("UICorner", G2L["7"]);
+G2L["8"]["CornerRadius"] = UDim.new(0, 6);
+
+
+-- StarterGui.NebulaHub.FrameGamePlay.HotBardFRAME.SELECTION.Esp
+G2L["9"] = Instance.new("TextButton", G2L["6"]);
+G2L["9"]["BorderSizePixel"] = 0;
+G2L["9"]["TextSize"] = 14;
+G2L["9"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["9"]["BackgroundColor3"] = Color3.fromRGB(16, 16, 16);
+G2L["9"]["FontFace"] = Font.new([[rbxasset://fonts/families/LuckiestGuy.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["9"]["Size"] = UDim2.new(0, 69, 0, 27);
+G2L["9"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["9"]["Text"] = [[ESP]];
+G2L["9"]["Name"] = [[Esp]];
+G2L["9"]["Position"] = UDim2.new(0.35558, 0, 0.034, 0);
+
+
+-- StarterGui.NebulaHub.FrameGamePlay.HotBardFRAME.SELECTION.Esp.LocalScript
+G2L["a"] = Instance.new("LocalScript", G2L["9"]);
+
+
+
+-- StarterGui.NebulaHub.FrameGamePlay.HotBardFRAME.SELECTION.Esp.UICorner
+G2L["b"] = Instance.new("UICorner", G2L["9"]);
+G2L["b"]["CornerRadius"] = UDim.new(0, 6);
+
+
+-- StarterGui.NebulaHub.FrameGamePlay.HotBardFRAME.SELECTION.UIStroke
+G2L["c"] = Instance.new("UIStroke", G2L["6"]);
+G2L["c"]["Color"] = Color3.fromRGB(26, 26, 26);
+
+
+-- StarterGui.NebulaHub.FrameGamePlay.HotBardFRAME.SELECTION.UICorner
+G2L["d"] = Instance.new("UICorner", G2L["6"]);
+
+
+
+-- StarterGui.NebulaHub.FrameGamePlay.HotBardFRAME.SELECTION.Autofarm
+G2L["e"] = Instance.new("TextButton", G2L["6"]);
+G2L["e"]["BorderSizePixel"] = 0;
+G2L["e"]["TextSize"] = 14;
+G2L["e"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["e"]["BackgroundColor3"] = Color3.fromRGB(16, 16, 16);
+G2L["e"]["FontFace"] = Font.new([[rbxasset://fonts/families/LuckiestGuy.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["e"]["Size"] = UDim2.new(0, 69, 0, 27);
+G2L["e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["e"]["Text"] = [[AUTOFARM]];
+G2L["e"]["Name"] = [[Autofarm]];
+G2L["e"]["Position"] = UDim2.new(0.68202, 0, 0.034, 0);
+
+
+-- StarterGui.NebulaHub.FrameGamePlay.HotBardFRAME.SELECTION.Autofarm.LocalScript
+G2L["f"] = Instance.new("LocalScript", G2L["e"]);
+
+
+
+-- StarterGui.NebulaHub.FrameGamePlay.HotBardFRAME.SELECTION.Autofarm.UICorner
+G2L["10"] = Instance.new("UICorner", G2L["e"]);
+G2L["10"]["CornerRadius"] = UDim.new(0, 6);
+
+
+-- StarterGui.NebulaHub.FrameGamePlay.HotBardFRAME.UICorner
+G2L["11"] = Instance.new("UICorner", G2L["3"]);
+
+
+
+-- StarterGui.NebulaHub.FrameGamePlay.HotBardFRAME.Minumise
+G2L["12"] = Instance.new("TextButton", G2L["3"]);
+G2L["12"]["TextStrokeTransparency"] = 0;
+G2L["12"]["BorderSizePixel"] = 0;
+G2L["12"]["TextSize"] = 20;
+G2L["12"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["12"]["BackgroundColor3"] = Color3.fromRGB(28, 28, 28);
+G2L["12"]["FontFace"] = Font.new([[rbxasset://fonts/families/LuckiestGuy.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["12"]["Size"] = UDim2.new(0, 33, 0, 31);
+G2L["12"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["12"]["Text"] = [[-]];
+G2L["12"]["Name"] = [[Minumise]];
+G2L["12"]["Position"] = UDim2.new(0.9373, 0, 0.01357, 0);
+
+
+-- StarterGui.NebulaHub.FrameGamePlay.HotBardFRAME.Minumise.UICorner
+G2L["13"] = Instance.new("UICorner", G2L["12"]);
+
+
+
+-- StarterGui.NebulaHub.FrameGamePlay.ScrollingFrame
+G2L["14"] = Instance.new("ScrollingFrame", G2L["2"]);
+G2L["14"]["Active"] = true;
+G2L["14"]["BorderSizePixel"] = 0;
+G2L["14"]["CanvasPosition"] = Vector2.new(0, 100);
+G2L["14"]["BackgroundColor3"] = Color3.fromRGB(16, 16, 16);
+G2L["14"]["Size"] = UDim2.new(0, 614, 0, 302);
+G2L["14"]["ScrollBarImageColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["14"]["Position"] = UDim2.new(0.02493, 0, 0.12325, 0);
+G2L["14"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+
+
+-- StarterGui.NebulaHub.FrameGamePlay.ScrollingFrame.DATAS
+G2L["15"] = Instance.new("Frame", G2L["14"]);
+G2L["15"]["BorderSizePixel"] = 0;
+G2L["15"]["BackgroundColor3"] = Color3.fromRGB(120, 22, 232);
+G2L["15"]["Size"] = UDim2.new(0, 4, 0, 18);
+G2L["15"]["Position"] = UDim2.new(0, 0, 0.01568, 0);
+G2L["15"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["15"]["Name"] = [[DATAS]];
+
+
+-- StarterGui.NebulaHub.FrameGamePlay.ScrollingFrame.DATAS.TOOLS
+G2L["16"] = Instance.new("TextLabel", G2L["15"]);
+G2L["16"]["BorderSizePixel"] = 0;
+G2L["16"]["TextSize"] = 14;
+G2L["16"]["BackgroundColor3"] = Color3.fromRGB(16, 16, 16);
+G2L["16"]["FontFace"] = Font.new([[rbxasset://fonts/families/LuckiestGuy.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["16"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["16"]["Size"] = UDim2.new(0, 37, 0, 20);
+G2L["16"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["16"]["Text"] = [[DATAS]];
+G2L["16"]["Name"] = [[TOOLS]];
+G2L["16"]["Position"] = UDim2.new(3, 0, 0.05556, 0);
+
+
+-- StarterGui.NebulaHub.FrameGamePlay.ScrollingFrame.DATAS.MurderIS
+G2L["17"] = Instance.new("TextBox", G2L["15"]);
+G2L["17"]["CursorPosition"] = -1;
+G2L["17"]["Name"] = [[MurderIS]];
+G2L["17"]["PlaceholderColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["17"]["BorderSizePixel"] = 0;
+G2L["17"]["TextEditable"] = false;
+G2L["17"]["TextSize"] = 14;
+G2L["17"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["17"]["BackgroundColor3"] = Color3.fromRGB(28, 28, 28);
+G2L["17"]["FontFace"] = Font.new([[rbxasset://fonts/families/LuckiestGuy.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["17"]["ClearTextOnFocus"] = false;
+G2L["17"]["Size"] = UDim2.new(0, 200, 0, 37);
+G2L["17"]["Position"] = UDim2.new(0, 0, 1.83333, 0);
+G2L["17"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["17"]["Text"] = [[MURDER IS: UNKNOWN]];
+
+
+-- StarterGui.NebulaHub.FrameGamePlay.ScrollingFrame.DATAS.MurderIS.LocalScript
+G2L["18"] = Instance.new("LocalScript", G2L["17"]);
+
+
+
+-- StarterGui.NebulaHub.FrameGamePlay.ScrollingFrame.DATAS.MurderIS.UICorner
+G2L["19"] = Instance.new("UICorner", G2L["17"]);
+
+
+
+-- StarterGui.NebulaHub.FrameGamePlay.ScrollingFrame.DATAS.SheriffIS
+G2L["1a"] = Instance.new("TextBox", G2L["15"]);
+G2L["1a"]["CursorPosition"] = -1;
+G2L["1a"]["Name"] = [[SheriffIS]];
+G2L["1a"]["PlaceholderColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1a"]["BorderSizePixel"] = 0;
+G2L["1a"]["TextEditable"] = false;
+G2L["1a"]["TextSize"] = 14;
+G2L["1a"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1a"]["BackgroundColor3"] = Color3.fromRGB(28, 28, 28);
+G2L["1a"]["FontFace"] = Font.new([[rbxasset://fonts/families/LuckiestGuy.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["1a"]["ClearTextOnFocus"] = false;
+G2L["1a"]["Size"] = UDim2.new(0, 200, 0, 37);
+G2L["1a"]["Position"] = UDim2.new(0, 0, 4.16667, 0);
+G2L["1a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1a"]["Text"] = [[SHERIFF IS: UNKNOWN]];
+
+
+-- StarterGui.NebulaHub.FrameGamePlay.ScrollingFrame.DATAS.SheriffIS.UICorner
+G2L["1b"] = Instance.new("UICorner", G2L["1a"]);
+
+
+
+-- StarterGui.NebulaHub.FrameGamePlay.ScrollingFrame.DATAS.UICorner
+G2L["1c"] = Instance.new("UICorner", G2L["15"]);
+
+
+
+-- StarterGui.NebulaHub.FrameGamePlay.ScrollingFrame.TeleportationFrame
+G2L["1d"] = Instance.new("Frame", G2L["14"]);
+G2L["1d"]["BorderSizePixel"] = 0;
+G2L["1d"]["BackgroundColor3"] = Color3.fromRGB(16, 16, 16);
+G2L["1d"]["Size"] = UDim2.new(0, 214, 0, 259);
+G2L["1d"]["Position"] = UDim2.new(0.64169, 0, 0.06022, 0);
+G2L["1d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1d"]["Name"] = [[TeleportationFrame]];
+
+
+-- StarterGui.NebulaHub.FrameGamePlay.ScrollingFrame.TeleportationFrame.TeleportRandomPlayer
+G2L["1e"] = Instance.new("TextButton", G2L["1d"]);
+G2L["1e"]["BorderSizePixel"] = 0;
+G2L["1e"]["TextSize"] = 14;
+G2L["1e"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1e"]["BackgroundColor3"] = Color3.fromRGB(28, 28, 28);
+G2L["1e"]["FontFace"] = Font.new([[rbxasset://fonts/families/LuckiestGuy.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["1e"]["Size"] = UDim2.new(0, 205, 0, 37);
+G2L["1e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1e"]["Text"] = [[Teleport Random Player]];
+G2L["1e"]["Name"] = [[TeleportRandomPlayer]];
+G2L["1e"]["Position"] = UDim2.new(0.01869, 0, 0.33205, 0);
+
+
+-- StarterGui.NebulaHub.FrameGamePlay.ScrollingFrame.TeleportationFrame.TeleportRandomPlayer.LocalScript
+G2L["1f"] = Instance.new("LocalScript", G2L["1e"]);
+
+
+
+-- StarterGui.NebulaHub.FrameGamePlay.ScrollingFrame.TeleportationFrame.TeleportRandomPlayer.UICorner
+G2L["20"] = Instance.new("UICorner", G2L["1e"]);
+
+
+
+-- StarterGui.NebulaHub.FrameGamePlay.ScrollingFrame.TeleportationFrame.Teleport
+G2L["21"] = Instance.new("Frame", G2L["1d"]);
+G2L["21"]["BorderSizePixel"] = 0;
+G2L["21"]["BackgroundColor3"] = Color3.fromRGB(120, 22, 232);
+G2L["21"]["Size"] = UDim2.new(0, -4, 0, 18);
+G2L["21"]["Position"] = UDim2.new(-0.00398, 0, -0.11946, 0);
+G2L["21"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["21"]["Name"] = [[Teleport]];
+
+
+-- StarterGui.NebulaHub.FrameGamePlay.ScrollingFrame.TeleportationFrame.Teleport.TOOLS
+G2L["22"] = Instance.new("TextLabel", G2L["21"]);
+G2L["22"]["BorderSizePixel"] = 0;
+G2L["22"]["TextSize"] = 14;
+G2L["22"]["BackgroundColor3"] = Color3.fromRGB(16, 16, 16);
+G2L["22"]["FontFace"] = Font.new([[rbxasset://fonts/families/LuckiestGuy.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["22"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["22"]["Size"] = UDim2.new(0, 37, 0, 20);
+G2L["22"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["22"]["Text"] = [[TELEPORT]];
+G2L["22"]["Name"] = [[TOOLS]];
+G2L["22"]["Position"] = UDim2.new(5.25, 0, 0, 0);
+
+
+-- StarterGui.NebulaHub.FrameGamePlay.ScrollingFrame.TeleportationFrame.Teleport.UICorner
+G2L["23"] = Instance.new("UICorner", G2L["21"]);
+
+
+
+-- StarterGui.NebulaHub.FrameGamePlay.ScrollingFrame.TeleportationFrame.TeleportRandomPlayer
+G2L["24"] = Instance.new("TextButton", G2L["1d"]);
+G2L["24"]["BorderSizePixel"] = 0;
+G2L["24"]["TextSize"] = 14;
+G2L["24"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["24"]["BackgroundColor3"] = Color3.fromRGB(28, 28, 28);
+G2L["24"]["FontFace"] = Font.new([[rbxasset://fonts/families/LuckiestGuy.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["24"]["Size"] = UDim2.new(0, 205, 0, 37);
+G2L["24"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["24"]["Text"] = [[Teleport CHOSEN PLAYER]];
+G2L["24"]["Name"] = [[TeleportRandomPlayer]];
+G2L["24"]["Position"] = UDim2.new(0.01869, 0, 0.16602, 0);
+
+
+-- StarterGui.NebulaHub.FrameGamePlay.ScrollingFrame.TeleportationFrame.TeleportRandomPlayer.UICorner
+G2L["25"] = Instance.new("UICorner", G2L["24"]);
+
+
+
+-- StarterGui.NebulaHub.FrameGamePlay.ScrollingFrame.TeleportationFrame.EnterUsername
+G2L["26"] = Instance.new("TextBox", G2L["1d"]);
+G2L["26"]["CursorPosition"] = -1;
+G2L["26"]["Name"] = [[EnterUsername]];
+G2L["26"]["BorderSizePixel"] = 0;
+G2L["26"]["TextSize"] = 14;
+G2L["26"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["26"]["BackgroundColor3"] = Color3.fromRGB(28, 28, 28);
+G2L["26"]["FontFace"] = Font.new([[rbxasset://fonts/families/LuckiestGuy.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["26"]["PlaceholderText"] = [[ENTER PLAYER NAME...]];
+G2L["26"]["Size"] = UDim2.new(0, 205, 0, 37);
+G2L["26"]["Position"] = UDim2.new(0.01869, 0, 0, 0);
+G2L["26"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["26"]["Text"] = [[]];
+
+
+-- StarterGui.NebulaHub.FrameGamePlay.ScrollingFrame.TeleportationFrame.EnterUsername.UICorner
+G2L["27"] = Instance.new("UICorner", G2L["26"]);
+
+
+
+-- StarterGui.NebulaHub.FrameGamePlay.ScrollingFrame.TeleportationFrame.TeleportToMurderer
+G2L["28"] = Instance.new("TextButton", G2L["1d"]);
+G2L["28"]["BorderSizePixel"] = 0;
+G2L["28"]["TextSize"] = 14;
+G2L["28"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["28"]["BackgroundColor3"] = Color3.fromRGB(232, 41, 41);
+G2L["28"]["FontFace"] = Font.new([[rbxasset://fonts/families/LuckiestGuy.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["28"]["Size"] = UDim2.new(0, 205, 0, 37);
+G2L["28"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["28"]["Text"] = [[TELEPORT TO MURDERER]];
+G2L["28"]["Name"] = [[TeleportToMurderer]];
+G2L["28"]["Position"] = UDim2.new(0.01715, 0, 0.49114, 0);
+
+
+-- StarterGui.NebulaHub.FrameGamePlay.ScrollingFrame.TeleportationFrame.TeleportToMurderer.LocalScript
+G2L["29"] = Instance.new("LocalScript", G2L["28"]);
+
+
+
+-- StarterGui.NebulaHub.FrameGamePlay.ScrollingFrame.TeleportationFrame.TeleportToMurderer.UICorner
+G2L["2a"] = Instance.new("UICorner", G2L["28"]);
+
+
+
+-- StarterGui.NebulaHub.FrameGamePlay.ScrollingFrame.TeleportationFrame.TeleportToSheriff
+G2L["2b"] = Instance.new("TextButton", G2L["1d"]);
+G2L["2b"]["BorderSizePixel"] = 0;
+G2L["2b"]["TextSize"] = 14;
+G2L["2b"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2b"]["BackgroundColor3"] = Color3.fromRGB(149, 65, 232);
+G2L["2b"]["FontFace"] = Font.new([[rbxasset://fonts/families/LuckiestGuy.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["2b"]["Size"] = UDim2.new(0, 205, 0, 37);
+G2L["2b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2b"]["Text"] = [[TELEPORT TO SHERIFF]];
+G2L["2b"]["Name"] = [[TeleportToSheriff]];
+G2L["2b"]["Position"] = UDim2.new(0.017, 0, 0.66, 0);
+
+
+-- StarterGui.NebulaHub.FrameGamePlay.ScrollingFrame.TeleportationFrame.TeleportToSheriff.LocalScript
+G2L["2c"] = Instance.new("LocalScript", G2L["2b"]);
+
+
+
+-- StarterGui.NebulaHub.FrameGamePlay.ScrollingFrame.TeleportationFrame.TeleportToSheriff.UICorner
+G2L["2d"] = Instance.new("UICorner", G2L["2b"]);
+
+
+
+-- StarterGui.NebulaHub.FrameGamePlay.ScrollingFrame.BasicStuff
+G2L["2e"] = Instance.new("Frame", G2L["14"]);
+G2L["2e"]["BorderSizePixel"] = 0;
+G2L["2e"]["BackgroundColor3"] = Color3.fromRGB(16, 16, 16);
+G2L["2e"]["Size"] = UDim2.new(0, 200, 0, 165);
+G2L["2e"]["Position"] = UDim2.new(0, 0, 0.18067, 0);
+G2L["2e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2e"]["Name"] = [[BasicStuff]];
+
+
+-- StarterGui.NebulaHub.FrameGamePlay.ScrollingFrame.BasicStuff.Frame
+G2L["2f"] = Instance.new("Frame", G2L["2e"]);
+G2L["2f"]["BorderSizePixel"] = 0;
+G2L["2f"]["BackgroundColor3"] = Color3.fromRGB(120, 22, 232);
+G2L["2f"]["Size"] = UDim2.new(0, 4, 0, 22);
+G2L["2f"]["Position"] = UDim2.new(0, 0, 0.0881, 0);
+G2L["2f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+
+
+-- StarterGui.NebulaHub.FrameGamePlay.ScrollingFrame.BasicStuff.Frame.UICorner
+G2L["30"] = Instance.new("UICorner", G2L["2f"]);
+
+
+
+-- StarterGui.NebulaHub.FrameGamePlay.ScrollingFrame.BasicStuff.Frame.TOOLS
+G2L["31"] = Instance.new("TextLabel", G2L["2f"]);
+G2L["31"]["BorderSizePixel"] = 0;
+G2L["31"]["TextSize"] = 14;
+G2L["31"]["BackgroundColor3"] = Color3.fromRGB(16, 16, 16);
+G2L["31"]["FontFace"] = Font.new([[rbxasset://fonts/families/LuckiestGuy.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["31"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["31"]["Size"] = UDim2.new(0, 37, 0, 20);
+G2L["31"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["31"]["Text"] = [[BASIC STUFF]];
+G2L["31"]["Name"] = [[TOOLS]];
+G2L["31"]["Position"] = UDim2.new(7.78139, 0, 0.09091, 0);
+
+
+-- StarterGui.NebulaHub.FrameGamePlay.ScrollingFrame.BasicStuff.TextLabel
+G2L["32"] = Instance.new("TextLabel", G2L["2e"]);
+G2L["32"]["BorderSizePixel"] = 0;
+G2L["32"]["TextSize"] = 14;
+G2L["32"]["BackgroundColor3"] = Color3.fromRGB(16, 16, 16);
+G2L["32"]["FontFace"] = Font.new([[rbxasset://fonts/families/LuckiestGuy.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["32"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["32"]["Size"] = UDim2.new(0, 53, 0, 25);
+G2L["32"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["32"]["Text"] = [[Noclip]];
+G2L["32"]["Position"] = UDim2.new(0.02, 0, 0.28485, 0);
+
+
+-- StarterGui.NebulaHub.FrameGamePlay.ScrollingFrame.BasicStuff.ToggleNoClip
+G2L["33"] = Instance.new("Frame", G2L["2e"]);
+G2L["33"]["BorderSizePixel"] = 0;
+G2L["33"]["BackgroundColor3"] = Color3.fromRGB(31, 31, 31);
+G2L["33"]["Size"] = UDim2.new(0, 55, 0, 26);
+G2L["33"]["Position"] = UDim2.new(0.73604, 0, 0.28347, 0);
+G2L["33"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["33"]["Name"] = [[ToggleNoClip]];
+
+
+-- StarterGui.NebulaHub.FrameGamePlay.ScrollingFrame.BasicStuff.ToggleNoClip.LocalScript
+G2L["34"] = Instance.new("LocalScript", G2L["33"]);
+
+
+
+-- StarterGui.NebulaHub.FrameGamePlay.ScrollingFrame.BasicStuff.ToggleNoClip.Circle
+G2L["35"] = Instance.new("Frame", G2L["33"]);
+G2L["35"]["BorderSizePixel"] = 0;
+G2L["35"]["BackgroundColor3"] = Color3.fromRGB(62, 62, 62);
+G2L["35"]["Size"] = UDim2.new(0, 21, 0, 22);
+G2L["35"]["Position"] = UDim2.new(-0.00368, 0, -0.01365, 0);
+G2L["35"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["35"]["Name"] = [[Circle]];
+
+
+-- StarterGui.NebulaHub.FrameGamePlay.ScrollingFrame.BasicStuff.ToggleNoClip.Circle.UICorner
+G2L["36"] = Instance.new("UICorner", G2L["35"]);
+G2L["36"]["CornerRadius"] = UDim.new(1, 0);
+
+
+-- StarterGui.NebulaHub.FrameGamePlay.ScrollingFrame.BasicStuff.ToggleNoClip.UICorner
+G2L["37"] = Instance.new("UICorner", G2L["33"]);
+G2L["37"]["CornerRadius"] = UDim.new(1, 0);
+
+
+-- StarterGui.NebulaHub.FrameGamePlay.ScrollingFrame.BasicStuff.FlyGUI
+G2L["38"] = Instance.new("TextButton", G2L["2e"]);
+G2L["38"]["TextStrokeTransparency"] = 0;
+G2L["38"]["BorderSizePixel"] = 0;
+G2L["38"]["TextSize"] = 15;
+G2L["38"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["38"]["BackgroundColor3"] = Color3.fromRGB(28, 28, 28);
+G2L["38"]["FontFace"] = Font.new([[rbxasset://fonts/families/LuckiestGuy.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["38"]["Size"] = UDim2.new(0, 200, 0, 37);
+G2L["38"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["38"]["Text"] = [[FLY GUI]];
+G2L["38"]["Name"] = [[FlyGUI]];
+G2L["38"]["Position"] = UDim2.new(0.02, 0, 0.68485, 0);
+
+
+-- StarterGui.NebulaHub.FrameGamePlay.ScrollingFrame.BasicStuff.FlyGUI.UICorner
+G2L["39"] = Instance.new("UICorner", G2L["38"]);
+G2L["39"]["CornerRadius"] = UDim.new(0, 6);
+
+
+-- StarterGui.NebulaHub.FrameGamePlay.ScrollingFrame.BasicStuff.FlyGUI.LocalScript
+G2L["3a"] = Instance.new("LocalScript", G2L["38"]);
+
+
+
+-- StarterGui.NebulaHub.FrameGamePlay.ScrollingFrame.BasicStuff.TextLabel
+G2L["3b"] = Instance.new("TextLabel", G2L["2e"]);
+G2L["3b"]["BorderSizePixel"] = 0;
+G2L["3b"]["TextSize"] = 14;
+G2L["3b"]["BackgroundColor3"] = Color3.fromRGB(16, 16, 16);
+G2L["3b"]["FontFace"] = Font.new([[rbxasset://fonts/families/LuckiestGuy.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["3b"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["3b"]["Size"] = UDim2.new(0, 59, 0, 25);
+G2L["3b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["3b"]["Text"] = [[INFINITE JUMP]];
+G2L["3b"]["Position"] = UDim2.new(0.125, 0, 0.47273, 0);
+
+
+-- StarterGui.NebulaHub.FrameGamePlay.ScrollingFrame.BasicStuff.ToggleInfiniteJump
+G2L["3c"] = Instance.new("Frame", G2L["2e"]);
+G2L["3c"]["BorderSizePixel"] = 0;
+G2L["3c"]["BackgroundColor3"] = Color3.fromRGB(31, 31, 31);
+G2L["3c"]["Size"] = UDim2.new(0, 55, 0, 26);
+G2L["3c"]["Position"] = UDim2.new(0.73104, 0, 0.47134, 0);
+G2L["3c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["3c"]["Name"] = [[ToggleInfiniteJump]];
+
+
+-- StarterGui.NebulaHub.FrameGamePlay.ScrollingFrame.BasicStuff.ToggleInfiniteJump.LocalScript
+G2L["3d"] = Instance.new("LocalScript", G2L["3c"]);
+
+
+
+-- StarterGui.NebulaHub.FrameGamePlay.ScrollingFrame.BasicStuff.ToggleInfiniteJump.Circle
+G2L["3e"] = Instance.new("Frame", G2L["3c"]);
+G2L["3e"]["BorderSizePixel"] = 0;
+G2L["3e"]["BackgroundColor3"] = Color3.fromRGB(62, 62, 62);
+G2L["3e"]["Size"] = UDim2.new(0, 21, 0, 22);
+G2L["3e"]["Position"] = UDim2.new(-0.00368, 0, -0.01365, 0);
+G2L["3e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["3e"]["Name"] = [[Circle]];
+
+
+-- StarterGui.NebulaHub.FrameGamePlay.ScrollingFrame.BasicStuff.ToggleInfiniteJump.Circle.UICorner
+G2L["3f"] = Instance.new("UICorner", G2L["3e"]);
+G2L["3f"]["CornerRadius"] = UDim.new(1, 0);
+
+
+-- StarterGui.NebulaHub.FrameGamePlay.ScrollingFrame.BasicStuff.ToggleInfiniteJump.UICorner
+G2L["40"] = Instance.new("UICorner", G2L["3c"]);
+G2L["40"]["CornerRadius"] = UDim.new(1, 0);
+
+
+-- StarterGui.NebulaHub.FrameGamePlay.ScrollingFrame.MoreTools
+G2L["41"] = Instance.new("Frame", G2L["14"]);
+G2L["41"]["BorderSizePixel"] = 0;
+G2L["41"]["BackgroundColor3"] = Color3.fromRGB(16, 16, 16);
+G2L["41"]["Size"] = UDim2.new(0, 200, 0, 238);
+G2L["41"]["Position"] = UDim2.new(0.00651, 0, 0.40896, 0);
+G2L["41"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["41"]["Name"] = [[MoreTools]];
+
+
+-- StarterGui.NebulaHub.FrameGamePlay.ScrollingFrame.MoreTools.Frame
+G2L["42"] = Instance.new("Frame", G2L["41"]);
+G2L["42"]["BorderSizePixel"] = 0;
+G2L["42"]["BackgroundColor3"] = Color3.fromRGB(120, 22, 232);
+G2L["42"]["Size"] = UDim2.new(0, 4, 0, 22);
+G2L["42"]["Position"] = UDim2.new(0, 0, 0.0042, 0);
+G2L["42"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+
+
+-- StarterGui.NebulaHub.FrameGamePlay.ScrollingFrame.MoreTools.Frame.UICorner
+G2L["43"] = Instance.new("UICorner", G2L["42"]);
+
+
+
+-- StarterGui.NebulaHub.FrameGamePlay.ScrollingFrame.MoreTools.Frame.TOOLS
+G2L["44"] = Instance.new("TextLabel", G2L["42"]);
+G2L["44"]["BorderSizePixel"] = 0;
+G2L["44"]["TextSize"] = 14;
+G2L["44"]["BackgroundColor3"] = Color3.fromRGB(16, 16, 16);
+G2L["44"]["FontFace"] = Font.new([[rbxasset://fonts/families/LuckiestGuy.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["44"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["44"]["Size"] = UDim2.new(0, 37, 0, 20);
+G2L["44"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["44"]["Text"] = [[MORE TOOLS]];
+G2L["44"]["Name"] = [[TOOLS]];
+G2L["44"]["Position"] = UDim2.new(7.78139, 0, 0.09091, 0);
+
+
+-- StarterGui.NebulaHub.FrameGamePlay.ScrollingFrame.MoreTools.BringAllPlayers
+G2L["45"] = Instance.new("TextButton", G2L["41"]);
+G2L["45"]["BorderSizePixel"] = 0;
+G2L["45"]["TextSize"] = 18;
+G2L["45"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["45"]["BackgroundColor3"] = Color3.fromRGB(232, 41, 41);
+G2L["45"]["FontFace"] = Font.new([[rbxasset://fonts/families/LuckiestGuy.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["45"]["Size"] = UDim2.new(0, 205, 0, 37);
+G2L["45"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["45"]["Text"] = [[BRING ALL PLAYERS]];
+G2L["45"]["Name"] = [[BringAllPlayers]];
+G2L["45"]["Position"] = UDim2.new(0.017, 0, 0.13479, 0);
+
+
+-- StarterGui.NebulaHub.FrameGamePlay.ScrollingFrame.MoreTools.BringAllPlayers.LocalScript
+G2L["46"] = Instance.new("LocalScript", G2L["45"]);
+
+
+
+-- StarterGui.NebulaHub.FrameGamePlay.ScrollingFrame.MoreTools.BringAllPlayers.UICorner
+G2L["47"] = Instance.new("UICorner", G2L["45"]);
+
+
+
+-- StarterGui.NebulaHub.FrameGamePlay.ScrollingFrame.Aimbot
+G2L["48"] = Instance.new("Frame", G2L["14"]);
+G2L["48"]["BorderSizePixel"] = 0;
+G2L["48"]["BackgroundColor3"] = Color3.fromRGB(16, 16, 16);
+G2L["48"]["Size"] = UDim2.new(0, 200, 0, 238);
+G2L["48"]["Position"] = UDim2.new(0.65472, 0, 0.37255, 0);
+G2L["48"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["48"]["Name"] = [[Aimbot]];
+
+
+-- StarterGui.NebulaHub.FrameGamePlay.ScrollingFrame.Aimbot.Frame
+G2L["49"] = Instance.new("Frame", G2L["48"]);
+G2L["49"]["BorderSizePixel"] = 0;
+G2L["49"]["BackgroundColor3"] = Color3.fromRGB(120, 22, 232);
+G2L["49"]["Size"] = UDim2.new(0, 4, 0, 22);
+G2L["49"]["Position"] = UDim2.new(0, 0, 0.0042, 0);
+G2L["49"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+
+
+-- StarterGui.NebulaHub.FrameGamePlay.ScrollingFrame.Aimbot.Frame.UICorner
+G2L["4a"] = Instance.new("UICorner", G2L["49"]);
+
+
+
+-- StarterGui.NebulaHub.FrameGamePlay.ScrollingFrame.Aimbot.Frame.TOOLS
+G2L["4b"] = Instance.new("TextLabel", G2L["49"]);
+G2L["4b"]["BorderSizePixel"] = 0;
+G2L["4b"]["TextSize"] = 14;
+G2L["4b"]["BackgroundColor3"] = Color3.fromRGB(16, 16, 16);
+G2L["4b"]["FontFace"] = Font.new([[rbxasset://fonts/families/LuckiestGuy.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["4b"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["4b"]["Size"] = UDim2.new(0, 37, 0, 20);
+G2L["4b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["4b"]["Text"] = [[AIMBOT]];
+G2L["4b"]["Name"] = [[TOOLS]];
+G2L["4b"]["Position"] = UDim2.new(3.78137, 0, 0.09091, 0);
+
+
+-- StarterGui.NebulaHub.FrameGamePlay.ScrollingFrame.Aimbot.AimbotSheriffText
+G2L["4c"] = Instance.new("TextLabel", G2L["48"]);
+G2L["4c"]["BorderSizePixel"] = 0;
+G2L["4c"]["TextSize"] = 16;
+G2L["4c"]["BackgroundColor3"] = Color3.fromRGB(16, 16, 16);
+G2L["4c"]["FontFace"] = Font.new([[rbxasset://fonts/families/LuckiestGuy.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["4c"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["4c"]["Size"] = UDim2.new(0, 122, 0, 35);
+G2L["4c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["4c"]["Text"] = [[Aimbot Sheriff]];
+G2L["4c"]["Name"] = [[AimbotSheriffText]];
+G2L["4c"]["Position"] = UDim2.new(0.02, 0, 0.11798, 0);
+
+
+-- StarterGui.NebulaHub.FrameGamePlay.ScrollingFrame.Aimbot.ToggleAimbotSheriff
+G2L["4d"] = Instance.new("Frame", G2L["48"]);
+G2L["4d"]["BorderSizePixel"] = 0;
+G2L["4d"]["BackgroundColor3"] = Color3.fromRGB(31, 31, 31);
+G2L["4d"]["Size"] = UDim2.new(0, 55, 0, 26);
+G2L["4d"]["Position"] = UDim2.new(0.72104, 0, 0.13521, 0);
+G2L["4d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["4d"]["Name"] = [[ToggleAimbotSheriff]];
+
+
+-- StarterGui.NebulaHub.FrameGamePlay.ScrollingFrame.Aimbot.ToggleAimbotSheriff.LocalScript
+G2L["4e"] = Instance.new("LocalScript", G2L["4d"]);
+
+
+
+-- StarterGui.NebulaHub.FrameGamePlay.ScrollingFrame.Aimbot.ToggleAimbotSheriff.Circle
+G2L["4f"] = Instance.new("Frame", G2L["4d"]);
+G2L["4f"]["BorderSizePixel"] = 0;
+G2L["4f"]["BackgroundColor3"] = Color3.fromRGB(62, 62, 62);
+G2L["4f"]["Size"] = UDim2.new(0, 21, 0, 22);
+G2L["4f"]["Position"] = UDim2.new(-0.00368, 0, -0.01365, 0);
+G2L["4f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["4f"]["Name"] = [[Circle]];
+
+
+-- StarterGui.NebulaHub.FrameGamePlay.ScrollingFrame.Aimbot.ToggleAimbotSheriff.Circle.UICorner
+G2L["50"] = Instance.new("UICorner", G2L["4f"]);
+G2L["50"]["CornerRadius"] = UDim.new(1, 0);
+
+
+-- StarterGui.NebulaHub.FrameGamePlay.ScrollingFrame.Aimbot.ToggleAimbotSheriff.UICorner
+G2L["51"] = Instance.new("UICorner", G2L["4d"]);
+G2L["51"]["CornerRadius"] = UDim.new(1, 0);
+
+
+-- StarterGui.NebulaHub.FrameGamePlay.ScrollingFrame.Aimbot.TeleportRandomPlayer
+G2L["52"] = Instance.new("TextButton", G2L["48"]);
+G2L["52"]["BorderSizePixel"] = 0;
+G2L["52"]["TextSize"] = 14;
+G2L["52"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["52"]["BackgroundColor3"] = Color3.fromRGB(28, 28, 28);
+G2L["52"]["FontFace"] = Font.new([[rbxasset://fonts/families/LuckiestGuy.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["52"]["Size"] = UDim2.new(0, 205, 0, 37);
+G2L["52"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["52"]["Text"] = [[Shoot the morder]];
+G2L["52"]["Name"] = [[TeleportRandomPlayer]];
+G2L["52"]["Position"] = UDim2.new(0.01869, 0, 0.29423, 0);
+
+
+-- StarterGui.NebulaHub.FrameGamePlay.ScrollingFrame.Aimbot.TeleportRandomPlayer.LocalScript
+G2L["53"] = Instance.new("LocalScript", G2L["52"]);
+
+
+
+-- StarterGui.NebulaHub.FrameGamePlay.ScrollingFrame.Aimbot.TeleportRandomPlayer.UICorner
+G2L["54"] = Instance.new("UICorner", G2L["52"]);
+
+
+
+-- StarterGui.NebulaHub.FrameGamePlay.UICorner
+G2L["55"] = Instance.new("UICorner", G2L["2"]);
+
+
+
+-- StarterGui.NebulaHub.FrameGamePlay.UIDragDetector
+G2L["56"] = Instance.new("UIDragDetector", G2L["2"]);
+
+
+
+-- StarterGui.NebulaHub.FrameEsp
+G2L["57"] = Instance.new("Frame", G2L["1"]);
+G2L["57"]["Visible"] = false;
+G2L["57"]["BorderSizePixel"] = 0;
+G2L["57"]["BackgroundColor3"] = Color3.fromRGB(16, 16, 16);
+G2L["57"]["Size"] = UDim2.new(0, 638, 0, 357);
+G2L["57"]["Position"] = UDim2.new(0.44567, 0, 0.45304, 0);
+G2L["57"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["57"]["Name"] = [[FrameEsp]];
+
+
+-- StarterGui.NebulaHub.FrameEsp.HotBardFRAME
+G2L["58"] = Instance.new("Frame", G2L["57"]);
+G2L["58"]["BorderSizePixel"] = 0;
+G2L["58"]["BackgroundColor3"] = Color3.fromRGB(16, 16, 16);
+G2L["58"]["Size"] = UDim2.new(0, 638, 0, 39);
+G2L["58"]["Position"] = UDim2.new(0, 0, -0, 0);
+G2L["58"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["58"]["Name"] = [[HotBardFRAME]];
+
+
+-- StarterGui.NebulaHub.FrameEsp.HotBardFRAME.NebulaHUB
+G2L["59"] = Instance.new("TextLabel", G2L["58"]);
+G2L["59"]["BorderSizePixel"] = 0;
+G2L["59"]["TextSize"] = 23;
+G2L["59"]["BackgroundColor3"] = Color3.fromRGB(16, 16, 16);
+G2L["59"]["FontFace"] = Font.new([[rbxasset://fonts/families/LuckiestGuy.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["59"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["59"]["Size"] = UDim2.new(0, 123, 0, 35);
+G2L["59"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["59"]["Text"] = [[NebulaHub]];
+G2L["59"]["Name"] = [[NebulaHUB]];
+G2L["59"]["Position"] = UDim2.new(0.02493, 0, 0.06486, 0);
+
+
+-- StarterGui.NebulaHub.FrameEsp.HotBardFRAME.TextLabel
+G2L["5a"] = Instance.new("TextLabel", G2L["58"]);
+G2L["5a"]["BorderSizePixel"] = 0;
+G2L["5a"]["TextSize"] = 14;
+G2L["5a"]["BackgroundColor3"] = Color3.fromRGB(16, 16, 16);
+G2L["5a"]["FontFace"] = Font.new([[rbxasset://fonts/families/LuckiestGuy.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["5a"]["TextColor3"] = Color3.fromRGB(182, 182, 182);
+G2L["5a"]["Size"] = UDim2.new(0, 172, 0, 29);
+G2L["5a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["5a"]["Text"] = [[discord.gg/PR6NSeghqf]];
+G2L["5a"]["Position"] = UDim2.new(0.25694, 0, 0.07692, 0);
+
+
+-- StarterGui.NebulaHub.FrameEsp.HotBardFRAME.SELECTION
+G2L["5b"] = Instance.new("Frame", G2L["58"]);
+G2L["5b"]["BorderSizePixel"] = 0;
+G2L["5b"]["BackgroundColor3"] = Color3.fromRGB(16, 16, 16);
+G2L["5b"]["Size"] = UDim2.new(0, 242, 0, 29);
+G2L["5b"]["Position"] = UDim2.new(0.54389, 0, 0.07692, 0);
+G2L["5b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["5b"]["Name"] = [[SELECTION]];
+
+
+-- StarterGui.NebulaHub.FrameEsp.HotBardFRAME.SELECTION.UIStroke
+G2L["5c"] = Instance.new("UIStroke", G2L["5b"]);
+G2L["5c"]["Color"] = Color3.fromRGB(26, 26, 26);
+
+
+-- StarterGui.NebulaHub.FrameEsp.HotBardFRAME.SELECTION.UICorner
+G2L["5d"] = Instance.new("UICorner", G2L["5b"]);
+
+
+
+-- StarterGui.NebulaHub.FrameEsp.HotBardFRAME.SELECTION.Gameplay
+G2L["5e"] = Instance.new("TextButton", G2L["5b"]);
+G2L["5e"]["BorderSizePixel"] = 0;
+G2L["5e"]["TextSize"] = 14;
+G2L["5e"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["5e"]["BackgroundColor3"] = Color3.fromRGB(16, 16, 16);
+G2L["5e"]["FontFace"] = Font.new([[rbxasset://fonts/families/LuckiestGuy.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["5e"]["Size"] = UDim2.new(0, 69, 0, 27);
+G2L["5e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["5e"]["Text"] = [[GAMEPLAY]];
+G2L["5e"]["Name"] = [[Gameplay]];
+G2L["5e"]["Position"] = UDim2.new(0.025, 0, 0.034, 0);
+
+
+-- StarterGui.NebulaHub.FrameEsp.HotBardFRAME.SELECTION.Gameplay.LocalScript
+G2L["5f"] = Instance.new("LocalScript", G2L["5e"]);
+
+
+
+-- StarterGui.NebulaHub.FrameEsp.HotBardFRAME.SELECTION.Gameplay.UICorner
+G2L["60"] = Instance.new("UICorner", G2L["5e"]);
+G2L["60"]["CornerRadius"] = UDim.new(0, 6);
+
+
+-- StarterGui.NebulaHub.FrameEsp.HotBardFRAME.SELECTION.Esp
+G2L["61"] = Instance.new("TextButton", G2L["5b"]);
+G2L["61"]["BorderSizePixel"] = 0;
+G2L["61"]["TextSize"] = 14;
+G2L["61"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["61"]["BackgroundColor3"] = Color3.fromRGB(120, 22, 232);
+G2L["61"]["FontFace"] = Font.new([[rbxasset://fonts/families/LuckiestGuy.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["61"]["Size"] = UDim2.new(0, 69, 0, 27);
+G2L["61"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["61"]["Text"] = [[ESP]];
+G2L["61"]["Name"] = [[Esp]];
+G2L["61"]["Position"] = UDim2.new(0.35558, 0, 0.034, 0);
+
+
+-- StarterGui.NebulaHub.FrameEsp.HotBardFRAME.SELECTION.Esp.UICorner
+G2L["62"] = Instance.new("UICorner", G2L["61"]);
+G2L["62"]["CornerRadius"] = UDim.new(0, 6);
+
+
+-- StarterGui.NebulaHub.FrameEsp.HotBardFRAME.SELECTION.Autofarm
+G2L["63"] = Instance.new("TextButton", G2L["5b"]);
+G2L["63"]["BorderSizePixel"] = 0;
+G2L["63"]["TextSize"] = 14;
+G2L["63"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["63"]["BackgroundColor3"] = Color3.fromRGB(16, 16, 16);
+G2L["63"]["FontFace"] = Font.new([[rbxasset://fonts/families/LuckiestGuy.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["63"]["Size"] = UDim2.new(0, 69, 0, 27);
+G2L["63"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["63"]["Text"] = [[AUTOFARM]];
+G2L["63"]["Name"] = [[Autofarm]];
+G2L["63"]["Position"] = UDim2.new(0.68202, 0, 0.034, 0);
+
+
+-- StarterGui.NebulaHub.FrameEsp.HotBardFRAME.SELECTION.Autofarm.LocalScript
+G2L["64"] = Instance.new("LocalScript", G2L["63"]);
+
+
+
+-- StarterGui.NebulaHub.FrameEsp.HotBardFRAME.SELECTION.Autofarm.UICorner
+G2L["65"] = Instance.new("UICorner", G2L["63"]);
+G2L["65"]["CornerRadius"] = UDim.new(0, 6);
+
+
+-- StarterGui.NebulaHub.FrameEsp.HotBardFRAME.UICorner
+G2L["66"] = Instance.new("UICorner", G2L["58"]);
+
+
+
+-- StarterGui.NebulaHub.FrameEsp.HotBardFRAME.Minumise
+G2L["67"] = Instance.new("TextButton", G2L["58"]);
+G2L["67"]["TextStrokeTransparency"] = 0;
+G2L["67"]["BorderSizePixel"] = 0;
+G2L["67"]["TextSize"] = 20;
+G2L["67"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["67"]["BackgroundColor3"] = Color3.fromRGB(28, 28, 28);
+G2L["67"]["FontFace"] = Font.new([[rbxasset://fonts/families/LuckiestGuy.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["67"]["Size"] = UDim2.new(0, 33, 0, 31);
+G2L["67"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["67"]["Text"] = [[-]];
+G2L["67"]["Name"] = [[Minumise]];
+G2L["67"]["Position"] = UDim2.new(0.9373, 0, 0.01357, 0);
+
+
+-- StarterGui.NebulaHub.FrameEsp.HotBardFRAME.Minumise.UICorner
+G2L["68"] = Instance.new("UICorner", G2L["67"]);
+
+
+
+-- StarterGui.NebulaHub.FrameEsp.Options
+G2L["69"] = Instance.new("Frame", G2L["57"]);
+G2L["69"]["BorderSizePixel"] = 0;
+G2L["69"]["BackgroundColor3"] = Color3.fromRGB(16, 16, 16);
+G2L["69"]["Size"] = UDim2.new(0, 608, 0, 302);
+G2L["69"]["Position"] = UDim2.new(0.02508, 0, 0.10644, 0);
+G2L["69"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["69"]["Name"] = [[Options]];
+
+
+-- StarterGui.NebulaHub.FrameEsp.Options.Frame
+G2L["6a"] = Instance.new("Frame", G2L["69"]);
+G2L["6a"]["BorderSizePixel"] = 0;
+G2L["6a"]["BackgroundColor3"] = Color3.fromRGB(120, 22, 232);
+G2L["6a"]["Size"] = UDim2.new(0, 4, 0, 18);
+G2L["6a"]["Position"] = UDim2.new(0, 0, 0.05629, 0);
+G2L["6a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+
+
+-- StarterGui.NebulaHub.FrameEsp.Options.Frame.UICorner
+G2L["6b"] = Instance.new("UICorner", G2L["6a"]);
+
+
+
+-- StarterGui.NebulaHub.FrameEsp.Options.Frame.ESP SETTINGS
+G2L["6c"] = Instance.new("TextLabel", G2L["6a"]);
+G2L["6c"]["BorderSizePixel"] = 0;
+G2L["6c"]["TextSize"] = 14;
+G2L["6c"]["BackgroundColor3"] = Color3.fromRGB(16, 16, 16);
+G2L["6c"]["FontFace"] = Font.new([[rbxasset://fonts/families/LuckiestGuy.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["6c"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["6c"]["Size"] = UDim2.new(0, 54, 0, 20);
+G2L["6c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["6c"]["Text"] = [[ESP SETTINGS]];
+G2L["6c"]["Name"] = [[ESP SETTINGS]];
+G2L["6c"]["Position"] = UDim2.new(6.5, 0, 0, 0);
+
+
+-- StarterGui.NebulaHub.FrameEsp.Options.Frame.PlayersESP
+G2L["6d"] = Instance.new("TextLabel", G2L["6a"]);
+G2L["6d"]["BorderSizePixel"] = 0;
+G2L["6d"]["TextSize"] = 14;
+G2L["6d"]["BackgroundColor3"] = Color3.fromRGB(16, 16, 16);
+G2L["6d"]["FontFace"] = Font.new([[rbxasset://fonts/families/LuckiestGuy.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["6d"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["6d"]["Size"] = UDim2.new(0, 54, 0, 20);
+G2L["6d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["6d"]["Text"] = [[PLAYERS ESP]];
+G2L["6d"]["Name"] = [[PlayersESP]];
+G2L["6d"]["Position"] = UDim2.new(3.5, 0, 2, 0);
+
+
+-- StarterGui.NebulaHub.FrameEsp.Options.Frame.MurderESP
+G2L["6e"] = Instance.new("TextLabel", G2L["6a"]);
+G2L["6e"]["BorderSizePixel"] = 0;
+G2L["6e"]["TextSize"] = 14;
+G2L["6e"]["BackgroundColor3"] = Color3.fromRGB(16, 16, 16);
+G2L["6e"]["FontFace"] = Font.new([[rbxasset://fonts/families/LuckiestGuy.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["6e"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["6e"]["Size"] = UDim2.new(0, 54, 0, 20);
+G2L["6e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["6e"]["Text"] = [[MURDER ESP]];
+G2L["6e"]["Name"] = [[MurderESP]];
+G2L["6e"]["Position"] = UDim2.new(3.5, 0, 3.33333, 8);
+
+
+-- StarterGui.NebulaHub.FrameEsp.Options.Frame.MurderESP
+G2L["6f"] = Instance.new("TextLabel", G2L["6a"]);
+G2L["6f"]["BorderSizePixel"] = 0;
+G2L["6f"]["TextSize"] = 14;
+G2L["6f"]["BackgroundColor3"] = Color3.fromRGB(16, 16, 16);
+G2L["6f"]["FontFace"] = Font.new([[rbxasset://fonts/families/LuckiestGuy.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["6f"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["6f"]["Size"] = UDim2.new(0, 70, 0, 20);
+G2L["6f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["6f"]["Text"] = [[SHERIFF ESP]];
+G2L["6f"]["Name"] = [[MurderESP]];
+G2L["6f"]["Position"] = UDim2.new(1, 0, 5, 8);
+
+
+-- StarterGui.NebulaHub.FrameEsp.Options.TogglePlayersESP
+G2L["70"] = Instance.new("Frame", G2L["69"]);
+G2L["70"]["BorderSizePixel"] = 0;
+G2L["70"]["BackgroundColor3"] = Color3.fromRGB(31, 31, 31);
+G2L["70"]["Size"] = UDim2.new(0, 55, 0, 26);
+G2L["70"]["Position"] = UDim2.new(0.92104, 0, 0.15527, 0);
+G2L["70"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["70"]["Name"] = [[TogglePlayersESP]];
+
+
+-- StarterGui.NebulaHub.FrameEsp.Options.TogglePlayersESP.LocalScript
+G2L["71"] = Instance.new("LocalScript", G2L["70"]);
+
+
+
+-- StarterGui.NebulaHub.FrameEsp.Options.TogglePlayersESP.Circle
+G2L["72"] = Instance.new("Frame", G2L["70"]);
+G2L["72"]["BorderSizePixel"] = 0;
+G2L["72"]["BackgroundColor3"] = Color3.fromRGB(62, 62, 62);
+G2L["72"]["Size"] = UDim2.new(0, 21, 0, 22);
+G2L["72"]["Position"] = UDim2.new(-0.00368, 0, -0.01365, 0);
+G2L["72"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["72"]["Name"] = [[Circle]];
+
+
+-- StarterGui.NebulaHub.FrameEsp.Options.TogglePlayersESP.Circle.UICorner
+G2L["73"] = Instance.new("UICorner", G2L["72"]);
+G2L["73"]["CornerRadius"] = UDim.new(1, 0);
+
+
+-- StarterGui.NebulaHub.FrameEsp.Options.TogglePlayersESP.UICorner
+G2L["74"] = Instance.new("UICorner", G2L["70"]);
+G2L["74"]["CornerRadius"] = UDim.new(1, 0);
+
+
+-- StarterGui.NebulaHub.FrameEsp.Options.ToggleMurderESP
+G2L["75"] = Instance.new("Frame", G2L["69"]);
+G2L["75"]["BorderSizePixel"] = 0;
+G2L["75"]["BackgroundColor3"] = Color3.fromRGB(31, 31, 31);
+G2L["75"]["Size"] = UDim2.new(0, 55, 0, 26);
+G2L["75"]["Position"] = UDim2.new(0.92104, 0, 0.27116, 0);
+G2L["75"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["75"]["Name"] = [[ToggleMurderESP]];
+
+
+-- StarterGui.NebulaHub.FrameEsp.Options.ToggleMurderESP.LocalScript
+G2L["76"] = Instance.new("LocalScript", G2L["75"]);
+
+
+
+-- StarterGui.NebulaHub.FrameEsp.Options.ToggleMurderESP.Circle
+G2L["77"] = Instance.new("Frame", G2L["75"]);
+G2L["77"]["BorderSizePixel"] = 0;
+G2L["77"]["BackgroundColor3"] = Color3.fromRGB(62, 62, 62);
+G2L["77"]["Size"] = UDim2.new(0, 21, 0, 22);
+G2L["77"]["Position"] = UDim2.new(-0.00368, 0, -0.01365, 0);
+G2L["77"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["77"]["Name"] = [[Circle]];
+
+
+-- StarterGui.NebulaHub.FrameEsp.Options.ToggleMurderESP.Circle.UICorner
+G2L["78"] = Instance.new("UICorner", G2L["77"]);
+G2L["78"]["CornerRadius"] = UDim.new(1, 0);
+
+
+-- StarterGui.NebulaHub.FrameEsp.Options.ToggleMurderESP.UICorner
+G2L["79"] = Instance.new("UICorner", G2L["75"]);
+G2L["79"]["CornerRadius"] = UDim.new(1, 0);
+
+
+-- StarterGui.NebulaHub.FrameEsp.Options.ToggleSheriffESP
+G2L["7a"] = Instance.new("Frame", G2L["69"]);
+G2L["7a"]["BorderSizePixel"] = 0;
+G2L["7a"]["BackgroundColor3"] = Color3.fromRGB(31, 31, 31);
+G2L["7a"]["Size"] = UDim2.new(0, 55, 0, 26);
+G2L["7a"]["Position"] = UDim2.new(0.92104, 0, 0.38044, 0);
+G2L["7a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["7a"]["Name"] = [[ToggleSheriffESP]];
+
+
+-- StarterGui.NebulaHub.FrameEsp.Options.ToggleSheriffESP.LocalScript
+G2L["7b"] = Instance.new("LocalScript", G2L["7a"]);
+
+
+
+-- StarterGui.NebulaHub.FrameEsp.Options.ToggleSheriffESP.Circle
+G2L["7c"] = Instance.new("Frame", G2L["7a"]);
+G2L["7c"]["BorderSizePixel"] = 0;
+G2L["7c"]["BackgroundColor3"] = Color3.fromRGB(62, 62, 62);
+G2L["7c"]["Size"] = UDim2.new(0, 21, 0, 22);
+G2L["7c"]["Position"] = UDim2.new(-0.00368, 0, -0.01365, 0);
+G2L["7c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["7c"]["Name"] = [[Circle]];
+
+
+-- StarterGui.NebulaHub.FrameEsp.Options.ToggleSheriffESP.Circle.UICorner
+G2L["7d"] = Instance.new("UICorner", G2L["7c"]);
+G2L["7d"]["CornerRadius"] = UDim.new(1, 0);
+
+
+-- StarterGui.NebulaHub.FrameEsp.Options.ToggleSheriffESP.UICorner
+G2L["7e"] = Instance.new("UICorner", G2L["7a"]);
+G2L["7e"]["CornerRadius"] = UDim.new(1, 0);
+
+
+-- StarterGui.NebulaHub.FrameEsp.UICorner
+G2L["7f"] = Instance.new("UICorner", G2L["57"]);
+
+
+
+-- StarterGui.NebulaHub.FrameEsp.UIDragDetector
+G2L["80"] = Instance.new("UIDragDetector", G2L["57"]);
+
+
+
+-- StarterGui.NebulaHub.FrameAutofarm
+G2L["81"] = Instance.new("Frame", G2L["1"]);
+G2L["81"]["Visible"] = false;
+G2L["81"]["BorderSizePixel"] = 0;
+G2L["81"]["BackgroundColor3"] = Color3.fromRGB(16, 16, 16);
+G2L["81"]["Size"] = UDim2.new(0, 638, 0, 357);
+G2L["81"]["Position"] = UDim2.new(0.44567, 0, 0.45477, 0);
+G2L["81"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["81"]["Name"] = [[FrameAutofarm]];
+
+
+-- StarterGui.NebulaHub.FrameAutofarm.HotBardFRAME
+G2L["82"] = Instance.new("Frame", G2L["81"]);
+G2L["82"]["BorderSizePixel"] = 0;
+G2L["82"]["BackgroundColor3"] = Color3.fromRGB(16, 16, 16);
+G2L["82"]["Size"] = UDim2.new(0, 638, 0, 39);
+G2L["82"]["Position"] = UDim2.new(0, 0, -0, 0);
+G2L["82"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["82"]["Name"] = [[HotBardFRAME]];
+
+
+-- StarterGui.NebulaHub.FrameAutofarm.HotBardFRAME.NebulaHUB
+G2L["83"] = Instance.new("TextLabel", G2L["82"]);
+G2L["83"]["BorderSizePixel"] = 0;
+G2L["83"]["TextSize"] = 23;
+G2L["83"]["BackgroundColor3"] = Color3.fromRGB(16, 16, 16);
+G2L["83"]["FontFace"] = Font.new([[rbxasset://fonts/families/LuckiestGuy.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["83"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["83"]["Size"] = UDim2.new(0, 123, 0, 35);
+G2L["83"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["83"]["Text"] = [[NebulaHub]];
+G2L["83"]["Name"] = [[NebulaHUB]];
+G2L["83"]["Position"] = UDim2.new(0.02493, 0, 0.03922, 0);
+
+
+-- StarterGui.NebulaHub.FrameAutofarm.HotBardFRAME.TextLabel
+G2L["84"] = Instance.new("TextLabel", G2L["82"]);
+G2L["84"]["BorderSizePixel"] = 0;
+G2L["84"]["TextSize"] = 14;
+G2L["84"]["BackgroundColor3"] = Color3.fromRGB(16, 16, 16);
+G2L["84"]["FontFace"] = Font.new([[rbxasset://fonts/families/LuckiestGuy.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["84"]["TextColor3"] = Color3.fromRGB(182, 182, 182);
+G2L["84"]["Size"] = UDim2.new(0, 172, 0, 29);
+G2L["84"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["84"]["Text"] = [[discord.gg/PR6NSeghqf]];
+G2L["84"]["Position"] = UDim2.new(0.25694, 0, 0.07692, 0);
+
+
+-- StarterGui.NebulaHub.FrameAutofarm.HotBardFRAME.SELECTION
+G2L["85"] = Instance.new("Frame", G2L["82"]);
+G2L["85"]["BorderSizePixel"] = 0;
+G2L["85"]["BackgroundColor3"] = Color3.fromRGB(16, 16, 16);
+G2L["85"]["Size"] = UDim2.new(0, 242, 0, 29);
+G2L["85"]["Position"] = UDim2.new(0.54389, 0, 0.07692, 0);
+G2L["85"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["85"]["Name"] = [[SELECTION]];
+
+
+-- StarterGui.NebulaHub.FrameAutofarm.HotBardFRAME.SELECTION.UIStroke
+G2L["86"] = Instance.new("UIStroke", G2L["85"]);
+G2L["86"]["Color"] = Color3.fromRGB(26, 26, 26);
+
+
+-- StarterGui.NebulaHub.FrameAutofarm.HotBardFRAME.SELECTION.UICorner
+G2L["87"] = Instance.new("UICorner", G2L["85"]);
+
+
+
+-- StarterGui.NebulaHub.FrameAutofarm.HotBardFRAME.SELECTION.Gameplay
+G2L["88"] = Instance.new("TextButton", G2L["85"]);
+G2L["88"]["BorderSizePixel"] = 0;
+G2L["88"]["TextSize"] = 14;
+G2L["88"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["88"]["BackgroundColor3"] = Color3.fromRGB(16, 16, 16);
+G2L["88"]["FontFace"] = Font.new([[rbxasset://fonts/families/LuckiestGuy.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["88"]["Size"] = UDim2.new(0, 69, 0, 27);
+G2L["88"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["88"]["Text"] = [[GAMEPLAY]];
+G2L["88"]["Name"] = [[Gameplay]];
+G2L["88"]["Position"] = UDim2.new(0.025, 0, 0.034, 0);
+
+
+-- StarterGui.NebulaHub.FrameAutofarm.HotBardFRAME.SELECTION.Gameplay.LocalScript
+G2L["89"] = Instance.new("LocalScript", G2L["88"]);
+
+
+
+-- StarterGui.NebulaHub.FrameAutofarm.HotBardFRAME.SELECTION.Gameplay.UICorner
+G2L["8a"] = Instance.new("UICorner", G2L["88"]);
+G2L["8a"]["CornerRadius"] = UDim.new(0, 6);
+
+
+-- StarterGui.NebulaHub.FrameAutofarm.HotBardFRAME.SELECTION.Esp
+G2L["8b"] = Instance.new("TextButton", G2L["85"]);
+G2L["8b"]["BorderSizePixel"] = 0;
+G2L["8b"]["TextSize"] = 14;
+G2L["8b"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["8b"]["BackgroundColor3"] = Color3.fromRGB(16, 16, 16);
+G2L["8b"]["FontFace"] = Font.new([[rbxasset://fonts/families/LuckiestGuy.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["8b"]["Size"] = UDim2.new(0, 69, 0, 27);
+G2L["8b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["8b"]["Text"] = [[ESP]];
+G2L["8b"]["Name"] = [[Esp]];
+G2L["8b"]["Position"] = UDim2.new(0.35558, 0, 0.034, 0);
+
+
+-- StarterGui.NebulaHub.FrameAutofarm.HotBardFRAME.SELECTION.Esp.LocalScript
+G2L["8c"] = Instance.new("LocalScript", G2L["8b"]);
+
+
+
+-- StarterGui.NebulaHub.FrameAutofarm.HotBardFRAME.SELECTION.Esp.UICorner
+G2L["8d"] = Instance.new("UICorner", G2L["8b"]);
+G2L["8d"]["CornerRadius"] = UDim.new(0, 6);
+
+
+-- StarterGui.NebulaHub.FrameAutofarm.HotBardFRAME.SELECTION.Autofarm
+G2L["8e"] = Instance.new("TextButton", G2L["85"]);
+G2L["8e"]["BorderSizePixel"] = 0;
+G2L["8e"]["TextSize"] = 14;
+G2L["8e"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["8e"]["BackgroundColor3"] = Color3.fromRGB(120, 22, 232);
+G2L["8e"]["FontFace"] = Font.new([[rbxasset://fonts/families/LuckiestGuy.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["8e"]["Size"] = UDim2.new(0, 69, 0, 27);
+G2L["8e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["8e"]["Text"] = [[AUTOFARM]];
+G2L["8e"]["Name"] = [[Autofarm]];
+G2L["8e"]["Position"] = UDim2.new(0.68202, 0, 0.034, 0);
+
+
+-- StarterGui.NebulaHub.FrameAutofarm.HotBardFRAME.SELECTION.Autofarm.UICorner
+G2L["8f"] = Instance.new("UICorner", G2L["8e"]);
+G2L["8f"]["CornerRadius"] = UDim.new(0, 6);
+
+
+-- StarterGui.NebulaHub.FrameAutofarm.HotBardFRAME.UICorner
+G2L["90"] = Instance.new("UICorner", G2L["82"]);
+
+
+
+-- StarterGui.NebulaHub.FrameAutofarm.HotBardFRAME.Minumise
+G2L["91"] = Instance.new("TextButton", G2L["82"]);
+G2L["91"]["TextStrokeTransparency"] = 0;
+G2L["91"]["BorderSizePixel"] = 0;
+G2L["91"]["TextSize"] = 20;
+G2L["91"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["91"]["BackgroundColor3"] = Color3.fromRGB(28, 28, 28);
+G2L["91"]["FontFace"] = Font.new([[rbxasset://fonts/families/LuckiestGuy.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["91"]["Size"] = UDim2.new(0, 33, 0, 31);
+G2L["91"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["91"]["Text"] = [[-]];
+G2L["91"]["Name"] = [[Minumise]];
+G2L["91"]["Position"] = UDim2.new(0.9373, 0, 0.01357, 0);
+
+
+-- StarterGui.NebulaHub.FrameAutofarm.HotBardFRAME.Minumise.UICorner
+G2L["92"] = Instance.new("UICorner", G2L["91"]);
+
+
+
+-- StarterGui.NebulaHub.FrameAutofarm.UICorner
+G2L["93"] = Instance.new("UICorner", G2L["81"]);
+
+
+
+-- StarterGui.NebulaHub.FrameAutofarm.UIDragDetector
+G2L["94"] = Instance.new("UIDragDetector", G2L["81"]);
+
+
+
+-- StarterGui.NebulaHub.NebulaSpeedUI
+G2L["95"] = Instance.new("Frame", G2L["1"]);
+G2L["95"]["Visible"] = false;
+G2L["95"]["BorderSizePixel"] = 0;
+G2L["95"]["BackgroundColor3"] = Color3.fromRGB(16, 16, 16);
+G2L["95"]["Size"] = UDim2.new(0, 261, 0, 236);
+G2L["95"]["Position"] = UDim2.new(0.23812, 0, 0.17173, 0);
+G2L["95"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["95"]["Name"] = [[NebulaSpeedUI]];
+
+
+-- StarterGui.NebulaHub.NebulaSpeedUI.NebulaHUB
+G2L["96"] = Instance.new("TextLabel", G2L["95"]);
+G2L["96"]["BorderSizePixel"] = 0;
+G2L["96"]["TextSize"] = 23;
+G2L["96"]["BackgroundColor3"] = Color3.fromRGB(16, 16, 16);
+G2L["96"]["FontFace"] = Font.new([[rbxasset://fonts/families/LuckiestGuy.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["96"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["96"]["Size"] = UDim2.new(0, 123, 0, 35);
+G2L["96"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["96"]["Text"] = [[NebulaHub]];
+G2L["96"]["Name"] = [[NebulaHUB]];
+G2L["96"]["Position"] = UDim2.new(0.04408, 0, 0.0367, 0);
+
+
+-- StarterGui.NebulaHub.NebulaSpeedUI.UICorner
+G2L["97"] = Instance.new("UICorner", G2L["95"]);
+G2L["97"]["CornerRadius"] = UDim.new(0, 6);
+
+
+-- StarterGui.NebulaHub.NebulaSpeedUI.CLOSE
+G2L["98"] = Instance.new("TextButton", G2L["95"]);
+G2L["98"]["TextStrokeTransparency"] = 0;
+G2L["98"]["BorderSizePixel"] = 0;
+G2L["98"]["TextSize"] = 20;
+G2L["98"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["98"]["BackgroundColor3"] = Color3.fromRGB(28, 28, 28);
+G2L["98"]["FontFace"] = Font.new([[rbxasset://fonts/families/LuckiestGuy.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["98"]["Size"] = UDim2.new(0, 33, 0, 31);
+G2L["98"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["98"]["Text"] = [[X]];
+G2L["98"]["Name"] = [[CLOSE]];
+G2L["98"]["Position"] = UDim2.new(0.84534, 0, 0.03643, 0);
+
+
+-- StarterGui.NebulaHub.NebulaSpeedUI.CLOSE.UICorner
+G2L["99"] = Instance.new("UICorner", G2L["98"]);
+
+
+
+-- StarterGui.NebulaHub.NebulaSpeedUI.CLOSE.LocalScript
+G2L["9a"] = Instance.new("LocalScript", G2L["98"]);
+
+
+
+-- StarterGui.NebulaHub.NebulaSpeedUI.TeleportRandomPlayer
+G2L["9b"] = Instance.new("TextButton", G2L["95"]);
+G2L["9b"]["BorderSizePixel"] = 0;
+G2L["9b"]["TextSize"] = 20;
+G2L["9b"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["9b"]["BackgroundColor3"] = Color3.fromRGB(28, 28, 28);
+G2L["9b"]["FontFace"] = Font.new([[rbxasset://fonts/families/LuckiestGuy.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["9b"]["Size"] = UDim2.new(0, 242, 0, 37);
+G2L["9b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["9b"]["Text"] = [[ENABLE THE FLY]];
+G2L["9b"]["Name"] = [[TeleportRandomPlayer]];
+G2L["9b"]["Position"] = UDim2.new(0.03402, 0, 0.21096, 0);
+
+
+-- StarterGui.NebulaHub.NebulaSpeedUI.TeleportRandomPlayer.LocalScript
+G2L["9c"] = Instance.new("LocalScript", G2L["9b"]);
+
+
+
+-- StarterGui.NebulaHub.NebulaSpeedUI.TeleportRandomPlayer.UICorner
+G2L["9d"] = Instance.new("UICorner", G2L["9b"]);
+
+
+
+-- StarterGui.NebulaHub.NebulaSpeedUI.TOOLS
+G2L["9e"] = Instance.new("TextLabel", G2L["95"]);
+G2L["9e"]["BorderSizePixel"] = 0;
+G2L["9e"]["TextSize"] = 18;
+G2L["9e"]["BackgroundColor3"] = Color3.fromRGB(16, 16, 16);
+G2L["9e"]["FontFace"] = Font.new([[rbxasset://fonts/families/LuckiestGuy.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["9e"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["9e"]["Size"] = UDim2.new(0, 37, 0, 20);
+G2L["9e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["9e"]["Text"] = [[STATUS : ACTIVE]];
+G2L["9e"]["Name"] = [[TOOLS]];
+G2L["9e"]["Position"] = UDim2.new(0.2069, 0, 0.88982, 0);
+
+
+-- StarterGui.NebulaHub.NebulaSpeedUI.SpeedLabel
+G2L["9f"] = Instance.new("TextLabel", G2L["95"]);
+G2L["9f"]["BorderSizePixel"] = 0;
+G2L["9f"]["TextSize"] = 18;
+G2L["9f"]["BackgroundColor3"] = Color3.fromRGB(16, 16, 16);
+G2L["9f"]["FontFace"] = Font.new([[rbxasset://fonts/families/LuckiestGuy.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["9f"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["9f"]["Size"] = UDim2.new(0, 42, 0, 20);
+G2L["9f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["9f"]["Text"] = [[Speed : 50]];
+G2L["9f"]["Name"] = [[SpeedLabel]];
+G2L["9f"]["Position"] = UDim2.new(0.11494, 0, 0.80083, 0);
+
+
+-- StarterGui.NebulaHub.NebulaSpeedUI.TextButton
+G2L["a0"] = Instance.new("TextButton", G2L["95"]);
+G2L["a0"]["TextStrokeTransparency"] = 0;
+G2L["a0"]["BorderSizePixel"] = 0;
+G2L["a0"]["TextSize"] = 14;
+G2L["a0"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["a0"]["BackgroundColor3"] = Color3.fromRGB(28, 28, 28);
+G2L["a0"]["FontFace"] = Font.new([[rbxasset://fonts/families/LuckiestGuy.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["a0"]["Size"] = UDim2.new(0, 74, 0, 50);
+G2L["a0"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["a0"]["Text"] = [[ADD SPEED]];
+G2L["a0"]["Position"] = UDim2.new(0.67433, 0, 0.4661, 0);
+
+
+-- StarterGui.NebulaHub.NebulaSpeedUI.TextButton.UICorner
+G2L["a1"] = Instance.new("UICorner", G2L["a0"]);
+G2L["a1"]["CornerRadius"] = UDim.new(0, 6);
+
+
+-- StarterGui.NebulaHub.NebulaSpeedUI.TextButton.LocalScript
+G2L["a2"] = Instance.new("LocalScript", G2L["a0"]);
+
+
+
+-- StarterGui.NebulaHub.NebulaSpeedUI.TextButton
+G2L["a3"] = Instance.new("TextButton", G2L["95"]);
+G2L["a3"]["TextStrokeTransparency"] = 0;
+G2L["a3"]["BorderSizePixel"] = 0;
+G2L["a3"]["TextSize"] = 14;
+G2L["a3"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["a3"]["BackgroundColor3"] = Color3.fromRGB(28, 28, 28);
+G2L["a3"]["FontFace"] = Font.new([[rbxasset://fonts/families/LuckiestGuy.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["a3"]["Size"] = UDim2.new(0, 74, 0, 50);
+G2L["a3"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["a3"]["Text"] = [[NOCLIP: OFF]];
+G2L["a3"]["Position"] = UDim2.new(0.34866, 0, 0.4661, 0);
+
+
+-- StarterGui.NebulaHub.NebulaSpeedUI.TextButton.UICorner
+G2L["a4"] = Instance.new("UICorner", G2L["a3"]);
+G2L["a4"]["CornerRadius"] = UDim.new(0, 6);
+
+
+-- StarterGui.NebulaHub.NebulaSpeedUI.TextButton
+G2L["a5"] = Instance.new("TextButton", G2L["95"]);
+G2L["a5"]["TextStrokeTransparency"] = 0;
+G2L["a5"]["BorderSizePixel"] = 0;
+G2L["a5"]["TextSize"] = 12;
+G2L["a5"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["a5"]["BackgroundColor3"] = Color3.fromRGB(28, 28, 28);
+G2L["a5"]["FontFace"] = Font.new([[rbxasset://fonts/families/LuckiestGuy.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["a5"]["Size"] = UDim2.new(0, 74, 0, 50);
+G2L["a5"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["a5"]["Text"] = [[DOWN SPEED]];
+G2L["a5"]["Position"] = UDim2.new(0.03065, 0, 0.4661, 0);
+
+
+-- StarterGui.NebulaHub.NebulaSpeedUI.TextButton.UICorner
+G2L["a6"] = Instance.new("UICorner", G2L["a5"]);
+G2L["a6"]["CornerRadius"] = UDim.new(0, 6);
+
+
+-- StarterGui.NebulaHub.NebulaSpeedUI.TextButton.LocalScript
+G2L["a7"] = Instance.new("LocalScript", G2L["a5"]);
+
+
+
+-- StarterGui.NebulaHub.FrameGamePlay.HotBardFRAME.SELECTION.Esp.LocalScript
+local function C_a()
+local script = G2L["a"];
+	local button = script.Parent
+	
+	local screenGui = game.Players.LocalPlayer.PlayerGui:WaitForChild("NebulaHub")
+	
+	local frameEsp = screenGui:WaitForChild("FrameEsp")
+	
+	button.MouseButton1Click:Connect(function()
+		-- Cache toutes les Frames du ScreenGui
+		for _, frame in pairs(screenGui:GetChildren()) do
+			if frame:IsA("Frame") then
+				frame.Visible = false
+			end
+		end
+	
+		-- Affiche la Frame voulue
+		frameEsp.Visible = true
+	end)
+end;
+task.spawn(C_a);
+-- StarterGui.NebulaHub.FrameGamePlay.HotBardFRAME.SELECTION.Autofarm.LocalScript
+local function C_f()
+local script = G2L["f"];
+	local button = script.Parent
+	
+	local screenGui = game.Players.LocalPlayer.PlayerGui:WaitForChild("NebulaHub")
+	
+	local FrameAutofarm = screenGui:WaitForChild("FrameAutofarm")
+	
+	button.MouseButton1Click:Connect(function()
+		-- Cache toutes les Frames du ScreenGui
+		for _, frame in pairs(screenGui:GetChildren()) do
+			if frame:IsA("Frame") then
+				frame.Visible = false
+			end
+		end
+	
+		-- Affiche la Frame voulue
+		FrameAutofarm.Visible = true
+	end)
+end;
+task.spawn(C_f);
+-- StarterGui.NebulaHub.FrameGamePlay.ScrollingFrame.DATAS.MurderIS.LocalScript
+local function C_18()
+local script = G2L["18"];
+	-- Met ceci dans un LocalScript séparé
+	
+	local Players = game:GetService("Players")
+	local PlayerGui = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+	
+	local lastMurder = nil
+	
+	-- RÉCUPÉRATION DU TEXTBOX (c'est un TextBox mais avec les options désactivées)
+	local murderTextBox = PlayerGui:WaitForChild("FrameGamePlay"):WaitForChild("ScrollingFrame"):FindFirstChild("MurderIS")
+	
+	local function updateMurderLabel(murdererName)
+		if murderTextBox then
+			if murdererName then
+				murderTextBox.Text = "MURDER IS: " .. string.upper(murdererName)
+			else
+				murderTextBox.Text = "MURDER IS: UNKNOWN"
+			end
+		end
+	end
+	
+	local function isMurder(player)
+		local backpack = player:FindFirstChild("Backpack")
+		local character = player.Character
+	
+		if backpack and backpack:FindFirstChild("Knife") then
+			return true
+		end
+	
+		if character and character:FindFirstChild("Knife") then
+			return true
+		end
+	
+		return false
+	end
+	
+	local function scanMurder()
+		local foundMurder = false
+	
+		for _, player in pairs(Players:GetPlayers()) do
+			if isMurder(player) then
+				foundMurder = true
+	
+				if lastMurder ~= player.Name then
+					print("NebulaHub | Murder Detected : " .. player.Name)
+					updateMurderLabel(player.Name)
+					lastMurder = player.Name
+				end
+				break
+			end
+		end
+	
+		if not foundMurder and lastMurder ~= nil then
+			print("NebulaHub | Murder Detected : None")
+			updateMurderLabel(nil)
+			lastMurder = nil
+		end
+	end
+	
+	-- Scan toutes les secondes
+	task.spawn(function()
+		while true do
+			scanMurder()
+			task.wait(1)
+		end
+	end)
+	
+	-- Scan quand un joueur rejoint
+	Players.PlayerAdded:Connect(function()
+		scanMurder()
+	end)
+	
+	-- Scan quand un joueur quitte
+	Players.PlayerRemoving:Connect(function()
+		scanMurder()
+	end)
+	
+	-- Premier scan au démarrage
+	scanMurder()
+end;
+task.spawn(C_18);
+-- StarterGui.NebulaHub.FrameGamePlay.ScrollingFrame.TeleportationFrame.TeleportRandomPlayer.LocalScript
+local function C_1f()
+local script = G2L["1f"];
+	-- LocalScript à mettre dans ton bouton
+	
+	local Players = game:GetService("Players")
+	local player = game.Players.LocalPlayer
+	
+	-- Fonction de téléportation vers un joueur aléatoire
+	local function teleportToRandomPlayer()
+		-- Récupérer tous les joueurs
+		local allPlayers = Players:GetPlayers()
+	
+		-- Filtrer pour enlever le joueur lui-même
+		local otherPlayers = {}
+		for _, p in pairs(allPlayers) do
+			if p ~= player then
+				table.insert(otherPlayers, p)
+			end
+		end
+	
+		if #otherPlayers == 0 then
+			print("❌ Aucun autre joueur trouvé !")
+			return
+		end
+	
+		-- Choisir un joueur aléatoire
+		local randomIndex = math.random(1, #otherPlayers)
+		local target = otherPlayers[randomIndex]
+	
+		print("🎯 Joueur choisi : " .. target.Name)
+	
+		local targetChar = target.Character
+		if not targetChar then
+			print("❌ Le joueur n'a pas de character !")
+			return
+		end
+	
+		local targetRoot = targetChar:FindFirstChild("HumanoidRootPart")
+		if not targetRoot then
+			print("❌ HumanoidRootPart introuvable !")
+			return
+		end
+	
+		local playerChar = player.Character
+		if not playerChar then
+			print("❌ Tu n'as pas de character !")
+			return
+		end
+	
+		local playerRoot = playerChar:FindFirstChild("HumanoidRootPart")
+		if not playerRoot then
+			print("❌ HumanoidRootPart introuvable !")
+			return
+		end
+	
+		local humanoid = targetChar:FindFirstChild("Humanoid")
+		if not humanoid or humanoid.Health <= 0 then
+			print("❌ Le joueur est mort !")
+			return
+		end
+	
+		-- Calculer la direction où le joueur regarde
+		local lookVector = targetRoot.CFrame.LookVector
+		local distance = 5
+	
+		-- Téléporter en face du joueur
+		local newCFrame = CFrame.new(targetRoot.Position + lookVector * distance, targetRoot.Position)
+		playerRoot.CFrame = newCFrame
+	
+		print("✅ Téléporté en face de " .. target.Name)
+	end
+	
+	-- Quand on clique sur le bouton, on se téléporte sur un joueur aléatoire
+	script.Parent.MouseButton1Click:Connect(teleportToRandomPlayer)
+	
+	print("✅ Script chargé ! Clique pour te téléporter sur un joueur aléatoire.")
+end;
+task.spawn(C_1f);
+-- StarterGui.NebulaHub.FrameGamePlay.ScrollingFrame.TeleportationFrame.TeleportToMurderer.LocalScript
+local function C_29()
+local script = G2L["29"];
+	-- LocalScript à mettre dans ton bouton
+	
+	local Players = game:GetService("Players")
+	local player = game.Players.LocalPlayer
+	
+	-- Fonction pour détecter le murder
+	local function isMurder(player)
+		local backpack = player:FindFirstChild("Backpack")
+		local character = player.Character
+	
+		if backpack and backpack:FindFirstChild("Knife") then
+			return true
+		end
+	
+		if character and character:FindFirstChild("Knife") then
+			return true
+		end
+	
+		return false
+	end
+	
+	-- Fonction pour trouver le murder
+	local function findMurder()
+		for _, p in pairs(Players:GetPlayers()) do
+			if isMurder(p) then
+				return p
+			end
+		end
+		return nil
+	end
+	
+	-- Fonction de téléportation
+	local function teleportToMurder()
+		local murder = findMurder()
+	
+		if not murder then
+			print("❌ Aucun murder détecté !")
+			return
+		end
+	
+		local targetChar = murder.Character
+		if not targetChar then
+			print("❌ Le murder n'a pas de character !")
+			return
+		end
+	
+		local targetRoot = targetChar:FindFirstChild("HumanoidRootPart")
+		if not targetRoot then
+			print("❌ HumanoidRootPart introuvable !")
+			return
+		end
+	
+		local playerChar = player.Character
+		if not playerChar then
+			print("❌ Tu n'as pas de character !")
+			return
+		end
+	
+		local playerRoot = playerChar:FindFirstChild("HumanoidRootPart")
+		if not playerRoot then
+			print("❌ HumanoidRootPart introuvable !")
+			return
+		end
+	
+		local humanoid = targetChar:FindFirstChild("Humanoid")
+		if not humanoid or humanoid.Health <= 0 then
+			print("❌ Le murder est mort !")
+			return
+		end
+	
+		-- Calculer la direction où le murder regarde
+		local lookVector = targetRoot.CFrame.LookVector
+		local distance = 5
+	
+		-- Téléporter en face du murder
+		local newCFrame = CFrame.new(targetRoot.Position + lookVector * distance, targetRoot.Position)
+		playerRoot.CFrame = newCFrame
+	
+		print("✅ Téléporté en face de " .. murder.Name)
+	end
+	
+	-- Quand on clique sur le bouton, on se téléporte
+	script.Parent.MouseButton1Click:Connect(teleportToMurder)
+end;
+task.spawn(C_29);
+-- StarterGui.NebulaHub.FrameGamePlay.ScrollingFrame.TeleportationFrame.TeleportToSheriff.LocalScript
+local function C_2c()
+local script = G2L["2c"];
+	-- LocalScript à mettre dans ton bouton
+	
+	local Players = game:GetService("Players")
+	local player = game.Players.LocalPlayer
+	
+	-- Variables pour garder la trace du sheriff actuel
+	local sheriffList = {}
+	local currentIndex = 1
+	
+	-- Fonction pour détecter le sheriff
+	local function isSheriff(player)
+		local backpack = player:FindFirstChild("Backpack")
+		local character = player.Character
+	
+		if backpack and backpack:FindFirstChild("Gun") then
+			return true
+		end
+	
+		if character and character:FindFirstChild("Gun") then
+			return true
+		end
+	
+		return false
+	end
+	
+	-- Fonction pour trouver tous les sheriffs
+	local function findAllSheriffs()
+		local sheriffs = {}
+		for _, p in pairs(Players:GetPlayers()) do
+			if isSheriff(p) and p ~= player then -- On s'exclut soi-même
+				table.insert(sheriffs, p)
+			end
+		end
+		return sheriffs
+	end
+	
+	-- Fonction pour mettre à jour la liste des sheriffs
+	local function updateSheriffList()
+		sheriffList = findAllSheriffs()
+		if #sheriffList > 0 then
+			if currentIndex > #sheriffList then
+				currentIndex = 1
+			end
+			print("🔫 " .. #sheriffList .. " sheriff(s) trouvé(s)")
+		else
+			print("❌ Aucun sheriff détecté !")
+		end
+	end
+	
+	-- Fonction de téléportation
+	local function teleportToSheriff()
+		-- Mettre à jour la liste
+		updateSheriffList()
+	
+		if #sheriffList == 0 then
+			print("❌ Aucun sheriff détecté !")
+			return
+		end
+	
+		local target = sheriffList[currentIndex]
+	
+		if not target then
+			print("❌ Sheriff introuvable !")
+			return
+		end
+	
+		local targetChar = target.Character
+		if not targetChar then
+			print("❌ Le sheriff n'a pas de character !")
+			return
+		end
+	
+		local targetRoot = targetChar:FindFirstChild("HumanoidRootPart")
+		if not targetRoot then
+			print("❌ HumanoidRootPart introuvable !")
+			return
+		end
+	
+		local playerChar = player.Character
+		if not playerChar then
+			print("❌ Tu n'as pas de character !")
+			return
+		end
+	
+		local playerRoot = playerChar:FindFirstChild("HumanoidRootPart")
+		if not playerRoot then
+			print("❌ HumanoidRootPart introuvable !")
+			return
+		end
+	
+		local humanoid = targetChar:FindFirstChild("Humanoid")
+		if not humanoid or humanoid.Health <= 0 then
+			print("❌ Le sheriff est mort, passage au suivant !")
+			currentIndex = currentIndex + 1
+			if currentIndex > #sheriffList then
+				currentIndex = 1
+			end
+			teleportToSheriff() -- Rappel pour aller au prochain
+			return
+		end
+	
+		-- Calculer la direction où le sheriff regarde
+		local lookVector = targetRoot.CFrame.LookVector
+		local distance = 5
+	
+		-- Téléporter en face du sheriff
+		local newCFrame = CFrame.new(targetRoot.Position + lookVector * distance, targetRoot.Position)
+		playerRoot.CFrame = newCFrame
+	
+		print("✅ Téléporté en face de " .. target.Name)
+	
+		-- Passer au sheriff suivant pour le prochain clic
+		currentIndex = currentIndex + 1
+		if currentIndex > #sheriffList then
+			currentIndex = 1
+		end
+	end
+	
+	-- Mise à jour initiale
+	updateSheriffList()
+	
+	-- Quand on clique sur le bouton, on se téléporte
+	script.Parent.MouseButton1Click:Connect(teleportToSheriff)
+	
+	print("✅ Script chargé ! Clique pour te téléporter sur les sheriffs un par un.")
+end;
+task.spawn(C_2c);
+-- StarterGui.NebulaHub.FrameGamePlay.ScrollingFrame.BasicStuff.ToggleNoClip.LocalScript
+local function C_34()
+local script = G2L["34"];
+	local toggle = script.Parent
+	local circle = toggle:WaitForChild("Circle")
+	
+	local TweenService = game:GetService("TweenService")
+	local Players = game:GetService("Players")
+	
+	local player = Players.LocalPlayer
+	
+	local activated = false
+	
+	local offPosition = UDim2.new(0, 0, 0.041, 0)
+	local onPosition = UDim2.new(0.525, 0, 0.041, 0)
+	
+	local noclipConnection
+	
+	local function setCharacterCollision(enabled)
+		local character = player.Character
+		if not character then return end
+	
+		for _, part in ipairs(character:GetDescendants()) do
+			if part:IsA("BasePart") then
+				part.CanCollide = not enabled
+			end
+		end
+	end
+	
+	local function enableNoclip()
+		if noclipConnection then
+			noclipConnection:Disconnect()
+		end
+	
+		noclipConnection = game:GetService("RunService").Stepped:Connect(function()
+			setCharacterCollision(true)
+		end)
+	end
+	
+	local function disableNoclip()
+		if noclipConnection then
+			noclipConnection:Disconnect()
+			noclipConnection = nil
+		end
+	
+		setCharacterCollision(false)
+	end
+	
+	player.CharacterAdded:Connect(function(character)
+		character:WaitForChild("HumanoidRootPart")
+	
+		if activated then
+			enableNoclip()
+		end
+	end)
+	
+	toggle.InputBegan:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1
+			or input.UserInputType == Enum.UserInputType.Touch then
+	
+			activated = not activated
+	
+			if activated then
+				TweenService:Create(circle, TweenInfo.new(0.2), {
+					Position = onPosition,
+					BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+				}):Play()
+	
+				toggle.BackgroundColor3 = Color3.fromRGB(179, 106, 232)
+	
+				enableNoclip()
+	
+			else
+				TweenService:Create(circle, TweenInfo.new(0.2), {
+					Position = offPosition,
+					BackgroundColor3 = Color3.fromRGB(61, 61, 61)
+				}):Play()
+	
+				toggle.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+	
+				disableNoclip()
+			end
+		end
+	end)
+end;
+task.spawn(C_34);
+-- StarterGui.NebulaHub.FrameGamePlay.ScrollingFrame.BasicStuff.FlyGUI.LocalScript
+local function C_3a()
+local script = G2L["3a"];
+	local button = script.Parent
+	local screenGui = game.Players.LocalPlayer.PlayerGui:WaitForChild("NebulaHub")
+	local frameToShow = screenGui:WaitForChild("NebulaSpeedUI")
+	
+	button.MouseButton1Click:Connect(function()
+		frameToShow.Visible = true
+	end)
+end;
+task.spawn(C_3a);
+-- StarterGui.NebulaHub.FrameGamePlay.ScrollingFrame.BasicStuff.ToggleInfiniteJump.LocalScript
+local function C_3d()
+local script = G2L["3d"];
+	local toggle = script.Parent
+	local circle = toggle:WaitForChild("Circle")
+	
+	local TweenService = game:GetService("TweenService")
+	local player = game.Players.LocalPlayer
+	
+	local activated = false
+	local infiniteJumpConnection = nil
+	
+	local offPosition = UDim2.new(0, 0, 0.041, 0)
+	local onPosition = UDim2.new(0.525, 0, 0.041, 0)
+	
+	local function enableInfiniteJump()
+		if infiniteJumpConnection then
+			infiniteJumpConnection:Disconnect()
+		end
+	
+		infiniteJumpConnection = game:GetService("UserInputService").JumpRequest:Connect(function()
+			local character = player.Character
+			if character then
+				local humanoid = character:FindFirstChild("Humanoid")
+				if humanoid and humanoid:GetState() ~= Enum.HumanoidStateType.Jumping then
+					humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+				end
+			end
+		end)
+	end
+	
+	local function disableInfiniteJump()
+		if infiniteJumpConnection then
+			infiniteJumpConnection:Disconnect()
+			infiniteJumpConnection = nil
+		end
+	end
+	
+	player.CharacterAdded:Connect(function(character)
+		character:WaitForChild("HumanoidRootPart")
+		if activated then
+			enableInfiniteJump()
+		end
+	end)
+	
+	toggle.InputBegan:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1
+			or input.UserInputType == Enum.UserInputType.Touch then
+	
+			activated = not activated
+	
+			if activated then
+				TweenService:Create(circle, TweenInfo.new(0.2), {
+					Position = onPosition,
+					BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+				}):Play()
+	
+				toggle.BackgroundColor3 = Color3.fromRGB(179, 106, 232)
+	
+				enableInfiniteJump()
+			else
+				TweenService:Create(circle, TweenInfo.new(0.2), {
+					Position = offPosition,
+					BackgroundColor3 = Color3.fromRGB(61, 61, 61)
+				}):Play()
+	
+				toggle.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+	
+				disableInfiniteJump()
+			end
+		end
+	end)
+end;
+task.spawn(C_3d);
+-- StarterGui.NebulaHub.FrameGamePlay.ScrollingFrame.MoreTools.BringAllPlayers.LocalScript
+local function C_46()
+local script = G2L["46"];
+	-- BRING ALL - Version TextButton avec clics multiples
+	script.Parent.MouseButton1Click:Connect(function()
+		-- Empêcher les clics pendant l'exécution
+		if script.Parent:GetAttribute("IsRunning") then
+			return
+		end
+		script.Parent:SetAttribute("IsRunning", true)
+	
+		local player = game.Players.LocalPlayer
+		local char = player.Character
+		if not char then 
+			script.Parent:SetAttribute("IsRunning", false)
+			return 
+		end
+	
+		local root = char:FindFirstChild("HumanoidRootPart")
+		if not root then 
+			script.Parent:SetAttribute("IsRunning", false)
+			return 
+		end
+	
+		local pos = root.Position
+	
+		-- Configuration
+		local SPREAD_RADIUS = 2.5
+		local Y_OFFSET = 2.5
+	
+		-- Tableau pour garder une trace des joueurs gelés
+		local frozenPlayers = {}
+	
+		-- Fonction pour freezer un joueur
+		local function freezePlayer(character)
+			if not character then return end
+	
+			local humanoid = character:FindFirstChild("Humanoid")
+			if humanoid and humanoid.Health > 0 then
+				humanoid.WalkSpeed = 0
+				humanoid.JumpPower = 0
+				humanoid.AutoRotate = false
+				humanoid.PlatformStand = true
+			end
+	
+			for _, part in ipairs(character:GetDescendants()) do
+				if part:IsA("BasePart") then
+					part.Anchored = true
+					part.CanCollide = false
+				end
+			end
+		end
+	
+		-- Fonction pour défreezer un joueur avec vérifications de sécurité
+		local function unfreezePlayer(character)
+			if not character then return end
+	
+			-- Vérifier si le personnage existe toujours et est valide
+			if not character.Parent then return end
+	
+			local humanoid = character:FindFirstChild("Humanoid")
+			if humanoid then
+				-- Restaurer les propriétés par défaut
+				humanoid.WalkSpeed = 16
+				humanoid.JumpPower = 50
+				humanoid.AutoRotate = true
+				humanoid.PlatformStand = false
+			end
+	
+			-- Désancher toutes les pièces
+			for _, part in ipairs(character:GetDescendants()) do
+				if part:IsA("BasePart") then
+					-- Vérifier si la pièce existe toujours
+					if part and part.Parent then
+						pcall(function()
+							part.Anchored = false
+							part.CanCollide = true
+						end)
+					end
+				end
+			end
+		end
+	
+		-- Fonction pour défreezer tout le monde en toute sécurité
+		local function unfreezeAll()
+			-- Créer une copie de la liste pour éviter les problèmes de modification
+			local playersToUnfreeze = {}
+			for _, v in ipairs(frozenPlayers) do
+				table.insert(playersToUnfreeze, v)
+			end
+	
+			-- Vider la liste des joueurs gelés
+			frozenPlayers = {}
+	
+			-- Dégeler chaque joueur
+			for _, v in ipairs(playersToUnfreeze) do
+				local success, err = pcall(function()
+					if v and v.Parent then
+						unfreezePlayer(v)
+					end
+				end)
+				if not success then
+					warn("Erreur lors du dégel d'un joueur:", err)
+				end
+			end
+		end
+	
+		-- Compteur de joueurs
+		local count = 0
+		frozenPlayers = {} -- Réinitialiser la liste
+	
+		-- Regrouper tous les joueurs
+		for _, v in ipairs(game.Players:GetPlayers()) do
+			if v ~= player then
+				local vChar = v.Character
+				if vChar and vChar:FindFirstChild("HumanoidRootPart") then
+					local vRoot = vChar.HumanoidRootPart
+	
+					-- Vérifier que le joueur est toujours valide
+					if vRoot and vRoot.Parent then
+						local angle = math.rad(count * 72)
+						local offsetX = math.cos(angle) * SPREAD_RADIUS
+						local offsetZ = math.sin(angle) * SPREAD_RADIUS
+	
+						local targetPos = pos + Vector3.new(offsetX, Y_OFFSET, offsetZ)
+	
+						-- Déplacer le joueur en toute sécurité
+						pcall(function()
+							vRoot.CFrame = CFrame.new(targetPos)
+							vRoot.Velocity = Vector3.new(0, 0, 0)
+							vRoot.RotVelocity = Vector3.new(0, 0, 0)
+						end)
+	
+						freezePlayer(vChar)
+						table.insert(frozenPlayers, vChar)
+						count = count + 1
+					end
+				end
+			end
+		end
+	
+		print("👥 " .. count .. " joueurs regroupés et gelés")
+	
+		-- Dégeler automatiquement après 5 secondes
+		task.wait(5)
+	
+		-- Dégeler en toute sécurité
+		local success, err = pcall(unfreezeAll)
+		if success then
+			print("🔓 Tous les joueurs ont été dégelés automatiquement après 5 secondes")
+		else
+			warn("Erreur lors du dégel:", err)
+			-- Tentative de dégel de secours
+			for _, v in ipairs(game.Players:GetPlayers()) do
+				if v ~= player then
+					pcall(function()
+						if v.Character then
+							unfreezePlayer(v.Character)
+						end
+					end)
+				end
+			end
+		end
+	
+		-- Réactiver le bouton
+		script.Parent:SetAttribute("IsRunning", false)
+	end)
+end;
+task.spawn(C_46);
+-- StarterGui.NebulaHub.FrameGamePlay.ScrollingFrame.Aimbot.ToggleAimbotSheriff.LocalScript
+local function C_4e()
+local script = G2L["4e"];
+	-- LocalScript (à mettre dans le bouton toggle)
+	
+	local player = game.Players.LocalPlayer
+	local Players = game:GetService("Players")
+	local UserInputService = game:GetService("UserInputService")
+	
+	-- Variables du toggle
+	local toggle = script.Parent
+	local circle = toggle:WaitForChild("Circle")
+	local TweenService = game:GetService("TweenService")
+	
+	local activated = false
+	local offPosition = UDim2.new(0, 0, 0.041, 0)
+	local onPosition = UDim2.new(0.525, 0, 0.041, 0)
+	
+	-- Fonction pour trouver le murder
+	local function findMurder()
+		for _, p in pairs(Players:GetPlayers()) do
+			local backpack = p:FindFirstChild("Backpack")
+			local character = p.Character
+	
+			if (backpack and backpack:FindFirstChild("Knife")) or 
+				(character and character:FindFirstChild("Knife")) then
+				return p
+			end
+		end
+		return nil
+	end
+	
+	-- Fonction pour tirer sur la tête du murder
+	local function shootAtMurderHead()
+		local character = player.Character
+		if not character then
+			return
+		end
+	
+		-- Vérifier si tu as un pistolet
+		local gun = character:FindFirstChild("Gun")
+		if not gun then
+			local backpack = player:FindFirstChild("Backpack")
+			if backpack then
+				gun = backpack:FindFirstChild("Gun")
+				if gun then
+					gun.Parent = character
+				end
+			end
+		end
+	
+		if not gun then
+			return
+		end
+	
+		local shootEvent = gun:FindFirstChild("Shoot")
+		if not shootEvent then
+			return
+		end
+	
+		local rootPart = character:FindFirstChild("HumanoidRootPart")
+		if not rootPart then
+			return
+		end
+	
+		-- Trouver le murder
+		local murder = findMurder()
+		if not murder then
+			return
+		end
+	
+		local murderChar = murder.Character
+		if not murderChar then
+			return
+		end
+	
+		-- Viser la TÊTE du murder
+		local head = murderChar:FindFirstChild("Head")
+		if not head then
+			-- Si pas de Head, viser le torse
+			local murderRoot = murderChar:FindFirstChild("HumanoidRootPart")
+			if murderRoot then
+				head = murderRoot
+			else
+				return
+			end
+		end
+	
+		local targetPos = head.Position
+		local startPos = rootPart.Position + Vector3.new(0, 1.5, 0)
+	
+		-- Créer les arguments pour le tir (vise la tête)
+		local args = {
+			CFrame.new(startPos, targetPos),
+			CFrame.new(targetPos)
+		}
+	
+		-- Tirer sur la tête
+		shootEvent:FireServer(unpack(args))
+		print("🔫 Tir dans la tête de " .. murder.Name)
+	end
+	
+	-- Fonction pour hook le RemoteEvent Shoot (intercepte tous les tirs)
+	local function hookShoot()
+		local character = player.Character
+		if not character then return end
+	
+		local gun = character:FindFirstChild("Gun")
+		if not gun then
+			local backpack = player:FindFirstChild("Backpack")
+			if backpack then
+				gun = backpack:FindFirstChild("Gun")
+			end
+		end
+	
+		if not gun then return end
+	
+		local shootEvent = gun:FindFirstChild("Shoot")
+		if not shootEvent then return end
+	
+		-- Sauvegarder la fonction originale
+		local original = shootEvent.FireServer
+	
+		-- Remplacer par notre fonction
+		shootEvent.FireServer = function(self, ...)
+			if activated then
+				local character = player.Character
+				if character then
+					local rootPart = character:FindFirstChild("HumanoidRootPart")
+					local murder = findMurder()
+	
+					if rootPart and murder then
+						local murderChar = murder.Character
+						if murderChar then
+							-- Viser la TÊTE du murder
+							local head = murderChar:FindFirstChild("Head")
+							if head then
+								local targetPos = head.Position
+								local startPos = rootPart.Position + Vector3.new(0, 1.5, 0)
+	
+								local newArgs = {
+									CFrame.new(startPos, targetPos),
+									CFrame.new(targetPos)
+								}
+	
+								print("🎯 Balle redirigée vers la tête de " .. murder.Name)
+	
+								-- Appeler la fonction originale avec les nouveaux arguments
+								return original(self, unpack(newArgs))
+							end
+						end
+					end
+				end
+			end
+	
+			-- Si toggle désactivé ou murder introuvable, tir normal
+			return original(self, ...)
+		end
+	
+		print("✅ Hook installé sur Shoot !")
+	end
+	
+	-- Gestion du toggle
+	toggle.InputBegan:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1
+			or input.UserInputType == Enum.UserInputType.Touch then
+	
+			activated = not activated
+	
+			if activated then
+				TweenService:Create(circle, TweenInfo.new(0.2), {
+					Position = onPosition,
+					BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+				}):Play()
+				toggle.BackgroundColor3 = Color3.fromRGB(179, 106, 232)
+				print("🎯 AimBot ACTIVÉ - Tirs redirigés vers la tête du murder")
+	
+				-- Installer le hook
+				hookShoot()
+			else
+				TweenService:Create(circle, TweenInfo.new(0.2), {
+					Position = offPosition,
+					BackgroundColor3 = Color3.fromRGB(61, 61, 61)
+				}):Play()
+				toggle.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+				print("🎯 AimBot DÉSACTIVÉ")
+			end
+		end
+	end)
+	
+	-- Réappliquer le hook quand le character change
+	player.CharacterAdded:Connect(function()
+		task.wait(0.5)
+		if activated then
+			hookShoot()
+		end
+	end)
+	
+	print("✅ AimBot Headshot chargé !")
+	print("📌 Active le toggle, même si tu tires sur un mur, la balle va dans la tête du murder")
+end;
+task.spawn(C_4e);
+-- StarterGui.NebulaHub.FrameGamePlay.ScrollingFrame.Aimbot.TeleportRandomPlayer.LocalScript
+local function C_53()
+local script = G2L["53"];
+	-- LocalScript (à mettre dans le bouton)
+	
+	local player = game.Players.LocalPlayer
+	local Players = game:GetService("Players")
+	local RunService = game:GetService("RunService")
+	
+	-- Fonction pour trouver le murder
+	local function findMurder()
+		for _, p in pairs(Players:GetPlayers()) do
+			local backpack = p:FindFirstChild("Backpack")
+			local character = p.Character
+	
+			if (backpack and backpack:FindFirstChild("Knife")) or 
+				(character and character:FindFirstChild("Knife")) then
+				return p
+			end
+		end
+		return nil
+	end
+	
+	-- Fonction pour obtenir la position de la tête du murder
+	local function getMurderHeadPosition()
+		local murder = findMurder()
+		if not murder then return nil end
+	
+		local murderChar = murder.Character
+		if not murderChar then return nil end
+	
+		local head = murderChar:FindFirstChild("Head")
+		if head then
+			return head.Position
+		end
+	
+		local root = murderChar:FindFirstChild("HumanoidRootPart")
+		if root then
+			return root.Position + Vector3.new(0, 1.5, 0)
+		end
+	
+		return nil
+	end
+	
+	-- Fonction pour tirer avec traversée des murs
+	local function shootThroughWalls()
+		local character = player.Character
+		if not character then
+			print("❌ Pas de character !")
+			return
+		end
+	
+		-- Vérifier le pistolet
+		local gun = character:FindFirstChild("Gun")
+		if not gun then
+			local backpack = player:FindFirstChild("Backpack")
+			if backpack then
+				gun = backpack:FindFirstChild("Gun")
+				if gun then
+					gun.Parent = character
+				end
+			end
+		end
+	
+		if not gun then
+			print("❌ Pas de pistolet (tu n'es pas sheriff)")
+			return
+		end
+	
+		local shootEvent = gun:FindFirstChild("Shoot")
+		if not shootEvent then
+			print("❌ Shoot RemoteEvent introuvable")
+			return
+		end
+	
+		-- Trouver la position de la tête du murder
+		local targetPos = getMurderHeadPosition()
+		if not targetPos then
+			print("❌ Murder introuvable ou sans tête")
+			return
+		end
+	
+		local rootPart = character:FindFirstChild("HumanoidRootPart")
+		if not rootPart then
+			print("❌ HumanoidRootPart introuvable")
+			return
+		end
+	
+		-- Position de départ (canon du pistolet)
+		local startPos = rootPart.Position + Vector3.new(0, 1.5, 0)
+	
+		-- Calculer la distance
+		local distance = (startPos - targetPos).Magnitude
+		print("🎯 Distance du murder : " .. math.floor(distance) .. " studs")
+	
+		-- Créer les arguments pour le tir (DIRECTEMENT sur la tête)
+		local args = {
+			CFrame.new(startPos, targetPos),
+			CFrame.new(targetPos)
+		}
+	
+		-- Tirer à travers les murs
+		shootEvent:FireServer(unpack(args))
+		print("🔫 Tir traversant vers la tête du murder !")
+	
+		-- Tuer instantanément
+		task.wait(0.05)
+		local murder = findMurder()
+		if murder then
+			local murderChar = murder.Character
+			if murderChar then
+				local humanoid = murderChar:FindFirstChild("Humanoid")
+				if humanoid and humanoid.Health > 0 then
+					humanoid.Health = 0
+					print("💀 " .. murder.Name .. " tué (traversée des murs) !")
+				end
+			end
+		end
+	end
+	
+	-- Quand on clique sur le bouton
+	script.Parent.MouseButton1Click:Connect(function()
+		shootThroughWalls()
+	end)
+	
+	print("✅ Script chargé !")
+	print("📌 Clique sur le bouton pour headshot le murder (traversée des murs)")
+end;
+task.spawn(C_53);
+-- StarterGui.NebulaHub.FrameEsp.HotBardFRAME.SELECTION.Gameplay.LocalScript
+local function C_5f()
+local script = G2L["5f"];
+	local button = script.Parent
+	
+	local screenGui = game.Players.LocalPlayer.PlayerGui:WaitForChild("NebulaHub")
+	
+	local FrameGamePlay = screenGui:WaitForChild("FrameGamePlay")
+	
+	button.MouseButton1Click:Connect(function()
+		-- Cache toutes les Frames du ScreenGui
+		for _, frame in pairs(screenGui:GetChildren()) do
+			if frame:IsA("Frame") then
+				frame.Visible = false
+			end
+		end
+	
+		-- Affiche la Frame voulue
+		FrameGamePlay.Visible = true
+	end)
+end;
+task.spawn(C_5f);
+-- StarterGui.NebulaHub.FrameEsp.HotBardFRAME.SELECTION.Autofarm.LocalScript
+local function C_64()
+local script = G2L["64"];
+	local button = script.Parent
+	
+	local screenGui = game.Players.LocalPlayer.PlayerGui:WaitForChild("NebulaHub")
+	
+	local FrameAutofarm = screenGui:WaitForChild("FrameAutofarm")
+	
+	button.MouseButton1Click:Connect(function()
+		-- Cache toutes les Frames du ScreenGui
+		for _, frame in pairs(screenGui:GetChildren()) do
+			if frame:IsA("Frame") then
+				frame.Visible = false
+			end
+		end
+	
+		-- Affiche la Frame voulue
+		FrameAutofarm.Visible = true
+	end)
+end;
+task.spawn(C_64);
+-- StarterGui.NebulaHub.FrameEsp.Options.TogglePlayersESP.LocalScript
+local function C_71()
+local script = G2L["71"];
+	local toggle = script.Parent
+	local circle = toggle:WaitForChild("Circle")
+	
+	local TweenService = game:GetService("TweenService")
+	local Players = game:GetService("Players")
+	
+	local LocalPlayer = Players.LocalPlayer
+	
+	local activated = false
+	
+	local offPosition = UDim2.new(0, 0, 0.041, 0)
+	local onPosition = UDim2.new(0.525, 0, 0.041, 0)
+	
+	local ESPObjects = {}
+	
+	
+	
+	local function removeESP()
+	
+		for _, obj in pairs(ESPObjects) do
+			if obj then
+				obj:Destroy()
+			end
+		end
+	
+		table.clear(ESPObjects)
+	
+	end
+	
+	
+	
+	
+	local function isSpecialRole(player)
+	
+		local backpack = player:FindFirstChild("Backpack")
+		local character = player.Character
+	
+	
+		if backpack then
+			if backpack:FindFirstChild("Knife") or backpack:FindFirstChild("Gun") then
+				return true
+			end
+		end
+	
+	
+		if character then
+			if character:FindFirstChild("Knife") or character:FindFirstChild("Gun") then
+				return true
+			end
+		end
+	
+	
+		return false
+	end
+	
+	
+	
+	
+	local function createPlayerESP(player)
+	
+		local character = player.Character
+		if not character then return end
+	
+		local head = character:FindFirstChild("Head")
+		if not head then return end
+	
+	
+	
+		-- Skin vert
+		local highlight = Instance.new("Highlight")
+	
+		highlight.Name = "PlayerHighlight"
+	
+		highlight.FillColor = Color3.fromRGB(0,255,0)
+	
+		highlight.OutlineColor = Color3.fromRGB(255,255,255)
+	
+	
+		highlight.FillTransparency = 0.45
+	
+		highlight.OutlineTransparency = 0
+	
+	
+		-- Voir à travers les murs
+		highlight.DepthMode = Enum.HighlightDepthMode.AlwaysOnTop
+	
+	
+		highlight.Parent = character
+	
+	
+	
+		table.insert(ESPObjects, highlight)
+	
+	
+	
+		-- Pas de texte sur soi
+		if player ~= LocalPlayer then
+	
+	
+			local billboard = Instance.new("BillboardGui")
+	
+			billboard.Name = "PlayerESP"
+	
+			billboard.Size = UDim2.new(0,220,0,60)
+	
+			billboard.StudsOffset = Vector3.new(0,3.8,0)
+	
+			billboard.AlwaysOnTop = true
+	
+			billboard.Parent = head
+	
+	
+	
+			local text = Instance.new("TextLabel")
+	
+	
+			text.Size = UDim2.new(1,0,1,0)
+	
+			text.BackgroundTransparency = 1
+	
+	
+			text.Text = "👤 PLAYER"
+	
+	
+			text.TextColor3 = Color3.fromRGB(0,255,0)
+	
+	
+			text.TextStrokeTransparency = 0
+	
+			text.TextStrokeColor3 = Color3.fromRGB(0,0,0)
+	
+	
+			text.Font = Enum.Font.GothamBlack
+	
+			text.TextSize = 24
+	
+	
+			text.Parent = billboard
+	
+	
+	
+			table.insert(ESPObjects, billboard)
+	
+		end
+	
+	end
+	
+	
+	
+	
+	
+	local function scanPlayers()
+	
+		removeESP()
+	
+	
+		for _, player in pairs(Players:GetPlayers()) do
+	
+	
+			if player ~= LocalPlayer then
+	
+	
+				if not isSpecialRole(player) then
+	
+					createPlayerESP(player)
+	
+				end
+	
+	
+			end
+	
+		end
+	
+	end
+	
+	
+	
+	
+	
+	toggle.InputBegan:Connect(function(input)
+	
+		if input.UserInputType == Enum.UserInputType.MouseButton1
+			or input.UserInputType == Enum.UserInputType.Touch then
+	
+	
+			activated = not activated
+	
+	
+	
+			if activated then
+	
+	
+				-- ON
+	
+				TweenService:Create(circle,TweenInfo.new(0.2),{
+	
+					Position = onPosition,
+	
+					BackgroundColor3 = Color3.fromRGB(255,255,255)
+	
+				}):Play()
+	
+	
+	
+				toggle.BackgroundColor3 = Color3.fromRGB(179,106,232)
+	
+	
+				scanPlayers()
+	
+	
+	
+			else
+	
+	
+				-- OFF
+	
+				TweenService:Create(circle,TweenInfo.new(0.2),{
+	
+					Position = offPosition,
+	
+					BackgroundColor3 = Color3.fromRGB(61,61,61)
+	
+				}):Play()
+	
+	
+	
+				toggle.BackgroundColor3 = Color3.fromRGB(30,30,30)
+	
+	
+				removeESP()
+	
+	
+			end
+	
+		end
+	
+	end)
+	
+	
+	
+	
+	-- Refresh automatique
+	
+	task.spawn(function()
+	
+		while true do
+	
+			if activated then
+	
+				scanPlayers()
+	
+			end
+	
+	
+			task.wait(1)
+	
+		end
+	
+	end)
+end;
+task.spawn(C_71);
+-- StarterGui.NebulaHub.FrameEsp.Options.ToggleMurderESP.LocalScript
+local function C_76()
+local script = G2L["76"];
+	local toggle = script.Parent
+	local circle = toggle:WaitForChild("Circle")
+	
+	local TweenService = game:GetService("TweenService")
+	local Players = game:GetService("Players")
+	
+	local LocalPlayer = Players.LocalPlayer
+	
+	local activated = false
+	
+	local offPosition = UDim2.new(0, 0, 0.041, 0)
+	local onPosition = UDim2.new(0.525, 0, 0.041, 0)
+	
+	local ESPObjects = {}
+	
+	
+	
+	local function removeESP()
+	
+		for _, obj in pairs(ESPObjects) do
+			if obj then
+				obj:Destroy()
+			end
+		end
+	
+		table.clear(ESPObjects)
+	
+	end
+	
+	
+	
+	
+	local function isMurder(player)
+	
+		local backpack = player:FindFirstChild("Backpack")
+		local character = player.Character
+	
+	
+		if backpack and backpack:FindFirstChild("Knife") then
+			return true
+		end
+	
+	
+		if character and character:FindFirstChild("Knife") then
+			return true
+		end
+	
+	
+		return false
+	
+	end
+	
+	
+	
+	
+	local function createMurderESP(player)
+	
+	
+		local character = player.Character
+		if not character then return end
+	
+	
+		local head = character:FindFirstChild("Head")
+		if not head then return end
+	
+	
+	
+		-- Skin rouge
+		local highlight = Instance.new("Highlight")
+	
+		highlight.Name = "MurderHighlight"
+	
+		highlight.FillColor = Color3.fromRGB(255,0,0)
+	
+		highlight.OutlineColor = Color3.fromRGB(255,255,255)
+	
+	
+		highlight.FillTransparency = 0.35
+	
+		highlight.OutlineTransparency = 0
+	
+	
+		-- Visible à travers les murs
+		highlight.DepthMode = Enum.HighlightDepthMode.AlwaysOnTop
+	
+	
+		highlight.Parent = character
+	
+	
+	
+		table.insert(ESPObjects, highlight)
+	
+	
+	
+		-- Texte seulement pour les autres joueurs
+		if player ~= LocalPlayer then
+	
+	
+			local billboard = Instance.new("BillboardGui")
+	
+			billboard.Name = "MurderESP"
+	
+			billboard.Size = UDim2.new(0,220,0,60)
+	
+			billboard.StudsOffset = Vector3.new(0,3.8,0)
+	
+	
+			billboard.AlwaysOnTop = true
+	
+	
+			billboard.Parent = head
+	
+	
+	
+			local text = Instance.new("TextLabel")
+	
+	
+			text.Size = UDim2.new(1,0,1,0)
+	
+			text.BackgroundTransparency = 1
+	
+	
+			text.Text = "🔪  MURDER"
+	
+	
+			text.TextColor3 = Color3.fromRGB(255,0,0)
+	
+	
+			text.TextStrokeTransparency = 0
+	
+			text.TextStrokeColor3 = Color3.fromRGB(0,0,0)
+	
+	
+	
+			text.Font = Enum.Font.GothamBlack
+	
+			text.TextSize = 26
+	
+	
+	
+			text.Parent = billboard
+	
+	
+	
+			table.insert(ESPObjects, billboard)
+	
+		end
+	
+	end
+	
+	
+	
+	
+	
+	local function scanMurder()
+	
+		removeESP()
+	
+	
+		for _, player in pairs(Players:GetPlayers()) do
+	
+	
+			if isMurder(player) then
+	
+	
+				createMurderESP(player)
+	
+	
+			end
+	
+		end
+	
+	end
+	
+	
+	
+	
+	
+	toggle.InputBegan:Connect(function(input)
+	
+	
+		if input.UserInputType == Enum.UserInputType.MouseButton1
+			or input.UserInputType == Enum.UserInputType.Touch then
+	
+	
+			activated = not activated
+	
+	
+	
+			if activated then
+	
+	
+				-- ON
+	
+				TweenService:Create(circle,TweenInfo.new(0.2),{
+	
+					Position = onPosition,
+	
+					BackgroundColor3 = Color3.fromRGB(255,255,255)
+	
+				}):Play()
+	
+	
+	
+				toggle.BackgroundColor3 = Color3.fromRGB(179,106,232)
+	
+	
+	
+				scanMurder()
+	
+	
+	
+			else
+	
+	
+				-- OFF
+	
+				TweenService:Create(circle,TweenInfo.new(0.2),{
+	
+					Position = offPosition,
+	
+					BackgroundColor3 = Color3.fromRGB(61,61,61)
+	
+				}):Play()
+	
+	
+	
+				toggle.BackgroundColor3 = Color3.fromRGB(30,30,30)
+	
+	
+	
+				removeESP()
+	
+	
+			end
+	
+		end
+	
+	end)
+	
+	
+	
+	
+	
+	-- Refresh automatique
+	
+	task.spawn(function()
+	
+		while true do
+	
+	
+			if activated then
+	
+				scanMurder()
+	
+			end
+	
+	
+			task.wait(1)
+	
+		end
+	
+	end)
+end;
+task.spawn(C_76);
+-- StarterGui.NebulaHub.FrameEsp.Options.ToggleSheriffESP.LocalScript
+local function C_7b()
+local script = G2L["7b"];
+	local toggle = script.Parent
+	local circle = toggle:WaitForChild("Circle")
+	
+	local TweenService = game:GetService("TweenService")
+	local Players = game:GetService("Players")
+	
+	local LocalPlayer = Players.LocalPlayer
+	
+	local activated = false
+	
+	local offPosition = UDim2.new(0, 0, 0.041, 0)
+	local onPosition = UDim2.new(0.525, 0, 0.041, 0)
+	
+	local ESPObjects = {}
+	
+	
+	
+	local function removeESP()
+	
+		for _, obj in pairs(ESPObjects) do
+			if obj then
+				obj:Destroy()
+			end
+		end
+	
+		table.clear(ESPObjects)
+	
+	end
+	
+	
+	
+	
+	local function isSheriff(player)
+	
+		local backpack = player:FindFirstChild("Backpack")
+		local character = player.Character
+	
+	
+		if backpack and backpack:FindFirstChild("Gun") then
+			return true
+		end
+	
+	
+		if character and character:FindFirstChild("Gun") then
+			return true
+		end
+	
+	
+		return false
+	
+	end
+	
+	
+	
+	
+	local function createSheriffESP(player)
+	
+	
+		local character = player.Character
+		if not character then return end
+	
+	
+		local head = character:FindFirstChild("Head")
+		if not head then return end
+	
+	
+	
+		-- Skin bleu
+		local highlight = Instance.new("Highlight")
+	
+		highlight.Name = "SheriffHighlight"
+	
+		highlight.FillColor = Color3.fromRGB(0,140,255)
+		highlight.OutlineColor = Color3.fromRGB(255,255,255)
+	
+		highlight.FillTransparency = 0.35
+		highlight.OutlineTransparency = 0
+	
+		-- Visible à travers les murs
+		highlight.DepthMode = Enum.HighlightDepthMode.AlwaysOnTop
+	
+		highlight.Parent = character
+	
+	
+	
+		table.insert(ESPObjects, highlight)
+	
+	
+	
+		-- Texte uniquement sur les autres joueurs
+		if player ~= LocalPlayer then
+	
+	
+			local billboard = Instance.new("BillboardGui")
+	
+			billboard.Name = "SheriffESP"
+	
+			billboard.Size = UDim2.new(0,220,0,60)
+	
+			billboard.StudsOffset = Vector3.new(0,3.8,0)
+	
+			billboard.AlwaysOnTop = true
+	
+			billboard.Parent = head
+	
+	
+	
+			local text = Instance.new("TextLabel")
+	
+	
+			text.Size = UDim2.new(1,0,1,0)
+	
+			text.BackgroundTransparency = 1
+	
+	
+			text.Text = "🔫  SHERIFF"
+	
+	
+			text.TextColor3 = Color3.fromRGB(0,170,255)
+	
+			text.TextStrokeTransparency = 0
+	
+			text.TextStrokeColor3 = Color3.fromRGB(0,0,0)
+	
+	
+			text.Font = Enum.Font.GothamBlack
+	
+			text.TextSize = 26
+	
+	
+			text.Parent = billboard
+	
+	
+	
+			table.insert(ESPObjects, billboard)
+	
+		end
+	
+	end
+	
+	
+	
+	
+	
+	local function scanSheriff()
+	
+		removeESP()
+	
+	
+		for _, player in pairs(Players:GetPlayers()) do
+	
+	
+			if isSheriff(player) then
+	
+				createSheriffESP(player)
+	
+			end
+	
+	
+		end
+	
+	end
+	
+	
+	
+	
+	
+	toggle.InputBegan:Connect(function(input)
+	
+	
+		if input.UserInputType == Enum.UserInputType.MouseButton1
+			or input.UserInputType == Enum.UserInputType.Touch then
+	
+	
+			activated = not activated
+	
+	
+	
+			if activated then
+	
+	
+				-- ON
+	
+				TweenService:Create(circle,TweenInfo.new(0.2),{
+	
+					Position = onPosition,
+	
+					BackgroundColor3 = Color3.fromRGB(255,255,255)
+	
+				}):Play()
+	
+	
+	
+				toggle.BackgroundColor3 = Color3.fromRGB(179,106,232)
+	
+	
+	
+				scanSheriff()
+	
+	
+	
+			else
+	
+	
+				-- OFF
+	
+				TweenService:Create(circle,TweenInfo.new(0.2),{
+	
+					Position = offPosition,
+	
+					BackgroundColor3 = Color3.fromRGB(61,61,61)
+	
+				}):Play()
+	
+	
+	
+				toggle.BackgroundColor3 = Color3.fromRGB(30,30,30)
+	
+	
+	
+				removeESP()
+	
+	
+			end
+	
+		end
+	
+	end)
+	
+	
+	
+	
+	-- Mise à jour automatique
+	
+	task.spawn(function()
+	
+		while true do
+	
+			if activated then
+	
+				scanSheriff()
+	
+			end
+	
+	
+			task.wait(1)
+	
+		end
+	
+	end)
+end;
+task.spawn(C_7b);
+-- StarterGui.NebulaHub.FrameAutofarm.HotBardFRAME.SELECTION.Gameplay.LocalScript
+local function C_89()
+local script = G2L["89"];
+	local button = script.Parent
+	
+	local screenGui = game.Players.LocalPlayer.PlayerGui:WaitForChild("NebulaHub")
+	
+	local FrameGamePlay = screenGui:WaitForChild("FrameGamePlay")
+	
+	button.MouseButton1Click:Connect(function()
+		-- Cache toutes les Frames du ScreenGui
+		for _, frame in pairs(screenGui:GetChildren()) do
+			if frame:IsA("Frame") then
+				frame.Visible = false
+			end
+		end
+	
+		-- Affiche la Frame voulue
+		FrameGamePlay.Visible = true
+	end)
+end;
+task.spawn(C_89);
+-- StarterGui.NebulaHub.FrameAutofarm.HotBardFRAME.SELECTION.Esp.LocalScript
+local function C_8c()
+local script = G2L["8c"];
+	local button = script.Parent
+	
+	local screenGui = game.Players.LocalPlayer.PlayerGui:WaitForChild("NebulaHub")
+	
+	local FrameEsp = screenGui:WaitForChild("FrameEsp")
+	
+	button.MouseButton1Click:Connect(function()
+		-- Cache toutes les Frames du ScreenGui
+		for _, frame in pairs(screenGui:GetChildren()) do
+			if frame:IsA("Frame") then
+				frame.Visible = false
+			end
+		end
+	
+		-- Affiche la Frame voulue
+		FrameEsp.Visible = true
+	end)
+end;
+task.spawn(C_8c);
+-- StarterGui.NebulaHub.NebulaSpeedUI.CLOSE.LocalScript
+local function C_9a()
+local script = G2L["9a"];
+	local button = script.Parent
+	local currentFrame = button.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		currentFrame.Visible = false
+	end)
+end;
+task.spawn(C_9a);
+-- StarterGui.NebulaHub.NebulaSpeedUI.TeleportRandomPlayer.LocalScript
+local function C_9c()
+local script = G2L["9c"];
+	local button = script.Parent
+	local speedLabel = script.Parent.Parent:WaitForChild("SpeedLabel")
+	
+	--// Services
+	local UserInputService = game:GetService("UserInputService")
+	local RunService = game:GetService("RunService")
+	local Players = game:GetService("Players")
+	
+	--// Player & Character
+	local player = Players.LocalPlayer
+	local character = player.Character or player.CharacterAdded:Wait()
+	local humanoid = character:WaitForChild("Humanoid")
+	local rootPart = character:WaitForChild("HumanoidRootPart")
+	
+	--// Configuration
+	local FLYING = false
+	local bodyGyro, bodyVelocity, noclipConnection
+	
+	--// Control scheme
+	local CONTROL = {F = 0, B = 0, L = 0, R = 0, Q = 0, E = 0}
+	
+	--// Keybind Handlers
+	local keyMap = {[Enum.KeyCode.W]="F",[Enum.KeyCode.S]="B",[Enum.KeyCode.A]="L",[Enum.KeyCode.D]="R",[Enum.KeyCode.Q]="Q",[Enum.KeyCode.E]="E"}
+	local valueMap = {[Enum.KeyCode.W]=1,[Enum.KeyCode.S]=-1,[Enum.KeyCode.A]=-1,[Enum.KeyCode.D]=1,[Enum.KeyCode.Q]=-1,[Enum.KeyCode.E]=1}
+	
+	UserInputService.InputBegan:Connect(function(input, gpe) 
+		if gpe or not keyMap[input.KeyCode] then return end 
+		CONTROL[keyMap[input.KeyCode]] = valueMap[input.KeyCode] 
+	end)
+	
+	UserInputService.InputEnded:Connect(function(input) 
+		if keyMap[input.KeyCode] then 
+			CONTROL[keyMap[input.KeyCode]] = 0 
+		end 
+	end)
+	
+	--// Noclip Function
+	local function NoclipLoop()
+		if character ~= nil then
+			for _, child in pairs(character:GetDescendants()) do
+				if child:IsA("BasePart") and child.CanCollide == true then 
+					child.CanCollide = false 
+				end
+			end
+		end
+	end
+	
+	--// Flight Functions
+	local function startBodyMoverFlyLoop()
+		if not character or not rootPart or not humanoid then return end
+		FLYING = true
+	
+		noclipConnection = RunService.Heartbeat:Connect(NoclipLoop)
+	
+		task.spawn(function()
+			bodyGyro = Instance.new('BodyGyro', rootPart)
+			bodyGyro.P = 9e4
+			bodyGyro.MaxTorque = Vector3.new(9e9, 9e9, 9e9)
+			bodyGyro.CFrame = rootPart.CFrame
+	
+			bodyVelocity = Instance.new('BodyVelocity', rootPart)
+			bodyVelocity.Velocity = Vector3.new(0, 0, 0)
+			bodyVelocity.MaxForce = Vector3.new(9e9, 9e9, 9e9)
+	
+			if humanoid then 
+				humanoid.PlatformStand = true 
+			end
+	
+			repeat
+				task.wait()
+				local camera = workspace.CurrentCamera
+				local moveVector = ((camera.CFrame.LookVector * (CONTROL.F + CONTROL.B)) + 
+					((camera.CFrame * CFrame.new((CONTROL.L + CONTROL.R), (CONTROL.Q + CONTROL.E) * 0.2, 0).p) - camera.CFrame.p))
+	
+				-- Utilise la vitesse du label
+				local currentSpeed = tonumber(speedLabel.Text:match("%d+")) or 1
+				bodyVelocity.Velocity = moveVector.Magnitude > 0 and moveVector.Unit * currentSpeed or Vector3.new(0,0,0)
+				bodyGyro.CFrame = camera.CFrame
+			until not FLYING or not rootPart.Parent
+	
+			if bodyGyro then bodyGyro:Destroy() end
+			if bodyVelocity then bodyVelocity:Destroy() end
+			if humanoid and humanoid.Parent then 
+				humanoid.PlatformStand = false 
+			end
+	
+			CONTROL = {F=0,B=0,L=0,R=0,Q=0,E=0}
+		end)
+	end
+	
+	local OFF_COLOR = Color3.fromRGB(27, 27, 27)
+	local ON_COLOR = Color3.fromRGB(148, 64, 231)
+	
+	local function setFlying(state)
+		FLYING = state
+	
+		if state then
+			startBodyMoverFlyLoop()
+			button.BackgroundColor3 = ON_COLOR
+			button.Text = "DISABLE THE FLY"
+		else
+			FLYING = false
+	
+			if noclipConnection then
+				noclipConnection:Disconnect()
+				noclipConnection = nil
+			end
+	
+			if bodyGyro then bodyGyro:Destroy(); bodyGyro = nil end
+			if bodyVelocity then bodyVelocity:Destroy(); bodyVelocity = nil end
+	
+			if character then
+				for _, part in ipairs(character:GetDescendants()) do
+					if part:IsA("BasePart") then
+						part.CanCollide = true
+					end
+				end
+			end
+	
+			if humanoid and humanoid.Parent then 
+				humanoid.PlatformStand = false 
+			end
+	
+			button.BackgroundColor3 = OFF_COLOR
+			button.Text = "ENABLE THE FLY"
+		end
+	end
+	
+	--// Respawn Handler
+	player.CharacterAdded:Connect(function(newChar)
+		if noclipConnection then
+			noclipConnection:Disconnect()
+			noclipConnection = nil
+		end
+	
+		if bodyGyro then bodyGyro:Destroy(); bodyGyro = nil end
+		if bodyVelocity then bodyVelocity:Destroy(); bodyVelocity = nil end
+	
+		FLYING = false
+		character = newChar
+		humanoid = newChar:WaitForChild("Humanoid")
+		rootPart = newChar:WaitForChild("HumanoidRootPart")
+	
+		button.BackgroundColor3 = OFF_COLOR
+		button.Text = "ENABLE THE FLY"
+	end)
+	
+	--// Bouton principal
+	button.MouseButton1Click:Connect(function()
+		setFlying(not FLYING)
+	end)
+end;
+task.spawn(C_9c);
+-- StarterGui.NebulaHub.NebulaSpeedUI.TextButton.LocalScript
+local function C_a2()
+local script = G2L["a2"];
+	local button = script.Parent
+	local speedLabel = script.Parent.Parent:WaitForChild("SpeedLabel") -- Change le nom si besoin
+	
+	button.MouseButton1Click:Connect(function()
+		local currentSpeed = tonumber(speedLabel.Text:match("%d+")) or 0
+		currentSpeed += 1
+		speedLabel.Text = "Speed : " .. currentSpeed
+	end)
+end;
+task.spawn(C_a2);
+-- StarterGui.NebulaHub.NebulaSpeedUI.TextButton.LocalScript
+local function C_a7()
+local script = G2L["a7"];
+	local button = script.Parent
+	local speedLabel = script.Parent.Parent:WaitForChild("SpeedLabel") -- Change le nom si besoin
+	
+	button.MouseButton1Click:Connect(function()
+		local currentSpeed = tonumber(speedLabel.Text:match("%d+")) or 0
+	
+		if currentSpeed > 0 then
+			currentSpeed -= 1
+		end
+	
+		speedLabel.Text = "Speed : " .. currentSpeed
+	end)
+end;
+task.spawn(C_a7);
+
+return G2L["1"], require;
